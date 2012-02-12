@@ -42,7 +42,7 @@ public class BBallParser
         ArrayList<Event> events = new ArrayList<Event>();
 
         NodeList nList = myDoc.getElementsByTagName("Calendar");
-        for (int i = 0; i < 1; i++)
+        for (int i = 0; i < nList.getLength(); i++)
         {
             events.add(createEvent(nList.item(i)));
 
@@ -60,6 +60,10 @@ public class BBallParser
         String summary = null;
         Date start = null;
         Date end = null;
+        String startString="";
+        String endString="";
+        DateFormat df = new SimpleDateFormat("MM/dd/yyyy hh:mm:ss a");
+        
 
 
         NodeList children = item.getChildNodes();
@@ -80,18 +84,34 @@ public class BBallParser
 
             if (children.item(i).getNodeName().equals("StartDate"))
             {
-                DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
-                start = df.parse(children.item(i).getTextContent());
+                startString+=children.item(i).getTextContent();
 
             }
             if (children.item(i).getNodeName().equals("StartTime"))
             {
+               startString+=" "+children.item(i).getTextContent();
+               start = df.parse(startString);
+               
+
+            }
+            if (children.item(i).getNodeName().equals("EndDate"))
+            {
+                endString+=children.item(i).getTextContent();
+
+
+            }
+            if (children.item(i).getNodeName().equals("EndTime"))
+            {
+                endString+=" "+children.item(i).getTextContent();
+                end = df.parse(endString);
                 
+
             }
 
         }
 
         return new Event(title, summary, start, end);
+        
     }
 
 }
