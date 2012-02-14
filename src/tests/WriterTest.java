@@ -6,6 +6,7 @@ import java.util.Calendar;
 import java.util.List;
 import event.Event;
 import writer.SummaryWriter;
+import writer.DetailsWriter;
 
 public class WriterTest
 {
@@ -16,7 +17,9 @@ public class WriterTest
         for(int i=0; i<10; i++){
             events.add(new Event("title"+i, "summary"+i, Calendar.getInstance().getTime(), Calendar.getInstance().getTime()));
         }
-        (new SummaryWriter()).outputHTML(events);
+        (new SummaryWriter()).outputHTML(events, "html/summary.html");
+        (new DetailsWriter()).outputHTML(events, "html/details.html");
+        
     }
 
 }
