@@ -41,7 +41,11 @@ public abstract class Parser {
     }
     
     protected String getTagValue(Object Node, String xPath) {
-        return getTagNodes(Node, xPath).item(0).getNodeValue();
+        Node nodeGot = getTagNodes(Node, xPath).item(0);
+        if (nodeGot != null)
+            return nodeGot.getNodeValue();
+        else
+            return "";
     }
 
     protected XPathExpression getXPathExpression(String xPath) {

@@ -34,7 +34,7 @@ public class DukeBasketballParser extends Parser {
                 String endDate = getTagValue(currentEvent, "EndDate/text()");
                 String endTime = getTagValue(currentEvent, "EndTime/text()");
                 Date end = getDateFromString(endDate + " " + endTime);
-
+                
                 myEvents.add(new Event(title, summary, start, end, url));
             }
     }

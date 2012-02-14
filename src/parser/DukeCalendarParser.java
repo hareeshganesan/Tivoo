@@ -27,17 +27,19 @@ public class DukeCalendarParser extends Parser {
 				String url = getTagValue(currentEvent, "link/text()");
 				
 				// Any way to simplify the following?
-		        String startTimeForParse1 = getTagValue(currentEvent, "start/longdate/text()") + " ";
-		        String startTimeForParse2 = getTagValue(currentEvent, "start/utcdate/text()").substring(9, 11) + ":" +
+		        String startDate = getTagValue(currentEvent, "start/longdate/text()") + " ";
+		        String startTime = getTagValue(currentEvent, "start/utcdate/text()").substring(9, 11) + ":" +
 		                getTagValue(currentEvent, "start/utcdate/text()").substring(11, 13);
-		        Date startTime = getDateFromString(startTimeForParse1 + startTimeForParse2);
+		        Date start = getDateFromString(startDate + startTime);
 		        
-		        String endTimeForParse1 = getTagValue(currentEvent, "end/longdate/text()") + " ";
-		        String endTimeForParse2 = getTagValue(currentEvent, "end/utcdate/text()").substring(9, 11)+":"+
+		        String endDate = getTagValue(currentEvent, "end/longdate/text()") + " ";
+		        String endTime = getTagValue(currentEvent, "end/utcdate/text()").substring(9, 11)+":"+
 		                getTagValue(currentEvent, "end/utcdate/text()").substring(11, 13);
-                Date endTime = getDateFromString(endTimeForParse1 + endTimeForParse2);
+                Date end = getDateFromString(endDate + endTime);
+//                System.out.format("%s %d %d %d %d %d\n", title, start.getMonth(), start.getDate(), start.getYear(), start.getHours(), start.getMinutes());
+//                System.out.format("%d %d %d %d %d\n", end.getMonth(), end.getDate(), end.getYear(), end.getHours(), end.getMinutes());
 
-				myEvents.add(new Event(title, summary, startTime, endTime, url));
+				myEvents.add(new Event(title, summary, start, end, url));
 			}
 	}
 	

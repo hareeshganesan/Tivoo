@@ -13,9 +13,7 @@ import event.Event;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
-import event.Event;
 import com.hp.gagawa.java.elements.*;
 
 public class SummaryWriter extends Writer
@@ -70,7 +68,7 @@ public class SummaryWriter extends Writer
         try
         {
             BufferedWriter bw =
-                new BufferedWriter(new FileWriter("output.html", filename));
+                new BufferedWriter(new FileWriter(String.format("%s", filename)));
             bw.write(html.write());
             bw.flush();
             bw.close();

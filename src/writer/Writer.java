@@ -1,6 +1,5 @@
 package writer;
 
-public abstract class Writer
-{
+public abstract class Writer {
     
 }

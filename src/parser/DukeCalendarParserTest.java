@@ -14,7 +14,8 @@ import event.Event;
 
 
 public class DukeCalendarParserTest{
-	public static void main(String[] args) throws IOException, ParserConfigurationException, SAXException{
+	@SuppressWarnings("deprecation")
+    public static void main(String[] args) throws IOException, ParserConfigurationException, SAXException{
 		List<Event> eventList;
 		File toParse = new File("./dukecal.xml");
         Parser test = new DukeCalendarParser(toParse);
@@ -25,7 +26,7 @@ public class DukeCalendarParserTest{
 		for(Event event:eventList){
 			String output ="----------------------------\n";
 			output+="Titile= "+event.getMyTitle()+"\n";
-			output+="StartTime= "+event.getMyStart().toGMTString()+"\n";
+            output+="StartTime= "+event.getMyStart()+"   "+event.getMyStart().toGMTString()+"\n";
 			output+="EndTime= "+event.getMyEnd()+"\n";
 			output+="Summary= "+event.getMySummary()+"\n";
 			  bw.write(output);
