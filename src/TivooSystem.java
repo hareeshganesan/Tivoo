@@ -36,13 +36,18 @@ public class TivooSystem {
         filter.filter();
         myEventList = filter.getFilteredList();
     }
-    
-    public List<Event> getEventList() {
-        return new ArrayList<Event>(myEventList);
+
+    public void  outputDetails(String outputLocation) {
+        Writer writer = new DetailsWriter();
+        writer.outputHTML(myEventList, outputLocation);
     }
      
     public void outputSummary(String outputLocation) {
-        SummaryWriter writer = new SummaryWriter();
+        Writer writer = new SummaryWriter();
         writer.outputHTML(myEventList, outputLocation);
+    }
+    
+    public List<Event> getEventList() {
+        return new ArrayList<Event>(myEventList);
     }
 }
