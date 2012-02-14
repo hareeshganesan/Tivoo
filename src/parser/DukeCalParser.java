@@ -14,6 +14,7 @@ import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 
 import org.w3c.dom.Document;
+import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
@@ -43,9 +44,9 @@ public class DukeCalParser extends Parser {
 			for (int temp = 0; temp < eventList.getLength(); temp++) {
 				String title;
 				String summary;
-				Object currentNode = eventList.item(temp);
-				title = getTagValue(eventList.item(temp), "summary/text()");
-				summary = getTagValue(eventList.item(temp),
+				Node currentNode = eventList.item(temp);
+				title = getTagValue(currentNode, "summary/text()");
+				summary = getTagValue(currentNode,
 						"description/text()");
 				myEvents.add(new Event(title, summary, startTime(currentNode),
 						endTime(currentNode)));
@@ -57,16 +58,16 @@ public class DukeCalParser extends Parser {
 	}
 
 	
-	private static String getTagValue(Object Node, String xPath)
+	private  String getTagValue(Node node, String xPath)
 			throws XPathExpressionException {
 
 		XPathExpression expr = getXPathExpression(xPath);
-		NodeList eventList = (NodeList) expr.evaluate(Node,
+		NodeList eventList = (NodeList) expr.evaluate(node,
 				XPathConstants.NODESET);
 		return eventList.item(0).getNodeValue();
 	}
 
-	private static XPathExpression getXPathExpression(String xPath)
+	private  XPathExpression getXPathExpression(String xPath)
 			throws XPathExpressionException {
 		XPathFactory xpathfactory = XPathFactory.newInstance();
 		XPath myXpath = xpathfactory.newXPath();
@@ -74,7 +75,7 @@ public class DukeCalParser extends Parser {
 	}
 //10,11,12,13
 	@SuppressWarnings({ "deprecation", "static-access" })
-	private static Date startTime(Object node) throws XPathExpressionException {
+	private  Date startTime(Node node) throws XPathExpressionException {
 		Date starttime = new Date();
 		String date = getTagValue(node, "start/longdate/text()") + " ";
 		
@@ -86,7 +87,7 @@ public class DukeCalParser extends Parser {
 	}
 
 	@SuppressWarnings({ "deprecation", "static-access" })
-	private static Date endTime(Object node) throws XPathExpressionException {
+	private  Date endTime(Node node) throws XPathExpressionException {
 		Date endtime = new Date();
 		String date = getTagValue(node, "end/longdate/text()") + " ";
 		
