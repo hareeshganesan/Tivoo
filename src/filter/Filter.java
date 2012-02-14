@@ -1,6 +1,9 @@
 package filter;
 
-public abstract class Filter
-{
+import java.util.*;
+import event.*;
 
+public abstract class Filter {
+    
+    protected abstract List<Event> filter();
 }
