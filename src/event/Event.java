@@ -43,4 +43,28 @@ public class Event
         return myEnd;
     }
 
+
+    public boolean containsKeywordInTitle (String keyword)
+    {
+        return myTitle.contains(keyword);
+    }
+
+
+    public boolean isWithinTimeFrame (Date startTime, Date endTime)
+    {
+        return (myStart.before(endTime) && myEnd.after(startTime));
+    }
+
+
+    public String toString ()
+    {
+        String ret = "";
+        ret += "Title: " + myTitle;
+        ret += "\nStart Date: " + myStart.toString();
+        ret += "\nEnd Date: " + myEnd.toString();
+        ret += "\nSummary: " + mySummary;
+
+        return ret;
+    }
+
 }
