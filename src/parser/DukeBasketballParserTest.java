@@ -1,6 +1,7 @@
 package parser;
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
@@ -12,10 +13,13 @@ import org.xml.sax.SAXException;
 import event.Event;
 
 
-public class DukeCalParserTest{
+public class DukeBasketballParserTest{
 	public static void main(String[] args) throws IOException, ParserConfigurationException, SAXException{
 		List<Event> eventList;
-		eventList=new DukeCalParser("./dukecal.xml").parse();
+		File toParse = new File("./DukeBasketball.xml");
+		Parser test = new DukeBasketballParser(toParse);
+		test.parse();
+		eventList = test.getEventList();
 			FileWriter fw = new FileWriter("./test.txt");
 	       BufferedWriter bw = new BufferedWriter(fw);  
 		for(Event event:eventList){

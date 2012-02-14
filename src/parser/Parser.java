@@ -1,53 +1,71 @@
 package parser;
 
-import java.io.*;
+import java.io.File;
 import java.util.*;
+
 import javax.xml.parsers.*;
+import javax.xml.xpath.*;
 import org.w3c.dom.*;
-import org.xml.sax.SAXException;
+
 import event.Event;
 
+public abstract class Parser {
 
-public abstract class Parser
-{
-    private List<Event> myEvents;
-    private Document myDoc;
-
-
-    public Parser (String fileName)
-        throws SAXException,
-            IOException,
-            ParserConfigurationException
-    {
-        File toParse = new File(fileName);
+    public abstract void parse();
+    
+    public abstract List<Event> getEventList();
+    
+    protected Document generateDocument(File file) {
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-        DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-        myDoc = dBuilder.parse(toParse);
-        myDoc.getDocumentElement().normalize();
-
+        DocumentBuilder dBuilder;
+        Document toReturn = null;
+        try {
+            dBuilder = dbFactory.newDocumentBuilder();
+            toReturn = dBuilder.parse(file);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        toReturn.getDocumentElement().normalize();
+        return toReturn;
+    }
+    
+    protected NodeList getTagNodes (Object Node, String xPath) {
+        XPathExpression expr = getXPathExpression(xPath);
+        NodeList nodeList = null;
+        try {
+            nodeList = (NodeList) expr.evaluate(Node, XPathConstants.NODESET);
+        } catch (XPathExpressionException e) {
+            e.printStackTrace();
+        }
+        return nodeList;
+    }
+    
+    protected String getTagValue(Object Node, String xPath) {
+        return getTagNodes(Node, xPath).item(0).getNodeValue();
     }
 
-
-    public List<Event> parse ()
-    {
-        /*
-         * Find root node of events Loop through all events create each event
-         */
-        //TODO implement code using Template design
-        return myEvents;
+    protected XPathExpression getXPathExpression(String xPath) {
+        XPathFactory xpathfactory = XPathFactory.newInstance();
+        XPath myXpath = xpathfactory.newXPath();
+        XPathExpression toReturn = null;
+        try {
+            toReturn = myXpath.compile(xPath);
+        } catch (XPathExpressionException e) {
+            e.printStackTrace();
+        }
+        return toReturn;
     }
-
-
-    private Event createEvent (Node node)
-    {
-        /*
-         * Using the xpaths for the given file being parsed create event object
-         * with relevant information
-         */
-        //TODO implement code using Template design
-        return null;
+    
+    @SuppressWarnings("deprecation")
+    protected Date getDateFromString(String in) {
+        Date toReturn = null;
+        toReturn = new Date(in);
+//        try {
+//            toReturn = DateFormat.getInstance().parse(in);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+        return toReturn;
     }
-
-    //Implement abstract methods allowing parsers to define their set of xpaths
 
 }
