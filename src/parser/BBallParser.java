@@ -15,6 +15,7 @@ import event.Event;
 public class BBallParser
 {
     private org.w3c.dom.Document myDoc;
+    private List<Event> myEvents;
 
 
     /**
@@ -25,33 +26,34 @@ public class BBallParser
      * @throws SAXException
      * @throws IOException
      */
-    public BBallParser (File in)
+    public BBallParser (String fileName)
         throws ParserConfigurationException,
             SAXException,
             IOException
     {
+        File toParse = new File(fileName);
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-        myDoc = dBuilder.parse(in);
+        myDoc = dBuilder.parse(toParse);
 
     }
 
 
     public List<Event> parse () throws DOMException, ParseException
     {
-        ArrayList<Event> events = new ArrayList<Event>();
+
+        myEvents = new ArrayList<Event>();
 
         NodeList nList = myDoc.getElementsByTagName("Calendar");
         for (int i = 0; i < nList.getLength(); i++)
         {
-            events.add(createEvent(nList.item(i)));
+            myEvents.add(createEvent(nList.item(i)));
 
         }
 
-        return events;
+        return myEvents;
 
     }
-
 
 
     private Event createEvent (Node item) throws DOMException, ParseException
@@ -60,11 +62,9 @@ public class BBallParser
         String summary = null;
         Date start = null;
         Date end = null;
-        String startString="";
-        String endString="";
+        String startString = "";
+        String endString = "";
         DateFormat df = new SimpleDateFormat("MM/dd/yyyy hh:mm:ss a");
-        
-
 
         NodeList children = item.getChildNodes();
         for (int i = 0; i < children.getLength(); i++)
@@ -84,34 +84,30 @@ public class BBallParser
 
             if (children.item(i).getNodeName().equals("StartDate"))
             {
-                startString+=children.item(i).getTextContent();
+                startString += children.item(i).getTextContent();
 
             }
             if (children.item(i).getNodeName().equals("StartTime"))
             {
-               startString+=" "+children.item(i).getTextContent();
-               start = df.parse(startString);
-               
+                startString += " " + children.item(i).getTextContent();
+                start = df.parse(startString);
 
             }
             if (children.item(i).getNodeName().equals("EndDate"))
             {
-                endString+=children.item(i).getTextContent();
-
+                endString += children.item(i).getTextContent();
 
             }
             if (children.item(i).getNodeName().equals("EndTime"))
             {
-                endString+=" "+children.item(i).getTextContent();
+                endString += " " + children.item(i).getTextContent();
                 end = df.parse(endString);
-                
 
             }
 
         }
-
         return new Event(title, summary, start, end);
-        
+
     }
 
 }

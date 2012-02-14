@@ -20,7 +20,7 @@ import org.xml.sax.SAXException;
 
 import event.Event;
 
-public class DukeCalParser extends Parser {
+public class DukeCalParser  {
 	private ArrayList<Event> myEvents = new ArrayList<Event>();
 	private Document doc;
 
@@ -58,7 +58,7 @@ public class DukeCalParser extends Parser {
 	}
 
 	
-	private  String getTagValue(Node node, String xPath)
+    private String getTagValue(Node node, String xPath)
 			throws XPathExpressionException {
 
 		XPathExpression expr = getXPathExpression(xPath);
@@ -74,8 +74,9 @@ public class DukeCalParser extends Parser {
 		return myXpath.compile(xPath);
 	}
 //10,11,12,13
+
 	@SuppressWarnings({ "deprecation", "static-access" })
-	private  Date startTime(Node node) throws XPathExpressionException {
+    private  Date startTime(Node node) throws XPathExpressionException {
 		Date starttime = new Date();
 		String date = getTagValue(node, "start/longdate/text()") + " ";
 		
