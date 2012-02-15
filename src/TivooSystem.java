@@ -9,6 +9,11 @@ import writer.*;
 public class TivooSystem {
     
     private List<Event> myEventList;
+    private static HashMap<String,Parser> myMap=new HashMap<String,Parser>();
+    static{
+    	myMap.put("./DukeBasketBall.xml", new DukeBasketballParser());
+    	myMap.put("./dukecal.xml", new DukeCalendarParser());
+    }
     
     public TivooSystem() {
         myEventList = new ArrayList<Event>();
@@ -16,8 +21,8 @@ public class TivooSystem {
 
     public void loadFile (String file) {
        
-        Parser parser = new DukeBasketballParser(file);
-        parser.parse();
+        Parser parser = myMap.get(file);
+        parser.parse(file);
         myEventList = parser.getEventList();
     }
     

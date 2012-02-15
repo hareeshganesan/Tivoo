@@ -8,9 +8,7 @@ import event.*;
 
 public class DukeBasketballParser extends Parser {
 
-	public DukeBasketballParser(String file) {
-		super(file);
-	}
+
 
 	@Override
 	public void parse(ArrayList<Event> myEvents, Document myDocument) {

@@ -13,13 +13,11 @@ public abstract class Parser {
 	private ArrayList<Event> myEvents;
 	private Document myDocument;
 
-	public Parser(String file) {
+
+	public void parse(String file) {
 		File toParse = new File(file);
 		myEvents = new ArrayList<Event>();
 		myDocument = generateDocument(toParse);
-	}
-
-	public void parse() {
 		parse(myEvents, myDocument);
 	}
 

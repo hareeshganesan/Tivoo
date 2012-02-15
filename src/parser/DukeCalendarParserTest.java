@@ -16,8 +16,8 @@ public class DukeCalendarParserTest {
 	public static void main(String[] args) throws IOException,
 			ParserConfigurationException, SAXException {
 		List<Event> eventList;
-		Parser test = new DukeCalendarParser("./dukecal.xml");
-		test.parse();
+		Parser test = new DukeCalendarParser();
+		test.parse("./dukecal.xml");
 		eventList = test.getEventList();
 		FileWriter fw = new FileWriter("./test.txt");
 		BufferedWriter bw = new BufferedWriter(fw);

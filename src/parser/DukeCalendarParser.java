@@ -8,9 +8,6 @@ import event.*;
 
 public class DukeCalendarParser extends Parser {
 
-	public DukeCalendarParser(String file) {
-		super(file);
-	}
 
 	@Override
 	public void parse(ArrayList<Event> myEvents, Document myDocument) {

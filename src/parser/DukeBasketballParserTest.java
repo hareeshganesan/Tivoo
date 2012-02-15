@@ -16,8 +16,8 @@ public class DukeBasketballParserTest {
 	public static void main(String[] args) throws IOException,
 			ParserConfigurationException, SAXException {
 		List<Event> eventList;
-		Parser test = new DukeBasketballParser("./DukeBasketball.xml");
-		test.parse();
+		Parser test = new DukeBasketballParser();
+		test.parse("./DukeBasketball.xml");
 		eventList = test.getEventList();
 		FileWriter fw = new FileWriter("./test.txt");
 		BufferedWriter bw = new BufferedWriter(fw);
