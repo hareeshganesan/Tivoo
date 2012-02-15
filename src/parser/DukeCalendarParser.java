@@ -28,7 +28,7 @@ public class DukeCalendarParser extends Parser {
 					.substring(9, 11)
 					+ ":"
 					+ getTagValue(currentEvent, "start/utcdate/text()")
-							.substring(11, 13);
+							.substring(11, 13)+" UTC";
 			Date start = getDateFromString(startDate + startTime);
 
 			String endDate = getTagValue(currentEvent, "end/longdate/text()")
@@ -37,7 +37,7 @@ public class DukeCalendarParser extends Parser {
 					.substring(9, 11)
 					+ ":"
 					+ getTagValue(currentEvent, "end/utcdate/text()")
-							.substring(11, 13);
+							.substring(11, 13)+" UTC";
 			Date end = getDateFromString(endDate + endTime);
 			// System.out.format("%s %d %d %d %d %d\n", title, start.getMonth(),
 			// start.getDate(), start.getYear(), start.getHours(),

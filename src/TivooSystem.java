@@ -34,8 +34,10 @@ public class TivooSystem {
     
     @SuppressWarnings("deprecation")
     public void filterByTimeFrame (String startTime, String endTime) {
-        Date start = new Date(startTime);
-        Date end = new Date(endTime);
+        Date start = new Date();
+        Date end = new Date();
+        start.setTime(Date.parse(startTime));
+        end.setTime(Date.parse(endTime));
         Filter filter = new FilterByTime(myEventList, start, end);
         filter.filter();
         myEventList = filter.getFilteredList();

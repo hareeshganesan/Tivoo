@@ -24,9 +24,9 @@ public class DukeCalendarParserTest {
 		for (Event event : eventList) {
 			String output = "----------------------------\n";
 			output += "Titile= " + event.getMyTitle() + "\n";
-			output += "StartTime= " + event.getMyStart() + "   "
-					+ event.getMyStart().toGMTString() + "\n";
-			output += "EndTime= " + event.getMyEnd() + "\n";
+			output += "StartTime= " + event.getMyStart().toGMTString() + "   "
+					+  event.getMyStart().toLocaleString()+"\n";
+			output += "EndTime= " + event.getMyEnd() +event.getMyEnd().toString()+"\n";
 			output += "Summary= " + event.getMySummary() + "\n";
 			bw.write(output);
 		}

@@ -12,12 +12,11 @@ import org.xml.sax.SAXException;
 import event.Event;
 
 public class DukeBasketballParserTest {
-	@SuppressWarnings("deprecation")
 	public static void main(String[] args) throws IOException,
 			ParserConfigurationException, SAXException {
 		List<Event> eventList;
 		Parser test = new DukeBasketballParser();
-		test.parse("./DukeBasketball.xml");
+		test.parse("./DukeBasketBall.xml");
 		eventList = test.getEventList();
 		FileWriter fw = new FileWriter("./test.txt");
 		BufferedWriter bw = new BufferedWriter(fw);
@@ -25,7 +24,7 @@ public class DukeBasketballParserTest {
 			String output = "----------------------------\n";
 			output += "Titile= " + event.getMyTitle() + "\n";
 			output += "StartTime= " + event.getMyStart() + "   "
-					+ event.getMyStart().toGMTString() + "\n";
+					+ event.getMyStart().toString() + "\n";
 			output += "EndTime= " + event.getMyEnd() + "\n";
 			output += "Summary= " + event.getMySummary() + "\n";
 			bw.write(output);

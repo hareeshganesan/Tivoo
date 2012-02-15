@@ -74,8 +74,8 @@ public abstract class Parser {
 
 	@SuppressWarnings("deprecation")
 	protected Date getDateFromString(String in) {
-		Date toReturn = null;
-		toReturn = new Date(in);
+		Date toReturn = new Date();
+		toReturn.setTime(Date.parse(in)) ;
 		// try {
 		// toReturn = DateFormat.getInstance().parse(in);
 		// } catch (Exception e) {

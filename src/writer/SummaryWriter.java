@@ -23,7 +23,7 @@ public class SummaryWriter extends Writer
         myTitle = "Summary";
     }
     
-    public void outputHTML (List<Event> events, String filename)
+	public void outputHTML (List<Event> events, String filename)
     {
 
         Html html = initializeHTMLDocument();
