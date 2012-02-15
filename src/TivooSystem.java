@@ -1,4 +1,3 @@
-import java.io.File;
 import java.util.*;
 
 import event.*;
@@ -16,8 +15,8 @@ public class TivooSystem {
     }
 
     public void loadFile (String file) {
-        File toParse = new File(file);
-        Parser parser = new DukeBasketballParser(toParse);
+       
+        Parser parser = new DukeBasketballParser(file);
         parser.parse();
         myEventList = parser.getEventList();
     }

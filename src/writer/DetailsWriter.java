@@ -11,16 +11,14 @@ package writer;
  */
 
 import event.Event;
-import java.util.ArrayList;
 import java.util.List;
-import event.Event;
 import com.hp.gagawa.java.elements.*;
 
 
 public class DetailsWriter extends Writer
 {
 
-    protected String myTitle;
+  //  protected String myTitle;
     
     public DetailsWriter(){
         myTitle = "Details";

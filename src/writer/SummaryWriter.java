@@ -17,7 +17,7 @@ public class SummaryWriter extends Writer
 {
 
 
-    protected String myTitle;
+  //  protected String myTitle;
     
     public SummaryWriter(){
         myTitle = "Summary";
