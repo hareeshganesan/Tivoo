@@ -35,13 +35,8 @@ public class TivooSystem {
         myEventList = filter.getFilteredList();   
     }
     
-    @SuppressWarnings("deprecation")
     public void filterByTimeFrame (String startTime, String endTime) {
-        Date start = new Date();
-        Date end = new Date();
-        start.setTime(Date.parse(startTime));
-        end.setTime(Date.parse(endTime));
-        Filter filter = new FilterByTime(myEventList, start, end);
+        Filter filter = new FilterByTime(myEventList, startTime, endTime);
         filter.filter();
         myEventList = filter.getFilteredList();
     }

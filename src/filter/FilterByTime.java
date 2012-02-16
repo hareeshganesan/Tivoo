@@ -9,11 +9,16 @@ public class FilterByTime extends Filter{
     private List<Event> myOriginalList, myFilteredList;
     private Date myStartTime, myEndTime;
     
-    public FilterByTime (List<Event> list, Date startTime, Date endTime) {
+    @SuppressWarnings("deprecation")
+    public FilterByTime (List<Event> list, String startTime, String endTime) {
+        Date start = new Date();
+        Date end = new Date();
+        start.setTime(Date.parse(startTime));
+        end.setTime(Date.parse(endTime));
         myOriginalList = list;
         myFilteredList = new ArrayList<Event>();
-        this.myStartTime = startTime;
-        this.myEndTime = endTime;
+        myStartTime = start;
+        myEndTime = end;
     }
 
     @Override
