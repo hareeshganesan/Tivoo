@@ -15,6 +15,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import com.hp.gagawa.java.elements.*;
 
 public class SummaryWriter extends Writer
@@ -32,28 +33,32 @@ public class SummaryWriter extends Writer
 
         Html html = initializeHTMLDocument();
 
+        String[] days = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
         HashMap<Integer, ArrayList<Event>> eventsByDate = groupByDate(events);
-        /**
-         * For each element in the events list, add a td to the table
-         */
+
         
         for(int i=0; i<7; i++){
             ArrayList<Event> day = eventsByDate.get(i);
             Table table = new Table();
             for(Event event : day){
                 Tr event_format = new Tr();
-                event_format.appendChild((new Td()).appendChild(new Text(event.getMyTitle())));
+                A link = new A();
+                link.setHref("event"+events.indexOf(event)+".html");
+                link.appendChild(new Text(event.getMyTitle()));
+                
+                event_format.appendChild((new Td()).appendChild(link));
                 event_format.appendChild((new Td()).appendChild(new Text(event.getMyStart().toString())));
                 event_format.appendChild((new Td()).appendChild(new Text(event.getMyEnd().toString())));  
                 
                 table.appendChild(event_format);
             }
-            html.appendChild(new H1().appendChild(new Text(new Integer(i).toString())));
+            Text dayOfTheWeek = new Text(days[i]);
+            html.appendChild(new H2().appendChild(dayOfTheWeek));
             html.appendChild(table);
         }
                  
                 
-        
+        int x = Calendar.SUNDAY;
         
         write(html, filename);
 
