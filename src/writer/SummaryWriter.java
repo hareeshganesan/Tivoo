@@ -10,12 +10,7 @@
 package writer;
 
 import event.Event;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Locale;
 import com.hp.gagawa.java.elements.*;
 
 public class SummaryWriter extends Writer
@@ -33,47 +28,22 @@ public class SummaryWriter extends Writer
 
         Html html = initializeHTMLDocument();
 
-        String[] days = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
-        HashMap<Integer, ArrayList<Event>> eventsByDate = groupByDate(events);
-
-        
-        for(int i=0; i<7; i++){
-            ArrayList<Event> day = eventsByDate.get(i);
-            Table table = new Table();
-            for(Event event : day){
-                Tr event_format = new Tr();
-                A link = new A();
-                link.setHref("event"+events.indexOf(event)+".html");
-                link.appendChild(new Text(event.getMyTitle()));
-                
-                event_format.appendChild((new Td()).appendChild(link));
-                event_format.appendChild((new Td()).appendChild(new Text(event.getMyStart().toString())));
-                event_format.appendChild((new Td()).appendChild(new Text(event.getMyEnd().toString())));  
-                
-                table.appendChild(event_format);
-            }
-            Text dayOfTheWeek = new Text(days[i]);
-            html.appendChild(new H2().appendChild(dayOfTheWeek));
-            html.appendChild(table);
+        Table table = new Table();
+        /**
+         * For each element in the events list, add a td to the table
+         */
+        for(Event event : events){
+            Tr event_format = new Tr();
+            event_format.appendChild((new Td()).appendChild(new Text(event.getMyTitle())));
+            event_format.appendChild((new Td()).appendChild(new Text(event.getMyStart().toString())));
+            event_format.appendChild((new Td()).appendChild(new Text(event.getMyEnd().toString())));   
+            
+            table.appendChild((event_format));
         }
-                 
-                
-        int x = Calendar.SUNDAY;
+        
+        html.appendChild(table);
         
         write(html, filename);
 
-    }
-    
-    private HashMap<Integer, ArrayList<Event>> groupByDate(List<Event> events){
-        HashMap<Integer, ArrayList<Event>> dateSet = new HashMap<Integer, ArrayList<Event>>();
-        for(int i=0; i<7; i++)
-            dateSet.put(i, new ArrayList<Event>());
-        
-        for(Event event : events){
-            dateSet.get(event.getMyStart().getDay()).add(event);
-        }
-        
-        return dateSet;
-            
     }
 }

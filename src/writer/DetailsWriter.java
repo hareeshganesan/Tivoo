@@ -24,25 +24,23 @@ public class DetailsWriter extends Writer
     
     public void outputHTML (List<Event> events, String filename)
     {
+
+        Html html = initializeHTMLDocument();
+
+        Table table = new Table();
+
         for (Event event : events)
         {
-            Html html = initializeHTMLDocument();
-            
-            html.appendChild(new H2().appendChild(new Text(event.getMyTitle())));
-            
-            Table details = new Table();
-            
-            
-            details.appendChild(new Tr().appendChild(new Td().appendChild(new Text("<b>Start Time:</b> "+event.getMyStart().toString()))));
-            details.appendChild(new Tr().appendChild(new Td().appendChild(new Text("<b>End Time:</b> "+event.getMyEnd().toString()))));
-            details.appendChild(new Tr().appendChild(new Td().appendChild(new Text("<b>Summary:</b> "+event.getMySummary()))));
-            
-            html.appendChild(details);
-            write(html, filename+events.indexOf(event)+".html");
+            Tr event_format = new Tr();
+            event_format.appendChild((new Td()).appendChild(new Text(event.getMyTitle())));
+            event_format.appendChild((new Td()).appendChild(new Text(event.getMySummary())));
 
+            table.appendChild((event_format));
         }
 
+        html.appendChild(table);
 
+        write(html, filename);
 
     }
 }
