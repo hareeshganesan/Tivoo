@@ -17,8 +17,6 @@ import com.hp.gagawa.java.elements.*;
 
 public class DetailsWriter extends Writer
 {
-
-  //  protected String myTitle;
     
     public DetailsWriter(){
         myTitle = "Details";
@@ -26,9 +24,6 @@ public class DetailsWriter extends Writer
     
     public void outputHTML (List<Event> events, String filename)
     {
-        /**
-         * For each element in the events list, add a td to the table
-         */
         for (Event event : events)
         {
             Html html = initializeHTMLDocument();
