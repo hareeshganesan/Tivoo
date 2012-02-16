@@ -21,13 +21,13 @@ public class SummaryWriter extends Writer
 {
 
 
-    protected String myTitle;
+  //  protected String myTitle;
     
     public SummaryWriter(){
         myTitle = "Summary";
     }
     
-    public void outputHTML (List<Event> events, String filename)
+	public void outputHTML (List<Event> events, String filename)
     {
 
         Html html = initializeHTMLDocument();
