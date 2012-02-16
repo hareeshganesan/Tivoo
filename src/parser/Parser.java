@@ -61,7 +61,7 @@ public abstract class Parser {
         return toReturn;
     }
 
-    private NodeList getTagNodes(Object Node, String xPath) {
+    protected NodeList getTagNodes(Object Node, String xPath) {
         XPathExpression expr = getXPathExpression(xPath);
         NodeList nodeList = null;
         try {
@@ -80,7 +80,7 @@ public abstract class Parser {
             return "";
     }
 
-    protected XPathExpression getXPathExpression(String xPath) {
+    private XPathExpression getXPathExpression(String xPath) {
         XPathFactory xpathfactory = XPathFactory.newInstance();
         XPath myXpath = xpathfactory.newXPath();
         XPathExpression toReturn = null;
