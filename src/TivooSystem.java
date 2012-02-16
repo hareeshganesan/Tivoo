@@ -9,10 +9,12 @@ import writer.*;
 public class TivooSystem {
     
     private List<Event> myEventList;
-    private static HashMap<String,Parser> myMap=new HashMap<String,Parser>();
+    private static Map<String,Parser> myMap;
+    
     static{
-    	myMap.put("./DukeBasketBall.xml", new DukeBasketballParser());
-    	myMap.put("./dukecal.xml", new DukeCalendarParser());
+        myMap = new HashMap<String,Parser>();
+    	myMap.put("DukeBasketBall.xml", new DukeBasketballParser());
+    	myMap.put("dukecal.xml", new DukeCalendarParser());
     }
     
     public TivooSystem() {
@@ -20,8 +22,9 @@ public class TivooSystem {
     }
 
     public void loadFile (String file) {
-       
-        Parser parser = myMap.get(file);
+        String[] s = file.split("/");
+        String key = s[s.length-1];
+        Parser parser = myMap.get(key);
         parser.parse(file);
         myEventList = parser.getEventList();
     }
