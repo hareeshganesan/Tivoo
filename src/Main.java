@@ -1,6 +1,6 @@
 
 public class Main {
-    public static void main (String[] args) {        
+    public static void main (String[] args) {    
         TivooSystem s = new TivooSystem();
         s.loadFile("./DukeBasketBall.xml");
         s.filterByKeyword("vs");
