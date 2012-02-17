@@ -19,4 +19,5 @@ public class TivooException extends RuntimeException{
     {
         return myType;
     }
+	
 }
