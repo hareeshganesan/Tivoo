@@ -1,5 +1,7 @@
 package parser;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.*;
 import org.w3c.dom.*;
 import event.*;
@@ -33,18 +35,18 @@ public class DukeCalendarParser extends Parser {
 
     @Override
     protected Date getStartDate(Node currentEvent) {
-        String startDate = getTagValue(currentEvent, "start/longdate/text()") + " ";
-        String startTime = getTagValue(currentEvent, "start/utcdate/text()").substring(9, 11) + ":" +
-                           getTagValue(currentEvent, "start/utcdate/text()").substring(11, 13)+" UTC";
-        return getDateFromString(startDate + startTime);
+        String startDate = getTagValue(currentEvent, "start/shortdate/text()");
+        String startTime = getTagValue(currentEvent, "start/time/text()"); 
+        DateFormat dateFormat = new SimpleDateFormat("MM/dd/yy hh:mm a");
+        return getDateFromString(startDate + " " + startTime, dateFormat);
     }
 
     @Override
     protected Date getEndDate(Node currentEvent) {
-        String endDate = getTagValue(currentEvent, "end/longdate/text()") + " ";
-        String endTime = getTagValue(currentEvent, "end/utcdate/text()").substring(9, 11) + ":" + 
-                         getTagValue(currentEvent, "end/utcdate/text()").substring(11, 13) +" UTC";
-        return getDateFromString(endDate + endTime);
+        String endDate = getTagValue(currentEvent, "end/shortdate/text()");
+        String endTime = getTagValue(currentEvent, "end/time/text()"); 
+        DateFormat dateFormat = new SimpleDateFormat("MM/dd/yy hh:mm a");
+        return getDateFromString(endDate + " " + endTime, dateFormat);
     }
 
 }

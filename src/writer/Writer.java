@@ -13,24 +13,22 @@ import com.hp.gagawa.java.elements.Text;
 import com.hp.gagawa.java.elements.Title;
 
 import event.Event;
+import exception.TivooException;
 
 public abstract class Writer
 {
 
     protected String myTitle;
-    
+
     protected void write (Html html, String filename)
     {
-        try
-        {
+        try {
             BufferedWriter bw = new BufferedWriter(new FileWriter(filename));
             bw.write(html.write());
             bw.flush();
             bw.close();
-        }
-        catch (IOException e)
-        {
-            System.out.println("error");
+        } catch (IOException e) {
+            throw new TivooException("Check output directory dude", TivooException.Type.BAD_OUTPUTDIRECTORY);
         }
     }
 
@@ -38,23 +36,24 @@ public abstract class Writer
     {
         Html html = new Html();
         Head head = new Head();
-    
+
         html.appendChild(head);
-    
+
         Title title = new Title();
         title.appendChild(new Text(myTitle+" Page"));
         head.appendChild(title);
-    
+
         Body body = new Body();
-    
+
         html.appendChild(body);
-    
+
         H1 h1 = new H1();
         h1.appendChild(new Text(myTitle));
         body.appendChild(h1);
-    
+
         return html;
     }
-    abstract public void outputHTML (List<Event> events, String filename);
     
+    abstract public void outputHTML (List<Event> events, String filename);
+
 }

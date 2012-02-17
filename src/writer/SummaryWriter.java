@@ -12,10 +12,8 @@ package writer;
 import event.Event;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Locale;
 import com.hp.gagawa.java.elements.*;
 
 public class SummaryWriter extends Writer

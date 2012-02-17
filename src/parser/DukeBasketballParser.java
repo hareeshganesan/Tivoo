@@ -1,5 +1,7 @@
 package parser;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 import org.w3c.dom.*;
@@ -39,14 +41,16 @@ public class DukeBasketballParser extends Parser {
     protected Date getStartDate(Node currentEvent) {
         String startDate = getTagValue(currentEvent, "StartDate/text()");
         String startTime = getTagValue(currentEvent, "StartTime/text()");
-        return getDateFromString(startDate + " " + startTime);
+        DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy hh:mm:ss a");
+        return getDateFromString(startDate + " " + startTime, dateFormat);
     }
 
     @Override
     protected Date getEndDate(Node currentEvent) {
         String endDate = getTagValue(currentEvent, "EndDate/text()");
         String endTime = getTagValue(currentEvent, "EndTime/text()");
-        return getDateFromString(endDate + " " + endTime);
+        DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy hh:mm:ss a");
+        return getDateFromString(endDate + " " + endTime, dateFormat);
     }
 
 }

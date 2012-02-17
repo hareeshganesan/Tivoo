@@ -1,6 +1,7 @@
 import java.util.*;
 
 import event.*;
+import exception.TivooException;
 import filter.*;
 import parser.*;
 import writer.*;
@@ -25,7 +26,12 @@ public class TivooSystem {
         String[] s = file.split("/");
         String key = s[s.length-1];
         Parser parser = myMap.get(key);
-        parser.parse(file);
+        try {
+            parser.parse(file);
+        }
+        catch (NullPointerException e) {
+            throw new TivooException("Never seen this xml before", TivooException.Type.BAD_INPUTDIRECTORY);
+        }
         myEventList = parser.getEventList();
     }
     
