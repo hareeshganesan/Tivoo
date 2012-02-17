@@ -1,13 +1,19 @@
 package parser;
 
 import java.io.File;
+import java.io.IOException;
+import java.text.DateFormat;
+import java.text.ParseException;
 import java.util.*;
 
 import javax.xml.parsers.*;
 import javax.xml.xpath.*;
+
 import org.w3c.dom.*;
+import org.xml.sax.SAXException;
 
 import event.Event;
+import exception.TivooException;
 
 public abstract class Parser {
     protected ArrayList<Event> myEvents;
@@ -32,7 +38,7 @@ public abstract class Parser {
             myEvents.add(createEvent(currentEvent));
         }
     }
-    
+
     private Event createEvent(Node currentEvent) {
         String title = getTitle(currentEvent);
         String summary = getSummary(currentEvent);
@@ -54,53 +60,57 @@ public abstract class Parser {
         try {
             dBuilder = dbFactory.newDocumentBuilder();
             toReturn = dBuilder.parse(file);
-        } catch (Exception e) {
-            e.printStackTrace();
+            toReturn.getDocumentElement().normalize();
+        } catch (ParserConfigurationException e) {
+            System.err.println("ARE YOU KIDDING ME");
+        } catch (SAXException e) {   // why SAXException|IOException doesn't work?
+            throw new TivooException("Check input directory dude", TivooException.Type.BAD_INPUTDIRECTORY);
+        } catch (IOException e) {
+            throw new TivooException("Check input directory dude", TivooException.Type.BAD_INPUTDIRECTORY);
         }
-        toReturn.getDocumentElement().normalize();
         return toReturn;
     }
 
     protected NodeList getTagNodes(Object Node, String xPath) {
         XPathExpression expr = getXPathExpression(xPath);
-        NodeList nodeList = null;
+        NodeList nodeList;
         try {
             nodeList = (NodeList) expr.evaluate(Node, XPathConstants.NODESET);
         } catch (XPathExpressionException e) {
-            e.printStackTrace();
+            throw new TivooException("Sorry we can't handle this xml", TivooException.Type.BAD_PARSING);
         }
         return nodeList;
     }
 
     protected String getTagValue(Object Node, String xPath) {
-        Node nodeGot = getTagNodes(Node, xPath).item(0);
-        if (nodeGot != null)
-            return nodeGot.getNodeValue();
-        else
-            return "";
+        String toReturn;
+        try {
+            toReturn = getTagNodes(Node, xPath).item(0).getNodeValue();
+        } catch (NullPointerException e) {
+            throw new TivooException("Sorry we can't handle this xml", TivooException.Type.BAD_PARSING);
+        }
+        return toReturn;
     }
 
     private XPathExpression getXPathExpression(String xPath) {
         XPathFactory xpathfactory = XPathFactory.newInstance();
         XPath myXpath = xpathfactory.newXPath();
-        XPathExpression toReturn = null;
+        XPathExpression toReturn;
         try {
             toReturn = myXpath.compile(xPath);
         } catch (XPathExpressionException e) {
-            e.printStackTrace();
+            throw new TivooException("Sorry we can't handle this xml", TivooException.Type.BAD_PARSING);
         }
         return toReturn;
     }
 
-    @SuppressWarnings("deprecation")
-    protected Date getDateFromString(String in) {
-        Date toReturn = new Date();
-        toReturn.setTime(Date.parse(in)) ;
-        //		try {
-        //		toReturn = DateFormat.getInstance().parse(in);
-        //		} catch (Exception e) {
-        //		e.printStackTrace();
-        //		}
+    protected Date getDateFromString(String in, DateFormat dateFormat) {
+        Date toReturn;
+        try {
+            toReturn = dateFormat.parse(in);
+        } catch (ParseException e) {
+            throw new TivooException("Sorry we can't handle this xml", TivooException.Type.BAD_PARSING);
+        }
         return toReturn;
     }
 
