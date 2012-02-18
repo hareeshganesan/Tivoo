@@ -4,6 +4,7 @@ import java.util.*;
 import event.*;
 
 public abstract class Filter {
+	protected List<Event> myOriginalList, myFilteredList;
     
     public abstract void filter();
     

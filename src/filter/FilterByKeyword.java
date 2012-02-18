@@ -6,7 +6,6 @@ import event.*;
 
 public class FilterByKeyword extends Filter{
     
-    private List<Event> myOriginalList, myFilteredList;
     private String myKeyword;
     
     public FilterByKeyword(List<Event> list, String keyword) {

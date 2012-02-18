@@ -1,6 +1,7 @@
 import java.util.*;
 
 import event.*;
+import exception.TivooException;
 import filter.*;
 import parser.*;
 import writer.*;
@@ -9,10 +10,12 @@ import writer.*;
 public class TivooSystem {
     
     private List<Event> myEventList;
-    private static HashMap<String,Parser> myMap=new HashMap<String,Parser>();
+    private static Map<String,Parser> myMap;
+    
     static{
-    	myMap.put("./DukeBasketBall.xml", new DukeBasketballParser());
-    	myMap.put("./dukecal.xml", new DukeCalendarParser());
+        myMap = new HashMap<String,Parser>();
+    	myMap.put("DukeBasketBall.xml", new DukeBasketballParser());
+    	myMap.put("dukecal.xml", new DukeCalendarParser());
     }
     
     public TivooSystem() {
@@ -20,9 +23,15 @@ public class TivooSystem {
     }
 
     public void loadFile (String file) {
-       
-        Parser parser = myMap.get(file);
-        parser.parse(file);
+        String[] s = file.split("/");
+        String key = s[s.length-1];
+        Parser parser = myMap.get(key);
+        try {
+            parser.parse(file);
+        }
+        catch (NullPointerException e) {
+            throw new TivooException("Never seen this xml before", TivooException.Type.BAD_INPUTDIRECTORY);
+        }
         myEventList = parser.getEventList();
     }
     
@@ -32,13 +41,8 @@ public class TivooSystem {
         myEventList = filter.getFilteredList();   
     }
     
-    @SuppressWarnings("deprecation")
     public void filterByTimeFrame (String startTime, String endTime) {
-        Date start = new Date();
-        Date end = new Date();
-        start.setTime(Date.parse(startTime));
-        end.setTime(Date.parse(endTime));
-        Filter filter = new FilterByTime(myEventList, start, end);
+        Filter filter = new FilterByTime(myEventList, startTime, endTime);
         filter.filter();
         myEventList = filter.getFilteredList();
     }
