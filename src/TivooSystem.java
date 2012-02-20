@@ -10,7 +10,10 @@ import writer.*;
 
 public class TivooSystem {
     
-    private List<Event> myEventList;
+    private List<Event> myOriginalList;
+    private List<Event> myFilteredList;
+    private List<Writer> myWriters;
+    private Filter myHeadFilter;
     private static Map<String,Parser> myMap = new HashMap<String,Parser>();
 
     static{
@@ -19,7 +22,10 @@ public class TivooSystem {
     }
     
     public TivooSystem() {
-        myEventList = new ArrayList<Event>();
+        myOriginalList = new ArrayList<Event>();
+        myFilteredList = new ArrayList<Event>();
+        myWriters = new ArrayList<Writer>();
+        myHeadFilter = null;
     }
 
     public void loadFile (File file) {
@@ -30,32 +36,52 @@ public class TivooSystem {
         catch (NullPointerException e) {
             throw new TivooException("Never seen this xml before", TivooException.Type.BAD_INPUTDIRECTORY);
         }
-        myEventList = parser.getEventList();
+        myOriginalList = parser.getEventList();
     }
     
-    public void filterByKeyword (String keyword) {
-        Filter filter = new FilterByKeyword(myEventList, keyword);
-        filter.filter();
-        myEventList = filter.getFilteredList();   
+    public void addFilterByKeyword (String keyword) {
+        Filter filter = new FilterByKeyword(keyword);
+        addFilter(filter);
     }
     
-    public void filterByTimeFrame (String startTime, String endTime) {
-        Filter filter = new FilterByTime(myEventList, startTime, endTime);
-        filter.filter();
-        myEventList = filter.getFilteredList();
+    public void addFilterByTimeFrame (String startTime, String endTime) {
+        Filter filter = new FilterByTimeFrame(startTime, endTime);
+        addFilter(filter);
     }
 
-    public void  outputDetails(String outputLocation) {
-        Writer writer = new DetailsWriter();
-        writer.outputHTML(myEventList, outputLocation);
+    private void addFilter(Filter filter) {
+        if (myHeadFilter == null) {
+            myHeadFilter = filter;
+        }
+        else {
+//            filter.setNextFilter(myHeadFilter);
+//            myHeadFilter = filter;
+            myHeadFilter.setFilterAtBottom(filter);
+        }
     }
-     
-    public void outputSummary(String outputLocation) {
-        Writer writer = new SummaryWriter();
-        writer.outputHTML(myEventList, outputLocation);
+
+    public void addSummaryAndDetailPagesWriter(String directory) {
+        Writer writer = new SummaryAndDetailsPagesWriter(directory);
+        addWriter(writer);
     }
     
-    public List<Event> getEventList() {
-        return new ArrayList<Event>(myEventList);
+    private void addWriter(Writer writer) {
+        myWriters.add(writer);
+    }
+    
+    public void perform() {
+        filter();
+        output();
+    }
+    
+    private void filter() {
+        myHeadFilter.filter(myOriginalList);
+        myFilteredList = myHeadFilter.getFilteredList();
+    }
+    
+    private void output() {
+        for (Writer writer:myWriters) {
+            writer.outputHTML(myFilteredList);
+        }
     }
 }

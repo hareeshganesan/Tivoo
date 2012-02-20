@@ -33,7 +33,6 @@ public class SummaryWriter extends Writer
 
         String[] days = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
         HashMap<Integer, ArrayList<Event>> eventsByDate = groupByDate(events);
-
         
         for(int i=0; i<7; i++){
             ArrayList<Event> day = eventsByDate.get(i);

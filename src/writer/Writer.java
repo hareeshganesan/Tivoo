@@ -18,7 +18,7 @@ import exception.TivooException;
 public abstract class Writer
 {
 
-    protected String myTitle;
+    protected String myTitle, myDirectory;
 
     protected void write (Html html, String filename)
     {
@@ -54,6 +54,6 @@ public abstract class Writer
         return html;
     }
     
-    abstract public void outputHTML (List<Event> events, String filename);
+    abstract public void outputHTML (List<Event> events);
 
 }
