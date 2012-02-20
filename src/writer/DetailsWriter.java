@@ -43,7 +43,7 @@ public class DetailsWriter extends Writer
             details.appendChild(new Tr().appendChild(new Td().appendChild(new Text("<b>Summary:</b> "+event.getMySummary()))));
             
             html.appendChild(details);
-            write(html, filename+events.indexOf(event)+".html");
+            write(html, filename + events.indexOf(event)+".html");
 
         }
 

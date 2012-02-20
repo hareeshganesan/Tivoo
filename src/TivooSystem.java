@@ -1,3 +1,4 @@
+import java.io.File;
 import java.util.*;
 
 import event.*;
@@ -10,10 +11,9 @@ import writer.*;
 public class TivooSystem {
     
     private List<Event> myEventList;
-    private static Map<String,Parser> myMap;
-    
+    private static Map<String,Parser> myMap = new HashMap<String,Parser>();
+
     static{
-        myMap = new HashMap<String,Parser>();
     	myMap.put("DukeBasketBall.xml", new DukeBasketballParser());
     	myMap.put("dukecal.xml", new DukeCalendarParser());
     }
@@ -22,10 +22,8 @@ public class TivooSystem {
         myEventList = new ArrayList<Event>();
     }
 
-    public void loadFile (String file) {
-        String[] s = file.split("/");
-        String key = s[s.length-1];
-        Parser parser = myMap.get(key);
+    public void loadFile (File file) {
+        Parser parser = myMap.get(file.getName());
         try {
             parser.parse(file);
         }

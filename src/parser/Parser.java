@@ -19,7 +19,7 @@ public abstract class Parser {
     protected ArrayList<Event> myEvents;
     protected Document myDocument;
 
-    public void parse(String file) {
+    public void parse(File file) {
         myDocument = generateDocument(file);
         parse();
     }
@@ -52,8 +52,7 @@ public abstract class Parser {
         return new ArrayList<Event>(myEvents);
     }
 
-    private Document generateDocument(String input) {
-        File file = new File(input);
+    private Document generateDocument(File file) {
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder dBuilder;
         Document toReturn = null;
@@ -64,9 +63,9 @@ public abstract class Parser {
         } catch (ParserConfigurationException e) {
             System.err.println("ARE YOU KIDDING ME");
         } catch (SAXException e) {   // why SAXException|IOException doesn't work?
-            throw new TivooException("Check input directory dude", TivooException.Type.BAD_INPUTDIRECTORY);
+            throw new TivooException("Invalid input file", TivooException.Type.BAD_INPUTDIRECTORY);
         } catch (IOException e) {
-            throw new TivooException("Check input directory dude", TivooException.Type.BAD_INPUTDIRECTORY);
+            throw new TivooException("Invalid input file", TivooException.Type.BAD_INPUTDIRECTORY);
         }
         return toReturn;
     }
