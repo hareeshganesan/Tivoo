@@ -41,7 +41,7 @@ public class DukeBasketballParser extends Parser {
     protected Date getStartDate(Node currentEvent) {
         String startDate = getTagValue(currentEvent, "StartDate/text()");
         String startTime = getTagValue(currentEvent, "StartTime/text()");
-        DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy hh:mm:ss a");
+        DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy hh:mm:ss");
         return getDateFromString(startDate + " " + startTime, dateFormat);
     }
 
@@ -49,7 +49,7 @@ public class DukeBasketballParser extends Parser {
     protected Date getEndDate(Node currentEvent) {
         String endDate = getTagValue(currentEvent, "EndDate/text()");
         String endTime = getTagValue(currentEvent, "EndTime/text()");
-        DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy hh:mm:ss a");
+        DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy hh:mm:ss");
         return getDateFromString(endDate + " " + endTime, dateFormat);
     }
 

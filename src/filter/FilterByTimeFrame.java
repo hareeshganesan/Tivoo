@@ -11,7 +11,7 @@ import exception.TivooException;
 
 public class FilterByTimeFrame extends Filter{
 
-    private static String defaultDateFormatString = "MM/dd/yy hh:mm:ss a";
+    private static String defaultDateFormatString = "MM/dd/yy HH:mm:ss";
     private static DateFormat defaultDateFormat = new SimpleDateFormat(defaultDateFormatString);
 
     private Date myStartTime, myEndTime;

@@ -1,4 +1,4 @@
-package parser;
+package tests;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -8,6 +8,9 @@ import java.util.*;
 import javax.xml.parsers.ParserConfigurationException;
 
 import org.xml.sax.SAXException;
+
+import parser.DukeCalendarParser;
+import parser.Parser;
 
 import event.Event;
 

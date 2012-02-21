@@ -22,13 +22,13 @@ public class SummaryAndDetailsPagesWriter extends Writer {
         for (Event event : events) {
             Html html = initializeHTMLDocument();
 
-            html.appendChild(new H2().appendChild(new Text(event.getMyTitle())));
+            html.appendChild(new H2().appendChild(new Text((String) event.get("title"))));
 
             Table details = new Table();
 
-            details.appendChild(new Tr().appendChild(new Td().appendChild(new Text("<b>Start Time:</b> "+event.getMyStart().toString()))));
-            details.appendChild(new Tr().appendChild(new Td().appendChild(new Text("<b>End Time:</b> "+event.getMyEnd().toString()))));
-            details.appendChild(new Tr().appendChild(new Td().appendChild(new Text("<b>Summary:</b> "+event.getMySummary()))));
+            details.appendChild(new Tr().appendChild(new Td().appendChild(new Text("<b>Start Time:</b> "+event.get("startTime").toString()))));
+            details.appendChild(new Tr().appendChild(new Td().appendChild(new Text("<b>End Time:</b> "+event.get("endTime").toString()))));
+            details.appendChild(new Tr().appendChild(new Td().appendChild(new Text("<b>Summary:</b> "+event.get("summary")))));
 
             html.appendChild(details);
             write(html, directory + "event" + events.indexOf(event)+".html");
@@ -48,11 +48,11 @@ public class SummaryAndDetailsPagesWriter extends Writer {
                 Tr event_format = new Tr();
                 A link = new A();
                 link.setHref("event"+events.indexOf(event)+".html");
-                link.appendChild(new Text(event.getMyTitle()));
+                link.appendChild(new Text((String)event.get("title")));
 
                 event_format.appendChild((new Td()).appendChild(link));
-                event_format.appendChild((new Td()).appendChild(new Text(event.getMyStart().toString())));
-                event_format.appendChild((new Td()).appendChild(new Text(event.getMyEnd().toString())));  
+                event_format.appendChild((new Td()).appendChild(new Text(event.get("startTime").toString())));
+                event_format.appendChild((new Td()).appendChild(new Text(event.get("endTime").toString())));  
 
                 table.appendChild(event_format);
             }
@@ -73,7 +73,7 @@ public class SummaryAndDetailsPagesWriter extends Writer {
             dateSet.put(i, new ArrayList<Event>());
 
         for(Event event : events){
-            dateSet.get(event.getMyStart().getDay()).add(event);
+            dateSet.get(((Date)event.get("startTime")).getDay()).add(event);
         }
         return dateSet;
     }

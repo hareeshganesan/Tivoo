@@ -7,6 +7,7 @@ import org.w3c.dom.*;
 import event.*;
 
 public class DukeCalendarParser extends Parser {
+ 
 
     public DukeCalendarParser() {
         myDocument = null;
@@ -37,7 +38,7 @@ public class DukeCalendarParser extends Parser {
     protected Date getStartDate(Node currentEvent) {
         String startDate = getTagValue(currentEvent, "start/shortdate/text()");
         String startTime = getTagValue(currentEvent, "start/time/text()"); 
-        DateFormat dateFormat = new SimpleDateFormat("MM/dd/yy hh:mm a");
+        DateFormat dateFormat = new SimpleDateFormat("MM/dd/yy hh:mm");
         return getDateFromString(startDate + " " + startTime, dateFormat);
     }
 
@@ -45,7 +46,7 @@ public class DukeCalendarParser extends Parser {
     protected Date getEndDate(Node currentEvent) {
         String endDate = getTagValue(currentEvent, "end/shortdate/text()");
         String endTime = getTagValue(currentEvent, "end/time/text()"); 
-        DateFormat dateFormat = new SimpleDateFormat("MM/dd/yy hh:mm a");
+        DateFormat dateFormat = new SimpleDateFormat("MM/dd/yy hh:mm");
         return getDateFromString(endDate + " " + endTime, dateFormat);
     }
 
