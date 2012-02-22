@@ -19,7 +19,7 @@ public class FilterByKeyword extends Filter{
         myOriginalList = list;
         myFilteredList = new ArrayList<Event>();
         for (Event entry: myOriginalList) {
-            if (entry.containsKeywordInTitle(myKeyword)) {
+            if (entry.containsKeyWord("title", myKeyword)) {
                 myFilteredList.add(entry);
             }
         }
