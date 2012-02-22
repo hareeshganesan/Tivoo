@@ -1,12 +1,8 @@
 package event;
 
-import java.util.Date;
 import java.util.HashMap;
 
 public class Event {
-    /**
-     * TODO: expose the keyset
-     */
     
     private HashMap<String,String> myField = new HashMap<String,String>();
 
@@ -15,23 +11,15 @@ public class Event {
     }
 
 
-    public Object get(String key) {
+    public String get(String key) {
+        /**
+         * TODO: throw exceptions for strings that do not exist
+         */
         return myField.get(key);
     }
 
-    /**
-     * TODO: make the methods more generic across keys
-     * @param keyword
-     * @return
-     */
-    public boolean containsKeywordInTitle(String keyword) {
-        return ((String)myField.get(Type.TITLE)).contains(keyword);
-    }
-
-    public boolean isWithinTimeFrame(Date startTime, Date endTime) {
-        Date eventStartTime=(Date) myField.get(Type.START);
-        Date eventEndTime= (Date) myField.get(Type.END);
-        return (eventStartTime.before(endTime) && eventEndTime.after(startTime));
+    public boolean containsKeyWord(String key, String keyword){
+        return ((String)myField.get(key)).contains(keyword);
     }
 
 }
