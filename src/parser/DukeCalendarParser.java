@@ -25,33 +25,26 @@ public class DukeCalendarParser extends Parser {
 		return "/events/event";
 	}
 
-	@Override
-	protected String getTitle(Node currentEvent) {
+	private String getTitle(Node currentEvent) {
 		return getTagValue(currentEvent, "summary/text()");
 	}
 
-	@Override
-	protected String getSummary(Node currentEvent) {
+	private String getSummary(Node currentEvent) {
 		return getTagValue(currentEvent, "description/text()");
 	}
 
-	@Override
-	protected String getURL(Node currentEvent) {
+	private String getURL(Node currentEvent) {
 		return getTagValue(currentEvent, "link/text()");
 	}
 
-	// not in right format yet
-	@Override
-	protected String getStartDate(Node currentEvent) {
+	private String getStartDate(Node currentEvent) {
 		ArrayList<String> time = new ArrayList<String>();
 		for (String s : myTime)
 			time.add(getTagValue(currentEvent, "start/" + s + "/text()"));
 		return format(time);
 	}
 
-	// not in right format yet
-	@Override
-	protected String getEndDate(Node currentEvent) {
+	private String getEndDate(Node currentEvent) {
 		ArrayList<String> time = new ArrayList<String>();
 		for (String s : myTime)
 			time.add(getTagValue(currentEvent, "end/" + s + "/text()"));
