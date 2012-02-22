@@ -44,4 +44,12 @@ public class FilterByTimeFrame extends Filter{
     public static String getDefaultDateFormat() {
         return defaultDateFormatString;
     }
+    
+
+    public boolean isWithinTimeFrame(Date startTime, Date endTime) {
+        Date eventStartTime=(Date) myField.get(Type.START);
+        Date eventEndTime= (Date) myField.get(Type.END);
+        return (eventStartTime.before(endTime) && eventEndTime.after(startTime));
+    }
+
 }

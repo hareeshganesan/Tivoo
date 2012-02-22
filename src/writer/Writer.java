@@ -11,9 +11,6 @@ import exception.*;
 public abstract class Writer
 {
 
-    /**
-     * TODO: make it private with a get or set
-     */
     private String myTitle, myDirectory;
 
     protected void write (Html html, String filename)
