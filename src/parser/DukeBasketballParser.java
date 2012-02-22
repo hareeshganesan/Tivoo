@@ -36,30 +36,21 @@ public class DukeBasketballParser extends Parser {
         int index = summary.indexOf("http://");
         return summary.substring(index);
     }
-
+//not in right format yet
     @Override
-    protected Date getStartDate(Node currentEvent) {
+    protected String getStartDate(Node currentEvent) {
         String startDate = getTagValue(currentEvent, "StartDate/text()");
         String startTime = getTagValue(currentEvent, "StartTime/text()");
-        DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy hh:mm:ss a");
-        return getDateFromString(startDate + " " + startTime, dateFormat);
+        return startDate + " " + startTime;
     }
-
+//not in right format yet
     @Override
-    protected Date getEndDate(Node currentEvent) {
+    protected String getEndDate(Node currentEvent) {
         String endDate = getTagValue(currentEvent, "EndDate/text()");
         String endTime = getTagValue(currentEvent, "EndTime/text()");
-        DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy hh:mm:ss a");
-        return getDateFromString(endDate + " " + endTime, dateFormat);
+        return endDate + " " + endTime;
     }
     
-    public static ParserFactory getFactory() {
-        return new ParserFactory(new DukeBasketballParser());
-    }
 
-    @Override
-    public Parser newParser() {
-        return new DukeBasketballParser();
-    }
 
 }

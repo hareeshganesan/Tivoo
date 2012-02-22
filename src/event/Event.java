@@ -8,15 +8,14 @@ public class Event {
      * TODO: expose the keyset
      */
     
-    private HashMap<Type,Object> myField = new HashMap<Type,Object>();
-    public static enum Type {TITLE, SUMMARY, URL, START, END}; 
+    private HashMap<String,String> myField = new HashMap<String,String>();
 
-    public Event (HashMap<Type,Object> map) {
+    public Event (HashMap<String,String> map) {
         myField = map; 
     }
 
 
-    public Object get(Type key) {
+    public Object get(String key) {
         return myField.get(key);
     }
 

@@ -27,10 +27,9 @@ public abstract class Parser {
     protected abstract String getTitle(Node currentEvent);
     protected abstract String getSummary(Node currentEvent);
     protected abstract String getURL(Node currentEvent);
-    protected abstract Date getStartDate(Node currentEvent);
-    protected abstract Date getEndDate(Node currentEvent);
+    protected abstract String getStartDate(Node currentEvent);
+    protected abstract String getEndDate(Node currentEvent);
 
-    public abstract Parser newParser();
     
     public void parse() {
         if (myDocument == null) {
@@ -47,14 +46,14 @@ public abstract class Parser {
         String title = getTitle(currentEvent);
         String summary = getSummary(currentEvent);
         String url = getURL(currentEvent);
-        Date start = getStartDate(currentEvent);
-        Date end = getEndDate(currentEvent);
-        HashMap<Event.Type,Object> map= new HashMap<Event.Type,Object>();
-        map.put(Event.Type.TITLE, title);
-        map.put(Event.Type.SUMMARY, summary);
-        map.put(Event.Type.URL, url);
-        map.put(Event.Type.START, start);
-        map.put(Event.Type.END, end);
+        String start = getStartDate(currentEvent);
+        String end = getEndDate(currentEvent);
+        HashMap<String,String> map= new HashMap<String,String>();
+        map.put("title", title);
+        map.put("summary", summary);
+        map.put("url", url);
+        map.put("startTime", start);
+        map.put("endTime", end);
         return new Event(map);
     }
 

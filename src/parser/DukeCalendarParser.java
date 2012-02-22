@@ -32,31 +32,22 @@ public class DukeCalendarParser extends Parser {
     protected String getURL(Node currentEvent) {
         return getTagValue(currentEvent, "link/text()");
     }
-
+//not in right format yet
     @Override
-    protected Date getStartDate(Node currentEvent) {
+    protected String getStartDate(Node currentEvent) {
         String startDate = getTagValue(currentEvent, "start/shortdate/text()");
         String startTime = getTagValue(currentEvent, "start/time/text()"); 
-        DateFormat dateFormat = new SimpleDateFormat("MM/dd/yy hh:mm a");
-        return getDateFromString(startDate + " " + startTime, dateFormat);
+        return startDate + " " + startTime;
     }
-
+//not in right format yet
     @Override
-    protected Date getEndDate(Node currentEvent) {
+    protected String getEndDate(Node currentEvent) {
         String endDate = getTagValue(currentEvent, "end/shortdate/text()");
         String endTime = getTagValue(currentEvent, "end/time/text()"); 
-        DateFormat dateFormat = new SimpleDateFormat("MM/dd/yy hh:mm a");
-        return getDateFromString(endDate + " " + endTime, dateFormat);
+        return endDate + " " + endTime;
     }
     
-    public static ParserFactory getFactory() {
-        return new ParserFactory(new DukeCalendarParser());
-    }
-
-    @Override
-    public Parser newParser() {
-        return new DukeCalendarParser();
-    }
+  
 
 
 }

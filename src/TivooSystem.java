@@ -15,11 +15,11 @@ public class TivooSystem {
     private Set<Writer> myWriters;
     private Set<Parser> myParsers;
     private Filter myHeadFilter;
-    private static Map<String, ParserFactory> myMap = new HashMap<String, ParserFactory>();
+    private static HashMap<String,Parser> myMap;
 
     static {
-    	myMap.put("DukeBasketBall.xml", DukeBasketballParser.getFactory());
-    	myMap.put("dukecal.xml", DukeCalendarParser.getFactory());
+    	myMap.put("DukeBasketBall.xml", new DukeBasketballParser());
+    	myMap.put("dukecal.xml", new DukeCalendarParser());
     }
     
     public TivooSystem() {
@@ -30,14 +30,14 @@ public class TivooSystem {
         myHeadFilter = null;
     }
 
-    public void loadFile (File file) {
-        ParserFactory factory = myMap.get(file.getName());
-        if (factory == null) {
-            throw new TivooUnrecognizedFeed();
-        }
-        Parser parser = factory.newParser();
+    public void loadFile (File file) {  
+        try{
+        Parser parser =  myMap.get(file.getName());
         parser.loadFile(file);
-        myParsers.add(parser);
+        myParsers.add(parser);}
+        catch(NullPointerException e){
+          throw new TivooUnrecognizedFeed();
+          }
     }
     
     public void addFilterByKeyword (String keyword) {
