@@ -49,7 +49,13 @@ public abstract class Parser {
         String url = getURL(currentEvent);
         Date start = getStartDate(currentEvent);
         Date end = getEndDate(currentEvent);
-        return new Event(title, summary, start, end, url);
+        HashMap<Event.Type,Object> map= new HashMap<Event.Type,Object>();
+        map.put(Event.Type.TITLE, title);
+        map.put(Event.Type.SUMMARY, summary);
+        map.put(Event.Type.URL, url);
+        map.put(Event.Type.START, start);
+        map.put(Event.Type.END, end);
+        return new Event(map);
     }
 
     public List<Event> getEventList() {
