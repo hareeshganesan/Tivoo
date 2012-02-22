@@ -2,8 +2,6 @@ package parser;
 
 import java.io.File;
 import java.io.IOException;
-import java.text.DateFormat;
-import java.text.ParseException;
 import java.util.*;
 import javax.xml.parsers.*;
 import javax.xml.xpath.*;
@@ -134,18 +132,6 @@ public abstract class Parser
     }
 
 
-    protected Date getDateFromString (String in, DateFormat dateFormat)
-    {
-        Date toReturn;
-        try
-        {
-            toReturn = dateFormat.parse(in);
-        }
-        catch (ParseException e)
-        {
-            throw new TivooInternalParsingError("DateFormat invalid");
-        }
-        return toReturn;
-    }
+
 
 }
