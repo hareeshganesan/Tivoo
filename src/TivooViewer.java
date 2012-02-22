@@ -5,9 +5,8 @@ import java.io.*;
 
 import javax.swing.*;
 
+import exception.*;
 import filter.FilterByTimeFrame;
-
-import java.util.*;
 
 
 @SuppressWarnings("serial")
@@ -33,7 +32,6 @@ public class TivooViewer extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setTitle(myTitle);
         pack();
-        setVisible(true);
     }
 
     private JPanel makeMessageBar() {
@@ -152,10 +150,18 @@ public class TivooViewer extends JFrame {
         if (returnVal != JFileChooser.APPROVE_OPTION) {
             return;
         }
-        showMessage("loading..");
         File file = myFileOpener.getSelectedFile();
-        myModel.loadFile(file);
-        showMessage("file loaded");
+        try {
+            myModel.loadFile(file);
+            showMessage("file loaded");
+        } catch (TivooUnrecognizedFeed e) {
+            showError("Never seen this xml before");
+        } catch (TivooInternalParsingError e) {
+            System.out.println(e.getMessage());
+            showError("Sorry we can not handle this xml \n Something must be wrong");
+        } catch (TivooInvalidFeed e) {
+            showError("This xml is invalid");
+        }
     }
 
     private void filterByKeyWord() {
@@ -176,8 +182,12 @@ public class TivooViewer extends JFrame {
         if (end == null) {
             return;
         }
-        myModel.addFilterByTimeFrame(start, end);
-        showMessage("filter ready");
+        try {
+            myModel.addFilterByTimeFrame(start, end);
+            showMessage("filter ready");
+        } catch (TivooIllegalDateFormat e) {
+            showError(String.format("Date format is invalid. Must obey the follwing format:\n%s", FilterByTimeFrame.getDefaultDateFormat()));
+        }
     }
 
     private void outputSummaryAndDetailPages() {
@@ -191,8 +201,18 @@ public class TivooViewer extends JFrame {
     }
 
     private void start() {
-        myModel.perform();
-        showMessage("succeeded!");
+        try {
+            myModel.perform();
+            showMessage("succeeded!");
+        } catch (TivooInternalParsingError e) {
+            showError("Sorry we can not handle this xml \n Something must be wrong");
+        } catch (TivooNoParserSelected e) {
+            showError("Please selected at least one xml file");
+        } catch (TivooNoFilterSelected e) {
+            showError("Please selected at least one filter");
+        } catch (TivooNoWriterSelected e) {
+            showError("Please selected at least one output");
+        }
     }
     
     private void exit() {
@@ -213,7 +233,9 @@ public class TivooViewer extends JFrame {
         JOptionPane.showMessageDialog(this, word, error,
                 JOptionPane.ERROR_MESSAGE);
     }
-
-
-
+    
+    public void showError(String word){
+        JOptionPane.showMessageDialog(this, word, "",
+                JOptionPane.ERROR_MESSAGE);
+    }
 }

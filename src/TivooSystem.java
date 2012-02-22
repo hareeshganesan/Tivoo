@@ -2,7 +2,7 @@ import java.io.File;
 import java.util.*;
 
 import event.*;
-import exception.TivooException;
+import exception.*;
 import filter.*;
 import parser.*;
 import writer.*;
@@ -12,31 +12,32 @@ public class TivooSystem {
     
     private List<Event> myOriginalList;
     private List<Event> myFilteredList;
-    private List<Writer> myWriters;
+    private Set<Writer> myWriters;
+    private Set<Parser> myParsers;
     private Filter myHeadFilter;
-    private static Map<String,Parser> myMap = new HashMap<String,Parser>();
+    private static Map<String, ParserFactory> myMap = new HashMap<String, ParserFactory>();
 
-    static{
-    	myMap.put("DukeBasketBall.xml", new DukeBasketballParser());
-    	myMap.put("dukecal.xml", new DukeCalendarParser());
+    static {
+    	myMap.put("DukeBasketBall.xml", DukeBasketballParser.getFactory());
+    	myMap.put("dukecal.xml", DukeCalendarParser.getFactory());
     }
     
     public TivooSystem() {
         myOriginalList = new ArrayList<Event>();
         myFilteredList = new ArrayList<Event>();
-        myWriters = new ArrayList<Writer>();
+        myParsers = new HashSet<Parser>();
+        myWriters = new HashSet<Writer>();
         myHeadFilter = null;
     }
 
     public void loadFile (File file) {
-        Parser parser = myMap.get(file.getName());
-        try {
-            parser.parse(file);
+        ParserFactory factory = myMap.get(file.getName());
+        if (factory == null) {
+            throw new TivooUnrecognizedFeed();
         }
-        catch (NullPointerException e) {
-            throw new TivooException("Never seen this xml before", TivooException.Type.BAD_INPUTDIRECTORY);
-        }
-        myOriginalList = parser.getEventList();
+        Parser parser = factory.newParser();
+        parser.loadFile(file);
+        myParsers.add(parser);
     }
     
     public void addFilterByKeyword (String keyword) {
@@ -70,16 +71,33 @@ public class TivooSystem {
     }
     
     public void perform() {
+        parse();
         filter();
         output();
     }
     
+    private void parse() {
+        if (myParsers.size() == 0) {
+            throw new TivooNoParserSelected();
+        }
+        for (Parser parser: myParsers) {
+            parser.parse();
+            myOriginalList.addAll(parser.getEventList());
+        }
+    }
+    
     private void filter() {
+        if (myHeadFilter == null) {
+            throw new TivooNoFilterSelected();
+        }
         myHeadFilter.filter(myOriginalList);
         myFilteredList = myHeadFilter.getFilteredList();
     }
     
     private void output() {
+        if (myParsers.size() == 0) {
+            throw new TivooNoWriterSelected();
+        }
         for (Writer writer:myWriters) {
             writer.outputHTML(myFilteredList);
         }

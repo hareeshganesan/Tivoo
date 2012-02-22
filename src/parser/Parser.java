@@ -13,15 +13,14 @@ import org.w3c.dom.*;
 import org.xml.sax.SAXException;
 
 import event.Event;
-import exception.TivooException;
+import exception.*;
 
 public abstract class Parser {
     protected ArrayList<Event> myEvents;
     protected Document myDocument;
 
-    public void parse(File file) {
+    public void loadFile(File file) {
         myDocument = generateDocument(file);
-        parse();
     }
 
     protected abstract String getHead();
@@ -31,7 +30,12 @@ public abstract class Parser {
     protected abstract Date getStartDate(Node currentEvent);
     protected abstract Date getEndDate(Node currentEvent);
 
-    private void parse() {
+    public abstract Parser newParser();
+    
+    public void parse() {
+        if (myDocument == null) {
+            return;
+        }
         NodeList eventList = getTagNodes(myDocument, getHead());
         for (int temp = 0; temp < eventList.getLength(); temp++) {
             Node currentEvent = eventList.item(temp);
@@ -61,11 +65,11 @@ public abstract class Parser {
             toReturn = dBuilder.parse(file);
             toReturn.getDocumentElement().normalize();
         } catch (ParserConfigurationException e) {
-            System.err.println("ARE YOU KIDDING ME");
+            throw new TivooInternalParsingError("DocumentBuilderFactory initialization failed");
         } catch (SAXException e) {   // why SAXException|IOException doesn't work?
-            throw new TivooException("Invalid input file", TivooException.Type.BAD_INPUTDIRECTORY);
+            throw new TivooInvalidFeed();
         } catch (IOException e) {
-            throw new TivooException("Invalid input file", TivooException.Type.BAD_INPUTDIRECTORY);
+            throw new TivooInvalidFeed();
         }
         return toReturn;
     }
@@ -76,29 +80,29 @@ public abstract class Parser {
         try {
             nodeList = (NodeList) expr.evaluate(Node, XPathConstants.NODESET);
         } catch (XPathExpressionException e) {
-            throw new TivooException("No such tags", TivooException.Type.BAD_PARSING);
+            throw new TivooInternalParsingError("getTagNodes failed");
         }
         return nodeList;
     }
 
     protected String getTagValue(Object Node, String xPath) {
-        String toReturn;
-        try {
-            toReturn = getTagNodes(Node, xPath).item(0).getNodeValue();
-        } catch (NullPointerException e) {
-            throw new TivooException("null value in Tags", TivooException.Type.BAD_PARSING);
+        Node node = getTagNodes(Node, xPath).item(0);
+        if (node == null) {
+            return "";
         }
-        return toReturn;
+        else {
+            return node.getNodeValue();
+        }
     }
 
-    private XPathExpression getXPathExpression(String xPath) {
+    private XPathExpression getXPathExpression(String xPath)  {
         XPathFactory xpathfactory = XPathFactory.newInstance();
         XPath myXpath = xpathfactory.newXPath();
         XPathExpression toReturn;
         try {
             toReturn = myXpath.compile(xPath);
         } catch (XPathExpressionException e) {
-            throw new TivooException("xPath invalid", TivooException.Type.BAD_PARSING);
+            throw new TivooInternalParsingError("xPath complication failed");
         }
         return toReturn;
     }
@@ -108,8 +112,7 @@ public abstract class Parser {
         try {
             toReturn = dateFormat.parse(in);
         } catch (ParseException e) {
-        	System.out.println("bad time string to parse! "+ in);
-            throw new TivooException("parse time failure", TivooException.Type.BAD_PARSING);
+            throw new TivooInternalParsingError("DateFormat invalid");
         }
         return toReturn;
     }

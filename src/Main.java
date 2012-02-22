@@ -1,10 +1,10 @@
-import exception.TivooException;
 
 
 public class Main {
     public static void main (String[] args) {    
         TivooSystem model = new TivooSystem();
         TivooViewer view = new TivooViewer(model);
+        view.setVisible(true);
 //        try {
 //            s.loadFile("./xml/DukeBasketBall.xml");
 //            s.filterByKeyword("vs");

@@ -37,10 +37,8 @@ public class SummaryAndDetailsPagesWriter extends Writer {
 
     public void outputSummaryPage (List<Event> events, String filename) {
         Html html = initializeHTMLDocument();
-
         String[] days = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
         HashMap<Integer, ArrayList<Event>> eventsByDate = groupByDate(events);
-
         for(int i=0; i<7; i++) {
             ArrayList<Event> day = eventsByDate.get(i);
             Table table = new Table();
@@ -60,9 +58,6 @@ public class SummaryAndDetailsPagesWriter extends Writer {
             html.appendChild(new H2().appendChild(dayOfTheWeek));
             html.appendChild(table);
         }
-
-        int x = Calendar.SUNDAY;
-
         write(html, filename);
     }
 

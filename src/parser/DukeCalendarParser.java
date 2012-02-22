@@ -48,5 +48,15 @@ public class DukeCalendarParser extends Parser {
         DateFormat dateFormat = new SimpleDateFormat("MM/dd/yy hh:mm a");
         return getDateFromString(endDate + " " + endTime, dateFormat);
     }
+    
+    public static ParserFactory getFactory() {
+        return new ParserFactory(new DukeCalendarParser());
+    }
+
+    @Override
+    public Parser newParser() {
+        return new DukeCalendarParser();
+    }
+
 
 }

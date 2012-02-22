@@ -52,5 +52,14 @@ public class DukeBasketballParser extends Parser {
         DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy hh:mm:ss a");
         return getDateFromString(endDate + " " + endTime, dateFormat);
     }
+    
+    public static ParserFactory getFactory() {
+        return new ParserFactory(new DukeBasketballParser());
+    }
+
+    @Override
+    public Parser newParser() {
+        return new DukeBasketballParser();
+    }
 
 }

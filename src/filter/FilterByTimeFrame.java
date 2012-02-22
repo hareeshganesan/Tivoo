@@ -3,11 +3,10 @@ package filter;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+
 import java.util.*;
-
-
 import event.Event;
-import exception.TivooException;
+import exception.*;
 
 public class FilterByTimeFrame extends Filter{
 
@@ -16,14 +15,13 @@ public class FilterByTimeFrame extends Filter{
 
     private Date myStartTime, myEndTime;
 
-    public FilterByTimeFrame (String startTime, String endTime)  {
+    public FilterByTimeFrame (String startTime, String endTime) {
         Date start, end;
         try {
             start = defaultDateFormat.parse(startTime);
             end = defaultDateFormat.parse(endTime);
         } catch (ParseException e) {
-            throw new TivooException(String.format("Check input date format: must be in forms of '%s'", defaultDateFormatString), 
-                    TivooException.Type.BAD_DATEFORMAT);
+            throw new TivooIllegalDateFormat();
         }
         myOriginalList = new ArrayList<Event>();
         myFilteredList = new ArrayList<Event>();

@@ -1,19 +1,12 @@
 package writer;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.List;
+import java.io.*;
+import java.util.*;
 
-import com.hp.gagawa.java.elements.Body;
-import com.hp.gagawa.java.elements.H1;
-import com.hp.gagawa.java.elements.Head;
-import com.hp.gagawa.java.elements.Html;
-import com.hp.gagawa.java.elements.Text;
-import com.hp.gagawa.java.elements.Title;
+import com.hp.gagawa.java.elements.*;
 
 import event.Event;
-import exception.TivooException;
+import exception.*;
 
 public abstract class Writer
 {
@@ -28,7 +21,7 @@ public abstract class Writer
             bw.flush();
             bw.close();
         } catch (IOException e) {
-            throw new TivooException("Check output directory dude", TivooException.Type.BAD_OUTPUTDIRECTORY);
+            throw new TivooInvalidOutputDirectory();
         }
     }
 
