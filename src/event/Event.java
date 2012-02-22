@@ -5,7 +5,9 @@ import java.util.HashMap;
 public class Event {
     
     private HashMap<String,String> myField = new HashMap<String,String>();
-
+    
+    public static final String dateFormat = "yyyy-MM-dd hh:mm:ss a";
+    
     public Event (HashMap<String,String> map) {
         myField = map; 
     }
