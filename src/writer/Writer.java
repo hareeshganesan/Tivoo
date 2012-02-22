@@ -11,7 +11,10 @@ import exception.*;
 public abstract class Writer
 {
 
-    protected String myTitle, myDirectory;
+    /**
+     * TODO: make it private with a get or set
+     */
+    private String myTitle, myDirectory;
 
     protected void write (Html html, String filename)
     {
@@ -48,5 +51,25 @@ public abstract class Writer
     }
     
     abstract public void outputHTML (List<Event> events);
+
+    protected String getMyTitle ()
+    {
+        return myTitle;
+    }
+
+    protected void setMyTitle (String myTitle)
+    {
+        this.myTitle = myTitle;
+    }
+
+    protected String getMyDirectory ()
+    {
+        return myDirectory;
+    }
+
+    protected void setMyDirectory (String myDirectory)
+    {
+        this.myDirectory = myDirectory;
+    }
 
 }

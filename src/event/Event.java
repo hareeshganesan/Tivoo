@@ -4,6 +4,9 @@ import java.util.Date;
 import java.util.HashMap;
 
 public class Event {
+    /**
+     * TODO: expose the keyset
+     */
     
     private HashMap<Type,Object> myField = new HashMap<Type,Object>();
     public static enum Type {TITLE, SUMMARY, URL, START, END}; 
@@ -17,6 +20,11 @@ public class Event {
         return myField.get(key);
     }
 
+    /**
+     * TODO: make the methods more generic across keys
+     * @param keyword
+     * @return
+     */
     public boolean containsKeywordInTitle(String keyword) {
         return ((String)myField.get(Type.TITLE)).contains(keyword);
     }
