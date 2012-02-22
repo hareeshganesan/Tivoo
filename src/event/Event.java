@@ -4,12 +4,12 @@ import java.util.HashMap;
 
 public class Event {
     
-    private HashMap<String,String> myField = new HashMap<String,String>();
+    private HashMap<String,String> myFields = new HashMap<String,String>();
     
-    public static final String dateFormat = "yyyy-MM-dd hh:mm:ss a";
+    public static final String dateFormat = "yyyy-MM-dd HH:mm:ss";
     
     public Event (HashMap<String,String> map) {
-        myField = map; 
+        myFields = map; 
     }
 
 
@@ -17,11 +17,11 @@ public class Event {
         /**
          * TODO: throw exceptions for strings that do not exist
          */
-        return myField.get(key);
+        return myFields.get(key);
     }
 
     public boolean containsKeyWord(String key, String keyword){
-        return ((String)myField.get(key)).contains(keyword);
+        return ((String)myFields.get(key)).contains(keyword);
     }
 
 }
