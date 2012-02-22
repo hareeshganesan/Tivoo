@@ -15,7 +15,7 @@ public class TivooSystem {
     private Set<Writer> myWriters;
     private Set<Parser> myParsers;
     private Filter myHeadFilter;
-    private static HashMap<String,Parser> myMap;
+    private static HashMap<String,Parser> myMap=new HashMap<String,Parser>();
 
     static {
     	myMap.put("DukeBasketBall.xml", new DukeBasketballParser());
