@@ -29,6 +29,7 @@ public abstract class Parser {
     protected abstract String getURL(Node currentEvent);
     protected abstract String getStartDate(Node currentEvent);
     protected abstract String getEndDate(Node currentEvent);
+    protected abstract HashMap<String,String> getMyFields(Node currentEvent);
 
     
     public void parse() {
@@ -43,18 +44,19 @@ public abstract class Parser {
     }
 
     private Event createEvent(Node currentEvent) {
-        String title = getTitle(currentEvent);
-        String summary = getSummary(currentEvent);
-        String url = getURL(currentEvent);
-        String start = getStartDate(currentEvent);
-        String end = getEndDate(currentEvent);
-        HashMap<String,String> map= new HashMap<String,String>();
-        map.put("title", title);
-        map.put("summary", summary);
-        map.put("url", url);
-        map.put("startTime", start);
-        map.put("endTime", end);
-        return new Event(map);
+//        String title = getTitle(currentEvent);
+//        String summary = getSummary(currentEvent);
+//        String url = getURL(currentEvent);
+//        String start = getStartDate(currentEvent);
+//        String end = getEndDate(currentEvent);
+//        HashMap<String,String> map= new HashMap<String,String>();
+//        map.put("title", title);
+//        map.put("summary", summary);
+//        map.put("url", url);
+//        map.put("startTime", start);
+//        map.put("endTime", end);
+        HashMap<String,String> eventFields = getMyFields(currentEvent);
+        return new Event(eventFields);
     }
 
     public List<Event> getEventList() {
