@@ -4,25 +4,22 @@ import java.util.*;
 
 import event.*;
 
-public class FilterByKeyword extends Filter{
+public class FilterByKeyword extends FilterDecorator{
     
     private String myKeyword;
     
     public FilterByKeyword(String keyword) {
-        myOriginalList = new ArrayList<Event>();
-        myFilteredList = new ArrayList<Event>();
+        super();
         myKeyword = keyword;
     }
 
     @Override
     public void filter(List<Event> list) {
-        myOriginalList = list;
-        myFilteredList = new ArrayList<Event>();
-        for (Event entry: myOriginalList) {
+        List<Event> decoratedList = decoratedFilterWork(list);
+        for (Event entry: decoratedList) {
             if (entry.containsKeyWord("title", myKeyword)) {
                 myFilteredList.add(entry);
             }
         }
-        nextFilter();
     }
 }
