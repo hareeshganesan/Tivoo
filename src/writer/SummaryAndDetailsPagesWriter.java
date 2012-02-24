@@ -50,13 +50,6 @@ public class SummaryAndDetailsPagesWriter extends Writer
     }
 
 
-    private void generateDetail (Table details, String eventType, String detail)
-    {
-        String fullDetail = eventType + ": " + detail;
-        details.appendChild(new Tr().appendChild(new Td().appendChild(new Text(fullDetail))));
-    }
-
-
     public void outputSummaryPage (List<Event> events, String filename)
     {
         Html html = initializeHTMLDocument();
@@ -78,20 +71,7 @@ public class SummaryAndDetailsPagesWriter extends Writer
             Table table = new Table();
             for (Event event : day)
             {
-                Tr event_format = new Tr();
-                A link = new A();
-
-                String linkText = "event" + events.indexOf(event) + ".html";
-                link.setHref(linkText);
-                link.appendChild(new Text(event.get("title")));
-
-                event_format.appendChild((new Td()).appendChild(link));
-                event_format.appendChild((new Td()).appendChild(new Text(event.get("startTime")
-                                                                              .toString())));
-                event_format.appendChild((new Td()).appendChild(new Text(event.get("endTime")
-                                                                              .toString())));
-
-                table.appendChild(event_format);
+                addEventToTable(events, table, event);
             }
             Text dayOfTheWeek = new Text(days[i]);
             html.appendChild(new H2().appendChild(dayOfTheWeek));
