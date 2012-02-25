@@ -45,8 +45,6 @@ public class DukeBasketballParser extends Parser
     }
 
 
-//not in right format yet
-
     protected String getStartDate (Node currentEvent)
     {
         String startDate = getTagValue(currentEvent, "StartDate/text()");
@@ -64,6 +62,7 @@ public class DukeBasketballParser extends Parser
         return reformatDateString(info);
     }
 
+
     private String reformatDateString (String info)
     {
         DateFormat df = new SimpleDateFormat("MM/dd/yyyy hh:mm:ss a");
@@ -76,7 +75,6 @@ public class DukeBasketballParser extends Parser
         }
         catch (ParseException e)
         {
-
             e.printStackTrace();
         }
 
@@ -84,9 +82,6 @@ public class DukeBasketballParser extends Parser
     }
 
 
-
-
-    @Override
     protected HashMap<String, String> getMyFields (Node currentEvent)
     {
         HashMap<String, String> fields = new HashMap<String, String>();

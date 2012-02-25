@@ -18,6 +18,7 @@ public class TivooSystem {
     private static HashMap<String,Parser> myMap;
 
     static {
+        myMap = new HashMap<String,Parser>();
     	myMap.put("DukeBasketBall.xml", new DukeBasketballParser());
     	myMap.put("dukecal.xml", new DukeCalendarParser());
     }
