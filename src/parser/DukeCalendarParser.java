@@ -15,10 +15,7 @@ public class DukeCalendarParser extends Parser {
 				+ list.get(3) + ":" + list.get(4) + ":" + "00";
 	}
 
-	public DukeCalendarParser() {
-		myDocument = null;
-		myEvents = new ArrayList<Event>();
-	}
+
 
 	@Override
 	protected String getHead() {

@@ -9,11 +9,6 @@ public class DukeBasketballParser extends Parser
 {
     private final String myOldFormat = "MM/dd/yyyy hh:mm:ss a" ;
 
-    public DukeBasketballParser ()
-    {
-        myDocument = null;
-        myEvents = new ArrayList<Event>();
-    }
 
 
     @Override
