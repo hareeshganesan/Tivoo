@@ -3,13 +3,12 @@ package filter;
 import java.util.*;
 
 import event.*;
-import exception.TivooEventKeywordNotFound;
 
-public class FilterByKeyword extends FilterDecorator{
+public class FilterByKeywordInGeneral extends FilterDecorator{
     
     private String myKeyword;
     
-    public FilterByKeyword(String keyword) {
+    public FilterByKeywordInGeneral(String keyword) {
         super();
         myKeyword = keyword;
     }
@@ -18,11 +17,7 @@ public class FilterByKeyword extends FilterDecorator{
     public void filter(List<Event> list) {
         List<Event> decoratedList = decoratedFilterWork(list);
         for (Event entry: decoratedList) {
-            try {
-                if (entry.containsKeyWord("title", myKeyword)) {
-                    myFilteredList.add(entry);
-                }
-            } catch (TivooEventKeywordNotFound e) {
+            if (entry.containsKeyWord(myKeyword)) {
                 myFilteredList.add(entry);
             }
         }

@@ -9,20 +9,21 @@ import writer.*;
 
 
 public class TivooSystem {
-    
+
     private List<Event> myOriginalList;
     private List<Event> myFilteredList;
     private Set<Writer> myWriters;
     private Set<Parser> myParsers;
-    private Filter myHeadFilter;
-    private static HashMap<String,Parser> myMap;
+    private FilterDecorator myHeadFilter;
+    private static HashMap<String,Parser> myMap=new HashMap<String,Parser>();
 
     static {
+
         myMap = new HashMap<String,Parser>();
     	myMap.put("DukeBasketBall.xml", new DukeBasketballParser());
-    	myMap.put("dukecal.xml", new DukeCalendarParser());
-    }
-    
+    	myMap.put("dukecal.xml", new DukeCalendarParser()); 
+   }
+
     public TivooSystem() {
         myOriginalList = new ArrayList<Event>();
         myFilteredList = new ArrayList<Event>();
@@ -32,33 +33,43 @@ public class TivooSystem {
     }
 
     public void loadFile (File file) {  
-        try{
-        Parser parser =  myMap.get(file.getName());
-        parser.loadFile(file);
-        myParsers.add(parser);}
-        catch(NullPointerException e){
-          throw new TivooUnrecognizedFeed();
-          }
+        try {
+            Parser parser =  myMap.get(file.getName());
+            parser.loadFile(file);
+            myParsers.add(parser);}
+        catch (NullPointerException e) {
+            throw new TivooUnrecognizedFeed();
+        }
     }
-    
+
     public void addFilterByKeyword (String keyword) {
-        Filter filter = new FilterByKeyword(keyword);
-        addFilter(filter);
-    }
-    
-    public void addFilterByTimeFrame (String startTime, String endTime) {
-        Filter filter = new FilterByTimeFrame(startTime, endTime);
+        FilterDecorator filter = new FilterByKeyword(keyword);
         addFilter(filter);
     }
 
-    private void addFilter(Filter filter) {
+    public void addFilterByTimeFrame (String startTime, String endTime) {
+        FilterDecorator filter = new FilterByTimeFrame(startTime, endTime);
+        addFilter(filter);
+    }
+    
+    public void addFilterByKeywordSorting (String keyword) {
+        FilterByKeywordSorting filter = new FilterByKeywordSorting(keyword);
+        addFilter(filter);
+    }
+    
+    public void addFilterByKeywordInGeneral (String keyword) {
+        FilterByKeywordInGeneral filter = new FilterByKeywordInGeneral(keyword);
+        addFilter(filter);
+    }
+    
+
+    private void addFilter(FilterDecorator filter) {
         if (myHeadFilter == null) {
             myHeadFilter = filter;
         }
         else {
-//            filter.setNextFilter(myHeadFilter);
-//            myHeadFilter = filter;
-            myHeadFilter.setFilterAtBottom(filter);
+            filter.appendFilter(myHeadFilter);
+            myHeadFilter = filter;
         }
     }
 
@@ -67,16 +78,28 @@ public class TivooSystem {
         addWriter(writer);
     }
     
+    
+    public void addConflictWriter(String directory) {
+        Writer writer = new ConflictWriter(directory);
+        addWriter(writer);
+    }
+    
+    public void addListWriter(String directory) {
+        Writer writer = new ListWriter(directory);
+        addWriter(writer);
+    }
+
     private void addWriter(Writer writer) {
         myWriters.add(writer);
     }
-    
+
     public void perform() {
+        clear();
         parse();
         filter();
         output();
     }
-    
+
     private void parse() {
         if (myParsers.size() == 0) {
             throw new TivooNoParserSelected();
@@ -86,7 +109,7 @@ public class TivooSystem {
             myOriginalList.addAll(parser.getEventList());
         }
     }
-    
+
     private void filter() {
         if (myHeadFilter == null) {
             throw new TivooNoFilterSelected();
@@ -94,13 +117,19 @@ public class TivooSystem {
         myHeadFilter.filter(myOriginalList);
         myFilteredList = myHeadFilter.getFilteredList();
     }
-    
+
     private void output() {
         if (myParsers.size() == 0) {
             throw new TivooNoWriterSelected();
         }
+        System.out.println(myFilteredList.size());
         for (Writer writer:myWriters) {
             writer.outputHTML(myFilteredList);
         }
+    }
+
+    private void clear() {
+        myOriginalList = new ArrayList<Event>();
+        myFilteredList = new ArrayList<Event>();
     }
 }

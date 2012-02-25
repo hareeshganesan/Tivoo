@@ -4,11 +4,12 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
+
 import event.Event;
 import exception.*;
 
 
-public class FilterByTimeFrame extends Filter
+public class FilterByTimeFrame extends FilterDecorator
 {
 
     private static String defaultDateFormatString = "MM/dd/yy hh:mm:ss a";
@@ -20,6 +21,7 @@ public class FilterByTimeFrame extends Filter
 
     public FilterByTimeFrame (String startTime, String endTime)
     {
+        super();
         Date start, end;
         try
         {
@@ -30,8 +32,6 @@ public class FilterByTimeFrame extends Filter
         {
             throw new TivooIllegalDateFormat();
         }
-        myOriginalList = new ArrayList<Event>();
-        myFilteredList = new ArrayList<Event>();
         myStartTime = start;
         myEndTime = end;
     }
@@ -40,16 +40,14 @@ public class FilterByTimeFrame extends Filter
     @Override
     public void filter (List<Event> list)
     {
-        myOriginalList = list;
-        myFilteredList = new ArrayList<Event>();
-        for (Event entry : myOriginalList)
+        List<Event> decoratedList = decoratedFilterWork(list);
+        for (Event entry : decoratedList)
         {
             if (isWithinTimeFrame(entry))
             {
                 myFilteredList.add(entry);
             }
         }
-        nextFilter();
     }
 
 
@@ -62,23 +60,15 @@ public class FilterByTimeFrame extends Filter
     public boolean isWithinTimeFrame (Event event)
     {
         DateFormat format = new SimpleDateFormat(Event.dateFormat);
-
         Date eventStartTime;
         Date eventEndTime;
-        try
-        {
-            eventStartTime = format.parse(event.get("startDate"));
-            eventEndTime = format.parse(event.get("endDate"));
-            return (eventStartTime.before(myStartTime) && eventEndTime.after(myEndTime));
+        try {
+            eventStartTime = format.parse(event.get("startTime"));
+            eventEndTime = format.parse(event.get("endTime"));
+            return (eventStartTime.after(myStartTime) && eventEndTime.before(myEndTime));
+        } catch (ParseException e) {
+            throw new TivooSystemError("isWithinTimeFrame failed");
         }
-        catch (ParseException e)
-        {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-
-        return false;
-
     }
 
 }
