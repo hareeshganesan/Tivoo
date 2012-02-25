@@ -55,14 +55,7 @@ public class DukeBasketballParser extends Parser
         return reformatDateString(info,myOldFormat);
     }
     
-    public static ParserFactory getFactory() {
-        return new ParserFactory(new DukeBasketballParser());
-    }
 
-    @Override
-    protected Parser newParser() {
-        return new DukeBasketballParser();
-    }
 
 
 
