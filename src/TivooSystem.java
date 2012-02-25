@@ -18,9 +18,11 @@ public class TivooSystem {
     private static HashMap<String,Parser> myMap=new HashMap<String,Parser>();
 
     static {
-        myMap.put("DukeBasketBall.xml", new DukeBasketballParser());
-        myMap.put("dukecal.xml", new DukeCalendarParser());
-    }
+
+        myMap = new HashMap<String,Parser>();
+    	myMap.put("DukeBasketBall.xml", new DukeBasketballParser());
+    	myMap.put("dukecal.xml", new DukeCalendarParser()); 
+   }
 
     public TivooSystem() {
         myOriginalList = new ArrayList<Event>();

@@ -40,7 +40,6 @@ public class DukeBasketballParser extends Parser
     }
 
 
-
     protected String getStartDate (Node currentEvent)
     {
         String startDate = getTagValue(currentEvent, "StartDate/text()");
@@ -58,6 +57,7 @@ public class DukeBasketballParser extends Parser
         return reformatDateString(info);
     }
 
+
     private String reformatDateString (String info)
     {
         DateFormat df = new SimpleDateFormat("MM/dd/yyyy hh:mm:ss a");
@@ -70,14 +70,11 @@ public class DukeBasketballParser extends Parser
         }
         catch (ParseException e)
         {
-
             e.printStackTrace();
         }
 
         return eventFormat.format(date);
     }
-
-
 
 
 //    @Override
@@ -91,5 +88,6 @@ public class DukeBasketballParser extends Parser
 //        fields.put("endTime", getEndDate(currentEvent));
 //        return fields;
 //    }
+
 
 }
