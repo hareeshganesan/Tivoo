@@ -22,6 +22,7 @@ public class TivooSystem {
         myMap = new HashMap<String,Parser>();
     	myMap.put("DukeBasketBall.xml", new DukeBasketballParser());
     	myMap.put("dukecal.xml", new DukeCalendarParser()); 
+    	myMap.put("googlecal.xml", new GoogleCalenderParser());
    }
 
     public TivooSystem() {
