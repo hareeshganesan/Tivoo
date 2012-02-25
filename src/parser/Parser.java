@@ -3,6 +3,7 @@ package parser;
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
+
 import javax.xml.parsers.*;
 import javax.xml.xpath.*;
 import org.w3c.dom.*;
@@ -16,7 +17,10 @@ public abstract class Parser
     protected ArrayList<Event> myEvents;
     protected Document myDocument;
 
-
+	public Parser() {
+		myDocument = null;
+		myEvents = new ArrayList<Event>();
+	}
     public void loadFile (File file)
     {
         myDocument = generateDocument(file);
@@ -26,7 +30,15 @@ public abstract class Parser
     protected abstract String getHead ();
 
 
-    protected abstract HashMap<String, String> getMyFields (Node currentEvent);
+    protected  HashMap<String, String> getMyFields (Node currentEvent){
+		HashMap<String, String> toReturn = new HashMap<String, String>();
+		toReturn.put("title", getTitle(currentEvent));
+		toReturn.put("summary", getSummary(currentEvent));
+		toReturn.put("startTime", getStartDate(currentEvent));
+		toReturn.put("endTime", getEndDate(currentEvent));
+		toReturn.put("url", getURL(currentEvent));
+		return toReturn;
+    }
 
 
     public void parse ()
@@ -39,6 +51,7 @@ public abstract class Parser
         for (int temp = 0; temp < eventList.getLength(); temp++)
         {
             Node currentEvent = eventList.item(temp);
+            
             myEvents.add(createEvent(currentEvent));
         }
     }
@@ -48,6 +61,7 @@ public abstract class Parser
     {
 
         HashMap<String, String> eventFields = getMyFields(currentEvent);
+  
         return new Event(eventFields);
     }
 
@@ -131,6 +145,35 @@ public abstract class Parser
         return toReturn;
     }
 
+    protected String getTitle (Node currentEvent)
+    {
+        return "Null Such Field";
+    }
+
+
+    protected String getSummary (Node currentEvent)
+    {
+    	return "Null Such Field";
+    }
+
+
+    protected String getURL (Node currentEvent)
+    {
+    	return "Null Such Field";
+    }
+
+
+
+    protected String getStartDate (Node currentEvent)
+    {
+    	return "Null Such Field";
+    }
+
+
+    protected String getEndDate (Node currentEvent)
+    {
+    	return "Null Such Field";
+    }
 
 
 

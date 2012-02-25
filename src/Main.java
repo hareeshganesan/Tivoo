@@ -9,9 +9,9 @@ public class Main {
         TivooSystem model = new TivooSystem();
         try {
             File file1 = new File("./xml/dukecal.xml");
-            File file2 = new File("./xml/DukeBasketBall.xml");
+//            File file2 = new File("./xml/DukeBasketBall.xml");
             model.loadFile(file1);
-            model.loadFile(file2);
+//            model.loadFile(file2);
 //            model.addFilterByKeyword("vs");
 //            model.addFilterByTimeFrame("11/21/11 6:30:00 PM", "01/21/12 1:00:00 PM"); 
             model.addFilterByKeywordInGeneral("Duke");

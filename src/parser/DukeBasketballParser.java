@@ -11,11 +11,6 @@ import event.*;
 public class DukeBasketballParser extends Parser
 {
 
-    public DukeBasketballParser ()
-    {
-        myDocument = null;
-        myEvents = new ArrayList<Event>();
-    }
 
 
     @Override
@@ -45,7 +40,6 @@ public class DukeBasketballParser extends Parser
     }
 
 
-//not in right format yet
 
     protected String getStartDate (Node currentEvent)
     {
@@ -86,16 +80,16 @@ public class DukeBasketballParser extends Parser
 
 
 
-    @Override
-    protected HashMap<String, String> getMyFields (Node currentEvent)
-    {
-        HashMap<String, String> fields = new HashMap<String, String>();
-        fields.put("title", getTitle(currentEvent));
-        fields.put("summary", getSummary(currentEvent));
-        fields.put("url", getURL(currentEvent));
-        fields.put("startTime", getStartDate(currentEvent));
-        fields.put("endTime", getEndDate(currentEvent));
-        return fields;
-    }
+//    @Override
+//    protected HashMap<String, String> getMyFields (Node currentEvent)
+//    {
+//        HashMap<String, String> fields = new HashMap<String, String>();
+//        fields.put("title", getTitle(currentEvent));
+//        fields.put("summary", getSummary(currentEvent));
+//        fields.put("url", getURL(currentEvent));
+//        fields.put("startTime", getStartDate(currentEvent));
+//        fields.put("endTime", getEndDate(currentEvent));
+//        return fields;
+//    }
 
 }
