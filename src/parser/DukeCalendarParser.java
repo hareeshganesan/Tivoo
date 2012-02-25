@@ -48,6 +48,14 @@ public class DukeCalendarParser extends Parser {
 		return format(time);
 	}
 
+    public static ParserFactory getFactory() {
+        return new ParserFactory(new DukeCalendarParser());
+    }
+
+    @Override
+    protected Parser newParser() {
+        return new DukeCalendarParser();
+    }
 
 
 }

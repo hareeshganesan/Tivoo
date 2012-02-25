@@ -20,6 +20,7 @@ public class Main {
             model.addConflictWriter("./html/conflicts.html");
             model.addListWriter("./html/listview.html");
             model.perform();
+            
         } catch (TivooException e) {
             System.out.println(e.getMessage());
         }

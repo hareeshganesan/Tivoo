@@ -31,5 +31,13 @@ public class NFLParser extends Parser {
 
 		return getTagValue(currentEvent, "Col9/text()");
 	}
+    public static ParserFactory getFactory() {
+        return new ParserFactory(new NFLParser());
+    }
+
+    @Override
+    protected Parser newParser() {
+        return new NFLParser();
+    }
 
 }

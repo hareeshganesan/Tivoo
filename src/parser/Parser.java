@@ -208,5 +208,7 @@ public abstract class Parser
 
         return eventFormat.format(date);
     }
+    
+    protected abstract Parser newParser();
 
 }
