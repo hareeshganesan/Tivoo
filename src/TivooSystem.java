@@ -49,6 +49,17 @@ public class TivooSystem {
         FilterDecorator filter = new FilterByTimeFrame(startTime, endTime);
         addFilter(filter);
     }
+    
+    public void addFilterByKeywordSorting (String keyword) {
+        FilterByKeywordSorting filter = new FilterByKeywordSorting(keyword);
+        addFilter(filter);
+    }
+    
+    public void addFilterByKeywordInGeneral (String keyword) {
+        FilterByKeywordInGeneral filter = new FilterByKeywordInGeneral(keyword);
+        addFilter(filter);
+    }
+    
 
     private void addFilter(FilterDecorator filter) {
         if (myHeadFilter == null) {

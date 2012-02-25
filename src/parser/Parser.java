@@ -71,7 +71,7 @@ public abstract class Parser
         }
         catch (ParserConfigurationException e)
         {
-            throw new TivooInternalParsingError("DocumentBuilderFactory initialization failed");
+            throw new TivooSystemError("DocumentBuilderFactory initialization failed");
         }
         catch (SAXException e)
         { // why SAXException|IOException doesn't work?
@@ -95,7 +95,7 @@ public abstract class Parser
         }
         catch (XPathExpressionException e)
         {
-            throw new TivooInternalParsingError("getTagNodes failed");
+            throw new TivooSystemError("getTagNodes failed");
         }
         return nodeList;
     }
@@ -126,7 +126,7 @@ public abstract class Parser
         }
         catch (XPathExpressionException e)
         {
-            throw new TivooInternalParsingError("xPath complication failed");
+            throw new TivooSystemError("xPath complication failed");
         }
         return toReturn;
     }

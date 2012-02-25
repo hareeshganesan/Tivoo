@@ -60,22 +60,15 @@ public class FilterByTimeFrame extends FilterDecorator
     public boolean isWithinTimeFrame (Event event)
     {
         DateFormat format = new SimpleDateFormat(Event.dateFormat);
-
         Date eventStartTime;
         Date eventEndTime;
-        try
-        {
+        try {
             eventStartTime = format.parse(event.get("startTime"));
             eventEndTime = format.parse(event.get("endTime"));
             return (eventStartTime.after(myStartTime) && eventEndTime.before(myEndTime));
+        } catch (ParseException e) {
+            throw new TivooSystemError("isWithinTimeFrame failed");
         }
-        catch (ParseException e)
-        {
-            e.printStackTrace();
-        }
-
-        return false;
-
     }
 
 }

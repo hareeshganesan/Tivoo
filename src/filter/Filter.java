@@ -12,4 +12,8 @@ public abstract class Filter {
     public List<Event> getFilteredList() {
         return myFilteredList;
     }
+    
+    public List<Event> getOriginalList() {
+        return myOriginalList;
+    }
 }
