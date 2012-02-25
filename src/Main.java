@@ -17,6 +17,8 @@ public class Main {
             model.addFilterByKeywordInGeneral("Duke");
             model.addFilterByKeywordSorting("title");
             model.addSummaryAndDetailPagesWriter("./html/summary.html");
+            model.addConflictWriter("./html/conflicts.html");
+            model.addListWriter("./html/listview.html");
             model.perform();
         } catch (TivooException e) {
             System.out.println(e.getMessage());

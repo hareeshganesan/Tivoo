@@ -75,6 +75,17 @@ public class TivooSystem {
         Writer writer = new SummaryAndDetailsPagesWriter(directory);
         addWriter(writer);
     }
+    
+    
+    public void addConflictWriter(String directory) {
+        Writer writer = new ConflictWriter(directory);
+        addWriter(writer);
+    }
+    
+    public void addListWriter(String directory) {
+        Writer writer = new ListWriter(directory);
+        addWriter(writer);
+    }
 
     private void addWriter(Writer writer) {
         myWriters.add(writer);
