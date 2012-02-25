@@ -94,10 +94,15 @@ public class TivooSystem {
     }
 
     public void perform() {
+        
         clear();
+        
         parse();
+        
         filter();
+        
         output();
+        
     }
 
     private void parse() {
@@ -122,9 +127,11 @@ public class TivooSystem {
         if (myParsers.size() == 0) {
             throw new TivooNoWriterSelected();
         }
-        System.out.println(myFilteredList.size());
+        
         for (Writer writer:myWriters) {
+            System.out.println("Looping and Writing");
             writer.outputHTML(myFilteredList);
+            System.out.println("output");
         }
     }
 
