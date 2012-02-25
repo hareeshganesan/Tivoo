@@ -2,8 +2,13 @@ package writer;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.*;
-import com.hp.gagawa.java.elements.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import com.hp.gagawa.java.elements.H2;
+import com.hp.gagawa.java.elements.Html;
+import com.hp.gagawa.java.elements.Table;
+import com.hp.gagawa.java.elements.Text;
 import event.Event;
 
 
@@ -52,6 +57,7 @@ public class SummaryAndDetailsPagesWriter extends Writer
 
     public void outputSummaryPage (List<Event> events, String filename)
     {
+
         Html html = initializeHTMLDocument();
 
         String[] days =
@@ -77,6 +83,7 @@ public class SummaryAndDetailsPagesWriter extends Writer
             html.appendChild(new H2().appendChild(dayOfTheWeek));
             html.appendChild(table);
         }
+
         write(html, filename);
     }
 

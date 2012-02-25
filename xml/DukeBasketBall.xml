@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="DukeBasketBall.xsd" generated="2012-02-10T01:15:13">
 <Calendar>
-<Subject>Belmont vs Duke (TV: ESPNU)</Subject>
-<StartDate>11/11/2011</StartDate>
-<StartTime>9:00:00 PM</StartTime>
-<EndDate>11/11/2011</EndDate>
-<EndTime>11:00:00 PM</EndTime>
-<Alldayevent>0</Alldayevent>
-<Reminderonoff>0</Reminderonoff>
-<ReminderDate>11/11/2011</ReminderDate>
-<ReminderTime>3:00:00 AM</ReminderTime>
-<Description>Visit StatSheet.com for more game info: http://statsheet.com/mcb/games/2011/11/11/belmont-76-duke-77</Description>
-<Location>Cameron Indoor Stadium</Location>
-<Priority>Low</Priority>
-<Private>0</Private>
-<Sensitivity>Normal</Sensitivity>
-<Showtimeas>2</Showtimeas>
-</Calendar>
-<Calendar>
 <Subject>Presbyterian vs Duke (TV: ESPNU)</Subject>
 <StartDate>11/12/2011</StartDate>
 <StartTime>4:30:00 PM</StartTime>
@@ -28,6 +11,23 @@
 <ReminderDate>11/11/2011</ReminderDate>
 <ReminderTime>10:30:00 PM</ReminderTime>
 <Description>Visit StatSheet.com for more game info: http://statsheet.com/mcb/games/2011/11/12/presbyterian-55-duke-96</Description>
+<Location>Cameron Indoor Stadium</Location>
+<Priority>Low</Priority>
+<Private>0</Private>
+<Sensitivity>Normal</Sensitivity>
+<Showtimeas>2</Showtimeas>
+</Calendar>
+<Calendar>
+<Subject>Belmont vs Duke (TV: ESPNU)</Subject>
+<StartDate>11/11/2011</StartDate>
+<StartTime>9:00:00 PM</StartTime>
+<EndDate>11/11/2011</EndDate>
+<EndTime>11:00:00 PM</EndTime>
+<Alldayevent>0</Alldayevent>
+<Reminderonoff>0</Reminderonoff>
+<ReminderDate>11/11/2011</ReminderDate>
+<ReminderTime>3:00:00 AM</ReminderTime>
+<Description>Visit StatSheet.com for more game info: http://statsheet.com/mcb/games/2011/11/11/belmont-76-duke-77</Description>
 <Location>Cameron Indoor Stadium</Location>
 <Priority>Low</Priority>
 <Private>0</Private>

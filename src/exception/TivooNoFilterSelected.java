@@ -1,13 +1,17 @@
 package exception;
 
 @SuppressWarnings("serial")
-public class TivooNoFilterSelected extends TivooException{
+public class TivooNoFilterSelected extends TivooException
+{
 
-    public TivooNoFilterSelected() {
+    public TivooNoFilterSelected ()
+    {
         this("");
     }
-    
-    public TivooNoFilterSelected (String message) {
+
+
+    public TivooNoFilterSelected (String message)
+    {
         super(message);
     }
 }

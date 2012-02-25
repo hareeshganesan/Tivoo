@@ -1,13 +1,17 @@
 package exception;
 
 @SuppressWarnings("serial")
-public class TivooUnrecognizedFeed extends TivooException {
+public class TivooUnrecognizedFeed extends TivooException
+{
 
-    public TivooUnrecognizedFeed() {
+    public TivooUnrecognizedFeed ()
+    {
         this("");
     }
-    
-    public TivooUnrecognizedFeed (String message) {
+
+
+    public TivooUnrecognizedFeed (String message)
+    {
         super(message);
     }
 }

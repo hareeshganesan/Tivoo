@@ -1,9 +1,5 @@
 package writer;
 
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
 import com.hp.gagawa.java.elements.Html;
 import com.hp.gagawa.java.elements.Table;
@@ -11,7 +7,6 @@ import com.hp.gagawa.java.elements.Td;
 import com.hp.gagawa.java.elements.Text;
 import com.hp.gagawa.java.elements.Tr;
 import event.Event;
-import writer.Writer;
 
 
 public class ConflictWriter extends Writer
@@ -23,7 +18,6 @@ public class ConflictWriter extends Writer
     }
 
 
-    @SuppressWarnings("unchecked")
     @Override
     public void outputHTML (List<Event> events)
     {
@@ -35,6 +29,7 @@ public class ConflictWriter extends Writer
         {
             if (hasConflict(event, events))
             {
+
                 Tr event_format = new Tr();
 
                 event_format.appendChild((new Td()).appendChild(new Text(event.get("title"))));
@@ -46,29 +41,26 @@ public class ConflictWriter extends Writer
                 table.appendChild(event_format);
             }
         }
+        html.appendChild(table);
         write(html, getMyDirectory());
     }
 
 
     private boolean hasConflict (Event event, List<Event> events)
     {
-        DateFormat format = new SimpleDateFormat(Event.dateFormat);
-        try
+
+        String start = event.get("startTime");
+        String end = event.get("endTime");
+        for (Event other : events)
         {
-            Date start = format.parse(event.get("startTime"));
-            Date end = format.parse(event.get("endTime"));
-            for(Event other : events){
-                if( other != event){
-                    Date otherStart = format.parse(other.get("startTime"));
-                    Date otherEnd = format.parse(other.get("endTime"));
-                    if(end.after(otherStart) || start.before(otherEnd))
-                        return true;
-                }
+            if (other != event)
+            {
+                String otherStart = other.get("startTime");
+                String otherEnd = other.get("endTime");
+                if ((otherStart.compareTo(end) <= 0 && start.compareTo(otherStart) <= 0) ||
+                    (otherStart.compareTo(start) <= 0 && start.compareTo(otherEnd) <= 0)) return true;
+
             }
-        }
-        catch (ParseException e)
-        {
-            e.printStackTrace();
         }
         return false;
     }

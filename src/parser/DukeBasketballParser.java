@@ -1,14 +1,11 @@
 package parser;
 
-import java.util.*;
-import org.w3c.dom.*;
-import event.*;
+import org.w3c.dom.Node;
 
 
 public class DukeBasketballParser extends Parser
 {
-    private final String myOldFormat = "MM/dd/yyyy hh:mm:ss a" ;
-
+    private final String myOldFormat = "MM/dd/yyyy hh:mm:ss a";
 
 
     @Override
@@ -43,7 +40,7 @@ public class DukeBasketballParser extends Parser
         String startDate = getTagValue(currentEvent, "StartDate/text()");
         String startTime = getTagValue(currentEvent, "StartTime/text()");
         String info = startDate + " " + startTime;
-        return reformatDateString(info,myOldFormat);
+        return reformatDateString(info, myOldFormat);
     }
 
 
@@ -52,11 +49,7 @@ public class DukeBasketballParser extends Parser
         String endDate = getTagValue(currentEvent, "EndDate/text()");
         String endTime = getTagValue(currentEvent, "EndTime/text()");
         String info = endDate + " " + endTime;
-        return reformatDateString(info,myOldFormat);
+        return reformatDateString(info, myOldFormat);
     }
-    
-
-
-
 
 }

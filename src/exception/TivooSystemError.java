@@ -1,13 +1,17 @@
 package exception;
 
 @SuppressWarnings("serial")
-public class TivooSystemError extends TivooException{
+public class TivooSystemError extends TivooException
+{
 
-    public TivooSystemError() {
+    public TivooSystemError ()
+    {
         this("");
     }
-    
-    public TivooSystemError (String message) {
+
+
+    public TivooSystemError (String message)
+    {
         super(message);
     }
 
