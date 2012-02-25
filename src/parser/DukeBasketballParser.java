@@ -1,8 +1,5 @@
 package parser;
 
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.*;
 import org.w3c.dom.*;
 import event.*;
@@ -10,6 +7,7 @@ import event.*;
 
 public class DukeBasketballParser extends Parser
 {
+    private final String myOldFormat = "MM/dd/yyyy hh:mm:ss a" ;
 
     public DukeBasketballParser ()
     {
@@ -50,7 +48,7 @@ public class DukeBasketballParser extends Parser
         String startDate = getTagValue(currentEvent, "StartDate/text()");
         String startTime = getTagValue(currentEvent, "StartTime/text()");
         String info = startDate + " " + startTime;
-        return reformatDateString(info);
+        return reformatDateString(info,myOldFormat);
     }
 
 
@@ -59,38 +57,9 @@ public class DukeBasketballParser extends Parser
         String endDate = getTagValue(currentEvent, "EndDate/text()");
         String endTime = getTagValue(currentEvent, "EndTime/text()");
         String info = endDate + " " + endTime;
-        return reformatDateString(info);
+        return reformatDateString(info,myOldFormat);
     }
 
 
-    private String reformatDateString (String info)
-    {
-        DateFormat df = new SimpleDateFormat("MM/dd/yyyy hh:mm:ss a");
-        Date date = new Date();
-        DateFormat eventFormat = new SimpleDateFormat(Event.dateFormat);
-
-        try
-        {
-            date = df.parse(info);
-        }
-        catch (ParseException e)
-        {
-            e.printStackTrace();
-        }
-
-        return eventFormat.format(date);
-    }
-
-
-    protected HashMap<String, String> getMyFields (Node currentEvent)
-    {
-        HashMap<String, String> fields = new HashMap<String, String>();
-        fields.put("title", getTitle(currentEvent));
-        fields.put("summary", getSummary(currentEvent));
-        fields.put("url", getURL(currentEvent));
-        fields.put("startTime", getStartDate(currentEvent));
-        fields.put("endTime", getEndDate(currentEvent));
-        return fields;
-    }
 
 }

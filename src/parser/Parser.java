@@ -2,6 +2,9 @@ package parser;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.*;
 import javax.xml.parsers.*;
 import javax.xml.xpath.*;
@@ -9,7 +12,7 @@ import org.w3c.dom.*;
 import org.xml.sax.SAXException;
 import event.Event;
 import exception.*;
- 
+
 
 public abstract class Parser
 {
@@ -24,9 +27,6 @@ public abstract class Parser
 
 
     protected abstract String getHead ();
-
-
-    protected abstract HashMap<String, String> getMyFields (Node currentEvent);
 
 
     public void parse ()
@@ -47,8 +47,58 @@ public abstract class Parser
     private Event createEvent (Node currentEvent)
     {
 
-        HashMap<String, String> eventFields = getMyFields(currentEvent);
-        return new Event(eventFields);
+        return new Event(getMyFields(currentEvent));
+    }
+
+
+    protected HashMap<String, String> getMyFields (Node currentEvent)
+    {
+        HashMap<String, String> fields = new HashMap<String, String>();
+        fields.put("title", getTitle(currentEvent));
+        fields.put("summary", getSummary(currentEvent));
+        fields.put("url", getURL(currentEvent));
+        fields.put("startTime", getStartDate(currentEvent));
+        fields.put("endTime", getEndDate(currentEvent));
+        return fields;
+    }
+
+
+    /**
+     * Allows for generic events but reduces code duplication so the parser has
+     * default behaviour
+     * 
+     * @param currentEvent
+     * @return
+     */
+
+    protected String getTitle (Node currentEvent)
+    {
+
+        return "no such field";
+    }
+
+
+    protected String getSummary (Node currentEvent)
+    {
+        return "no such field";
+    }
+
+
+    protected String getURL (Node currentEvent)
+    {
+        return "no such field";
+    }
+
+
+    protected String getStartDate (Node currentEvent)
+    {
+        return "no such field";
+    }
+
+
+    protected String getEndDate (Node currentEvent)
+    {
+        return "no such field";
     }
 
 
@@ -132,6 +182,23 @@ public abstract class Parser
     }
 
 
+    protected String reformatDateString (String info, String oldFormat)
+    {
+        DateFormat df = new SimpleDateFormat(oldFormat);
+        Date date = new Date();
+        DateFormat eventFormat = new SimpleDateFormat(Event.dateFormat);
 
+        try
+        {
+            date = df.parse(info);
+        }
+        catch (ParseException e)
+        {
+            //TODO get a better exception
+            e.printStackTrace();
+        }
+
+        return eventFormat.format(date);
+    }
 
 }
