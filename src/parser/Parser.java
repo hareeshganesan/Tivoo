@@ -9,7 +9,7 @@ import org.w3c.dom.*;
 import org.xml.sax.SAXException;
 import event.Event;
 import exception.*;
-
+ 
 
 public abstract class Parser
 {
