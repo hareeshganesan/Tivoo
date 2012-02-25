@@ -19,10 +19,10 @@ public class TivooSystem {
 
     static {
 
-        myMap = new HashMap<String,Parser>();
     	myMap.put("DukeBasketBall.xml", new DukeBasketballParser());
     	myMap.put("dukecal.xml", new DukeCalendarParser()); 
     	myMap.put("googlecal.xml", new GoogleCalenderParser());
+    	myMap.put("NFL.xml",new NFLParser());
    }
 
     public TivooSystem() {
