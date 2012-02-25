@@ -1,13 +1,17 @@
 package exception;
 
 @SuppressWarnings("serial")
-public class TivooInvalidOutputDirectory extends TivooException{
+public class TivooInvalidOutputDirectory extends TivooException
+{
 
-    public TivooInvalidOutputDirectory() {
+    public TivooInvalidOutputDirectory ()
+    {
         this("");
     }
-    
-    public TivooInvalidOutputDirectory (String message) {
+
+
+    public TivooInvalidOutputDirectory (String message)
+    {
         super(message);
     }
 

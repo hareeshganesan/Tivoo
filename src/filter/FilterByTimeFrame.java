@@ -3,10 +3,11 @@ package filter;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.*;
-
+import java.util.Date;
+import java.util.List;
 import event.Event;
-import exception.*;
+import exception.TivooIllegalDateFormat;
+import exception.TivooSystemError;
 
 
 public class FilterByTimeFrame extends FilterDecorator
@@ -14,7 +15,7 @@ public class FilterByTimeFrame extends FilterDecorator
 
     private static String defaultDateFormatString = "MM/dd/yy hh:mm:ss a";
     private static DateFormat defaultDateFormat =
-            new SimpleDateFormat(defaultDateFormatString);
+        new SimpleDateFormat(defaultDateFormatString);
 
     private Date myStartTime, myEndTime;
 
@@ -62,11 +63,14 @@ public class FilterByTimeFrame extends FilterDecorator
         DateFormat format = new SimpleDateFormat(Event.dateFormat);
         Date eventStartTime;
         Date eventEndTime;
-        try {
+        try
+        {
             eventStartTime = format.parse(event.get("startTime"));
             eventEndTime = format.parse(event.get("endTime"));
             return (eventStartTime.after(myStartTime) && eventEndTime.before(myEndTime));
-        } catch (ParseException e) {
+        }
+        catch (ParseException e)
+        {
             throw new TivooSystemError("isWithinTimeFrame failed");
         }
     }

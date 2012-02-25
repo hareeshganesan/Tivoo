@@ -1,31 +1,53 @@
 import java.io.File;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import parser.DukeBasketballParser;
+import parser.DukeCalendarParser;
+import parser.GoogleCalenderParser;
+import parser.NFLParser;
+import parser.Parser;
+import writer.ConflictWriter;
+import writer.ListWriter;
+import writer.SummaryAndDetailsPagesWriter;
+import writer.Writer;
+import event.Event;
+import exception.TivooNoFilterSelected;
+import exception.TivooNoParserSelected;
+import exception.TivooNoWriterSelected;
+import exception.TivooUnrecognizedFeed;
+import filter.FilterByKeyword;
+import filter.FilterByKeywordInGeneral;
+import filter.FilterByKeywordSorting;
+import filter.FilterByTimeFrame;
+import filter.FilterDecorator;
 
-import event.*;
-import exception.*;
-import filter.*;
-import parser.*;
-import writer.*;
 
-
-public class TivooSystem {
+public class TivooSystem
+{
 
     private List<Event> myOriginalList;
     private List<Event> myFilteredList;
     private Set<Writer> myWriters;
     private Set<Parser> myParsers;
     private FilterDecorator myHeadFilter;
-    private static HashMap<String,Parser> myMap=new HashMap<String,Parser>();
+    private static HashMap<String, Parser> myMap =
+        new HashMap<String, Parser>();
 
-    static {
+    static
+    {
 
-    	myMap.put("DukeBasketBall.xml", new DukeBasketballParser());
-    	myMap.put("dukecal.xml", new DukeCalendarParser()); 
-    	myMap.put("googlecal.xml", new GoogleCalenderParser());
-    	myMap.put("NFL.xml",new NFLParser());
-   }
+        myMap.put("DukeBasketBall.xml", new DukeBasketballParser());
+        myMap.put("dukecal.xml", new DukeCalendarParser());
+        myMap.put("googlecal.xml", new GoogleCalenderParser());
+        myMap.put("NFL.xml", new NFLParser());
+    }
 
-    public TivooSystem() {
+
+    public TivooSystem ()
+    {
         myOriginalList = new ArrayList<Event>();
         myFilteredList = new ArrayList<Event>();
         myParsers = new HashSet<Parser>();
@@ -33,110 +55,148 @@ public class TivooSystem {
         myHeadFilter = null;
     }
 
-    public void loadFile (File file) {  
-        try {
-            Parser parser =  myMap.get(file.getName());
+
+    public void loadFile (File file)
+    {
+        try
+        {
+            Parser parser = myMap.get(file.getName());
             parser.loadFile(file);
-            myParsers.add(parser);}
-        catch (NullPointerException e) {
+            myParsers.add(parser);
+        }
+        catch (NullPointerException e)
+        {
             throw new TivooUnrecognizedFeed();
         }
     }
 
-    public void addFilterByKeyword (String keyword) {
+
+    public void addFilterByKeyword (String keyword)
+    {
         FilterDecorator filter = new FilterByKeyword(keyword);
         addFilter(filter);
     }
 
-    public void addFilterByTimeFrame (String startTime, String endTime) {
+
+    public void addFilterByTimeFrame (String startTime, String endTime)
+    {
         FilterDecorator filter = new FilterByTimeFrame(startTime, endTime);
         addFilter(filter);
     }
-    
-    public void addFilterByKeywordSorting (String keyword) {
+
+
+    public void addFilterByKeywordSorting (String keyword)
+    {
         FilterByKeywordSorting filter = new FilterByKeywordSorting(keyword);
         addFilter(filter);
     }
-    
-    public void addFilterByKeywordInGeneral (String keyword) {
+
+
+    public void addFilterByKeywordInGeneral (String keyword)
+    {
         FilterByKeywordInGeneral filter = new FilterByKeywordInGeneral(keyword);
         addFilter(filter);
     }
-    
 
-    private void addFilter(FilterDecorator filter) {
-        if (myHeadFilter == null) {
+
+    private void addFilter (FilterDecorator filter)
+    {
+        if (myHeadFilter == null)
+        {
             myHeadFilter = filter;
         }
-        else {
+        else
+        {
             filter.appendFilter(myHeadFilter);
             myHeadFilter = filter;
         }
     }
 
-    public void addSummaryAndDetailPagesWriter(String directory) {
+
+    public void addSummaryAndDetailPagesWriter (String directory)
+    {
         Writer writer = new SummaryAndDetailsPagesWriter(directory);
         addWriter(writer);
     }
-    
-    
-    public void addConflictWriter(String directory) {
+
+
+    public void addConflictWriter (String directory)
+    {
         Writer writer = new ConflictWriter(directory);
         addWriter(writer);
     }
-    
-    public void addListWriter(String directory) {
+
+
+    public void addListWriter (String directory)
+    {
         Writer writer = new ListWriter(directory);
         addWriter(writer);
     }
 
-    private void addWriter(Writer writer) {
+
+    private void addWriter (Writer writer)
+    {
         myWriters.add(writer);
     }
 
-    public void perform() {
-        
+
+    public void perform ()
+    {
+
         clear();
-        
+
         parse();
-        
+
         filter();
-        
+
         output();
-        
+
     }
 
-    private void parse() {
-        if (myParsers.size() == 0) {
+
+    private void parse ()
+    {
+        if (myParsers.size() == 0)
+        {
             throw new TivooNoParserSelected();
         }
-        for (Parser parser: myParsers) {
+        for (Parser parser : myParsers)
+        {
             parser.parse();
             myOriginalList.addAll(parser.getEventList());
         }
     }
 
-    private void filter() {
-        if (myHeadFilter == null) {
+
+    private void filter ()
+    {
+        if (myHeadFilter == null)
+        {
             throw new TivooNoFilterSelected();
         }
         myHeadFilter.filter(myOriginalList);
         myFilteredList = myHeadFilter.getFilteredList();
     }
 
-    private void output() {
-        if (myParsers.size() == 0) {
+
+    private void output ()
+    {
+        if (myParsers.size() == 0)
+        {
             throw new TivooNoWriterSelected();
         }
-        
-        for (Writer writer:myWriters) {
+
+        for (Writer writer : myWriters)
+        {
             System.out.println("Looping and Writing");
             writer.outputHTML(myFilteredList);
             System.out.println("output");
         }
     }
 
-    private void clear() {
+
+    private void clear ()
+    {
         myOriginalList = new ArrayList<Event>();
         myFilteredList = new ArrayList<Event>();
     }

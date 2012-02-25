@@ -1,13 +1,17 @@
 package exception;
 
 @SuppressWarnings("serial")
-public class TivooNoParserSelected extends TivooException{
+public class TivooNoParserSelected extends TivooException
+{
 
-    public TivooNoParserSelected() {
+    public TivooNoParserSelected ()
+    {
         this("");
     }
-    
-    public TivooNoParserSelected (String message) {
+
+
+    public TivooNoParserSelected (String message)
+    {
         super(message);
     }
 }
