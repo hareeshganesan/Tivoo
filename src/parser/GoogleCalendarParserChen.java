@@ -5,6 +5,7 @@ import java.util.HashMap;
 import org.w3c.dom.Node;
 
 public class GoogleCalendarParserChen extends Parser {
+	private String myRepeatPeriod = "none";
 	private static HashMap<String, String> myMonth = new HashMap<String, String>();
 	static {
 		myMonth.put("jan", "01");
@@ -28,6 +29,7 @@ public class GoogleCalendarParserChen extends Parser {
 	}
 
 	protected String getTitle(Node currentEvent) {
+		System.out.println(getTagValue(currentEvent, "title/text()"));//
 		return getTagValue(currentEvent, "title/text()");
 	}
 
@@ -36,29 +38,62 @@ public class GoogleCalendarParserChen extends Parser {
 	}
 
 	protected String getStartDate(Node currentEvent) {
-		String toparse=getTagValue(currentEvent, "summary/text()");
-		return parsetime(toparse,"start");
-	}
-	
-	protected String getEndDate(Node currentEvent) {
-		String toparse=getTagValue(currentEvent, "summary/text()");
-		return parsetime(toparse,"end");
+		try{
+		String toparse = getTagValue(currentEvent, "summary/text()");
+		System.out.println(parseTime(toparse, "start"));//
+		return parseTime(toparse, "start");
+		
+		}
+		catch(java.lang.StringIndexOutOfBoundsException e){
+			System.out.println("invalid format !");
+			System.out.println(getTagValue(currentEvent, "title/text()"));
+		}
+		return "INVALID";
 	}
 
-	private String parsetime(String s,String startorend) {
-		int offset=5;
+	protected String getEndDate(Node currentEvent) {
+		try{
+		String toparse = getTagValue(currentEvent, "summary/text()");
+		System.out.println(parseTime(toparse, "end"));//
+		return parseTime(toparse, "end");}
+		catch(java.lang.StringIndexOutOfBoundsException e){
+			System.out.println("invalid format !");
+			System.out.println(getTagValue(currentEvent, "title/text()"));
+		}
+		return "INVALID";
+	}
+
+	protected String getRepeatPeriod(Node currentEvent) {
+		return myRepeatPeriod;
+	}
+
+	private String parseTime(String s, String startorend) {
+		if (s.startsWith("Recurring"))
+			return recurringTime(s, startorend);
+		return simpleTime(s, startorend);
+	}
+
+	private String recurringTime(String s, String startorend) {
+		myRepeatPeriod="weekly";
+		return "";
+	}
+
+	private String simpleTime(String s, String startorend) {
+		myRepeatPeriod="none";
+		int offset = 5;
 		if (startorend.equalsIgnoreCase("end"))
-			offset+=2;
+			offset += 2;
 		int start = s.indexOf(":");
 		int end = s.indexOf("&");
 		s = s.substring(start + 1, end);
 		s = s.replaceAll(",", "");
 		String[] timeElement = s.split(" ");
-     return timeElement[4] + "-" + myMonth.get(timeElement[2].toLowerCase()) + "-"
-				+ twodigitnumber(timeElement[3]) + " " + time(timeElement[offset]);
+		return timeElement[4] + "-" + myMonth.get(timeElement[2].toLowerCase())
+				+ "-" + twoDigitNumber(timeElement[3]) + " "
+				+ time(timeElement[offset]);
 	}
 
-	private String twodigitnumber(String number) {
+	private String twoDigitNumber(String number) {
 		if (number.length() < 2)
 			return "0" + number;
 		return number;
@@ -76,11 +111,11 @@ public class GoogleCalendarParserChen extends Parser {
 		if (s.contains(":")) {
 			String[] tmp = s.split(":");
 			int hour = Integer.parseInt(tmp[0]) + offset;
-			hourminute[0] = twodigitnumber("" + hour);
-			hourminute[1] = twodigitnumber(tmp[1]);
+			hourminute[0] = twoDigitNumber("" + hour);
+			hourminute[1] = twoDigitNumber(tmp[1]);
 		} else {
 			int hour = Integer.parseInt(s) + offset;
-			hourminute[0] = twodigitnumber("" + hour);
+			hourminute[0] = twoDigitNumber("" + hour);
 			hourminute[1] = "00";
 		}
 		return hourminute[0] + ":" + hourminute[1] + ":00";

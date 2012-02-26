@@ -28,8 +28,10 @@ public class ParserTest
             String out = "Title: " + event.get("title") + "\n";
             out += "Summary: " + event.get("summary") + "\n";
             out += "Url: " + event.get("url") + "\n";
-            out += "StartTime " + event.get("startTime") + "\n";
-            out += "endTime " + event.get("endTime") + "\n\n";
+            out += "StartTime: " + event.get("startTime") + "\n";
+            out += "endTime: " + event.get("endTime") + "\n";
+            out += "repeat: "+event.get("repeat")+"\n------------------------------------\n";
+           
             fw.write(out);
             fw.flush();
         }
