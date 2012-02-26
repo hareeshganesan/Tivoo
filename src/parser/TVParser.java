@@ -5,6 +5,7 @@ import org.w3c.dom.Node;
 
 public class TVParser extends Parser
 {
+   private final String myOldFormat = "yyyyMMddHHmmss ZZZZZ";
 
     @Override
     protected String getHead ()
@@ -27,19 +28,21 @@ public class TVParser extends Parser
 
     protected String getURL (Node currentEvent)
     {
-        return getTagValue(currentEvent, "getAttribute(channel)");
+        return getTagValue(currentEvent, "/attribute::channel");
     }
 
 
     protected String getStartDate (Node currentEvent)
     {
-        return null;
+        String result = getTagValue(currentEvent,"/attribute::start");
+        return reformatDateString(result,myOldFormat);
     }
 
 
     protected String getEndDate (Node currentEvent)
     {
-        return null;
+        String result = getTagValue(currentEvent,"/attribute::stop");
+        return reformatDateString(result,myOldFormat);
     }
 
 }
