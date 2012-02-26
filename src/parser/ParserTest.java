@@ -16,8 +16,8 @@ public class ParserTest
         FileWriter fw = new FileWriter("Test.txt");
 
         /////////////////////////////////////////
-        Parser p = new DukeCalendarParser();
-        File file = new File("./xml/dukecal.xml");
+        Parser p = new GoogleCalendarParserChen();
+        File file = new File("./xml/googlecal.xml");
         ////////////////////////////////////////
 
         p.loadFile(file);
