@@ -26,7 +26,6 @@ public class ListWriter extends Writer
     {
         Collections.sort(events, new Comparator<Event>()
         {
-            @Override
             public int compare (Event e1, Event e2)
             {
                 return e1.get("startTime").compareTo(e2.get("startTime"));
