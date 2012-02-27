@@ -28,7 +28,7 @@ public class TivooSystem
 
         myMap.put("DukeBasketBall.xml", new DukeBasketballParser());
         myMap.put("dukecal.xml", new DukeCalendarParser());
-        myMap.put("googlecal.xml", new GoogleCalenderParser());
+        myMap.put("googlecal.xml", new GoogleCalendarParserChen());
         myMap.put("NFL.xml", new NFLParser());
         myMap.put("tv.xml", new TVParser());
         myMap.put("TVTest.xml", new TVParser());
