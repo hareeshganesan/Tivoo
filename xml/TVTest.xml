@@ -1,0 +1,4514 @@
+<tv source-info-url="http://www.schedulesdirect.org/" source-info-name="Schedules Direct" generator-info-name="XMLTV/$Id: tv_grab_na_dd.in,v 1.82 2010/09/04 10:28:44 dekarl Exp $" generator-info-url="http://www.xmltv.org/">
+  <channel id="I10021.labs.zap2it.com">
+    <display-name>622 AMC</display-name>
+    <display-name>622 AMC NC32461:X</display-name>
+    <display-name>622</display-name>
+    <display-name>AMC</display-name>
+    <display-name>AMC</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I10035.labs.zap2it.com">
+    <display-name>306 AETV</display-name>
+    <display-name>306 AETV NC32461:X</display-name>
+    <display-name>306</display-name>
+    <display-name>AETV</display-name>
+    <display-name>A &amp; E Network</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I10051.labs.zap2it.com">
+    <display-name>308 BET</display-name>
+    <display-name>308 BET NC32461:X</display-name>
+    <display-name>308</display-name>
+    <display-name>BET</display-name>
+    <display-name>BET</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I10057.labs.zap2it.com">
+    <display-name>307 BRAVO</display-name>
+    <display-name>307 BRAVO NC32461:X</display-name>
+    <display-name>307</display-name>
+    <display-name>BRAVO</display-name>
+    <display-name>Bravo</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I10093.labs.zap2it.com">
+    <display-name>215 ABCF</display-name>
+    <display-name>215 ABCF NC32461:X</display-name>
+    <display-name>215</display-name>
+    <display-name>ABCF</display-name>
+    <display-name>ABC Family</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I10120.labs.zap2it.com">
+    <display-name>715 MAX</display-name>
+    <display-name>715 MAX NC32461:X</display-name>
+    <display-name>715</display-name>
+    <display-name>MAX</display-name>
+    <display-name>CineMAX</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I10121.labs.zap2it.com">
+    <display-name>717 MOMAX</display-name>
+    <display-name>717 MOMAX NC32461:X</display-name>
+    <display-name>717</display-name>
+    <display-name>MOMAX</display-name>
+    <display-name>MoreMAX</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I10138.labs.zap2it.com">
+    <display-name>460 CMTV</display-name>
+    <display-name>460 CMTV NC32461:X</display-name>
+    <display-name>460</display-name>
+    <display-name>CMTV</display-name>
+    <display-name>Country Music Television</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I10139.labs.zap2it.com">
+    <display-name>407 CNBC</display-name>
+    <display-name>407 CNBC NC32461:X</display-name>
+    <display-name>407</display-name>
+    <display-name>CNBC</display-name>
+    <display-name>CNBC</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I10142.labs.zap2it.com">
+    <display-name>400 CNN</display-name>
+    <display-name>400 CNN NC32461:X</display-name>
+    <display-name>400</display-name>
+    <display-name>CNN</display-name>
+    <display-name>Cable News Network</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I10145.labs.zap2it.com">
+    <display-name>401 HLN</display-name>
+    <display-name>401 HLN NC32461:X</display-name>
+    <display-name>401</display-name>
+    <display-name>HLN</display-name>
+    <display-name>HLN (Formerly Headline News)</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I10149.labs.zap2it.com">
+    <display-name>304 COMEDY</display-name>
+    <display-name>304 COMEDY NC32461:X</display-name>
+    <display-name>304</display-name>
+    <display-name>COMEDY</display-name>
+    <display-name>Comedy Central</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I10153.labs.zap2it.com">
+    <display-name>313 TRUTV</display-name>
+    <display-name>313 TRUTV NC32461:X</display-name>
+    <display-name>313</display-name>
+    <display-name>TRUTV</display-name>
+    <display-name>truTV</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I10161.labs.zap2it.com">
+    <display-name>415 CSPAN</display-name>
+    <display-name>415 CSPAN NC32461:X</display-name>
+    <display-name>415</display-name>
+    <display-name>CSPAN</display-name>
+    <display-name>CSPAN</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I10162.labs.zap2it.com">
+    <display-name>416 CSPAN2</display-name>
+    <display-name>416 CSPAN2 NC32461:X</display-name>
+    <display-name>416</display-name>
+    <display-name>CSPAN2</display-name>
+    <display-name>CSPAN2</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I10171.labs.zap2it.com">
+    <display-name>200 DISN</display-name>
+    <display-name>200 DISN NC32461:X</display-name>
+    <display-name>200</display-name>
+    <display-name>DISN</display-name>
+    <display-name>Disney Channel</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I10178.labs.zap2it.com">
+    <display-name>635 ENCORE</display-name>
+    <display-name>635 ENCORE NC32461:X</display-name>
+    <display-name>635</display-name>
+    <display-name>ENCORE</display-name>
+    <display-name>Encore</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I10179.labs.zap2it.com">
+    <display-name>500 ESPN</display-name>
+    <display-name>500 ESPN NC32461:X</display-name>
+    <display-name>500</display-name>
+    <display-name>ESPN</display-name>
+    <display-name>ESPN</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I10183.labs.zap2it.com">
+    <display-name>280 EWTN</display-name>
+    <display-name>280 EWTN NC32461:X</display-name>
+    <display-name>280</display-name>
+    <display-name>EWTN</display-name>
+    <display-name>Eternal Word Television Network</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I10201.labs.zap2it.com">
+    <display-name>632 FLIX</display-name>
+    <display-name>632 FLIX NC32461:X</display-name>
+    <display-name>632</display-name>
+    <display-name>FLIX</display-name>
+    <display-name>Flix</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I10222.labs.zap2it.com">
+    <display-name>801 GALA</display-name>
+    <display-name>801 GALA NC32461:X</display-name>
+    <display-name>801</display-name>
+    <display-name>GALA</display-name>
+    <display-name>Galavision Cable Network</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I10239.labs.zap2it.com">
+    <display-name>800 TELE</display-name>
+    <display-name>800 TELE NC32461:X</display-name>
+    <display-name>800</display-name>
+    <display-name>TELE</display-name>
+    <display-name>Telemundo Television Network</display-name>
+    <display-name>Network</display-name>
+  </channel>
+  <channel id="I10240.labs.zap2it.com">
+    <display-name>700 HBO</display-name>
+    <display-name>700 HBO NC32461:X</display-name>
+    <display-name>700</display-name>
+    <display-name>HBO</display-name>
+    <display-name>HBO</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I10241.labs.zap2it.com">
+    <display-name>702 HBO2</display-name>
+    <display-name>702 HBO2 NC32461:X</display-name>
+    <display-name>702</display-name>
+    <display-name>HBO2</display-name>
+    <display-name>HBO2</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I10242.labs.zap2it.com">
+    <display-name>703 HB2P</display-name>
+    <display-name>703 HB2P NC32461:X</display-name>
+    <display-name>703</display-name>
+    <display-name>HB2P</display-name>
+    <display-name>HBO2 (Pacific)</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I10243.labs.zap2it.com">
+    <display-name>706 HBOSIG</display-name>
+    <display-name>706 HBOSIG NC32461:X</display-name>
+    <display-name>706</display-name>
+    <display-name>HBOSIG</display-name>
+    <display-name>HBO Signature</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I10244.labs.zap2it.com">
+    <display-name>701 HBOP</display-name>
+    <display-name>701 HBOP NC32461:X</display-name>
+    <display-name>701</display-name>
+    <display-name>HBOP</display-name>
+    <display-name>HBO (Pacific)</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I10269.labs.zap2it.com">
+    <display-name>371 HSN</display-name>
+    <display-name>371 HSN NC32461:X</display-name>
+    <display-name>371</display-name>
+    <display-name>HSN</display-name>
+    <display-name>Home Shopping Network</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I10918.labs.zap2it.com">
+    <display-name>321 LIFE</display-name>
+    <display-name>321 LIFE NC32461:X</display-name>
+    <display-name>321</display-name>
+    <display-name>LIFE</display-name>
+    <display-name>Lifetime</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I10986.labs.zap2it.com">
+    <display-name>450 MTV</display-name>
+    <display-name>450 MTV NC32461:X</display-name>
+    <display-name>450</display-name>
+    <display-name>MTV</display-name>
+    <display-name>MTV - Music Television</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I10989.labs.zap2it.com">
+    <display-name>305 E</display-name>
+    <display-name>305 E NC32461:X</display-name>
+    <display-name>305</display-name>
+    <display-name>E</display-name>
+    <display-name>E! Entertainment Television</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I11006.labs.zap2it.com">
+    <display-name>205 NIK</display-name>
+    <display-name>205 NIK NC32461:X</display-name>
+    <display-name>205</display-name>
+    <display-name>NIK</display-name>
+    <display-name>Nickelodeon</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I11066.labs.zap2it.com">
+    <display-name>281 INSP</display-name>
+    <display-name>281 INSP NC32461:X</display-name>
+    <display-name>281</display-name>
+    <display-name>INSP</display-name>
+    <display-name>The Inspiration Network</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I11069.labs.zap2it.com">
+    <display-name>370 QVC</display-name>
+    <display-name>370 QVC NC32461:X</display-name>
+    <display-name>370</display-name>
+    <display-name>QVC</display-name>
+    <display-name>QVC</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I11097.labs.zap2it.com">
+    <display-name>315 SYFY</display-name>
+    <display-name>315 SYFY NC32461:X</display-name>
+    <display-name>315</display-name>
+    <display-name>SYFY</display-name>
+    <display-name>Syfy</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I11115.labs.zap2it.com">
+    <display-name>728 SHOW</display-name>
+    <display-name>728 SHOW NC32461:X</display-name>
+    <display-name>728</display-name>
+    <display-name>SHOW</display-name>
+    <display-name>Showtime</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I11116.labs.zap2it.com">
+    <display-name>730 SHO2</display-name>
+    <display-name>730 SHO2 NC32461:X</display-name>
+    <display-name>730</display-name>
+    <display-name>SHO2</display-name>
+    <display-name>SHO 2</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I11117.labs.zap2it.com">
+    <display-name>729 SHOWP</display-name>
+    <display-name>729 SHOWP NC32461:X</display-name>
+    <display-name>729</display-name>
+    <display-name>SHOWP</display-name>
+    <display-name>Showtime (Pacific)</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I11150.labs.zap2it.com">
+    <display-name>250 DSC</display-name>
+    <display-name>250 DSC NC32461:X</display-name>
+    <display-name>250</display-name>
+    <display-name>DSC</display-name>
+    <display-name>The Discovery Channel</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I11158.labs.zap2it.com">
+    <display-name>258 TLC</display-name>
+    <display-name>258 TLC NC32461:X</display-name>
+    <display-name>258</display-name>
+    <display-name>TLC</display-name>
+    <display-name>The Learning Channel</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I11160.labs.zap2it.com">
+    <display-name>745 TMC</display-name>
+    <display-name>745 TMC NC32461:X</display-name>
+    <display-name>745</display-name>
+    <display-name>TMC</display-name>
+    <display-name>The Movie Channel</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I11163.labs.zap2it.com">
+    <display-name>310 SPIKETV</display-name>
+    <display-name>310 SPIKETV NC32461:X</display-name>
+    <display-name>310</display-name>
+    <display-name>SPIKETV</display-name>
+    <display-name>SPIKE TV</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I11164.labs.zap2it.com">
+    <display-name>301 TNT</display-name>
+    <display-name>301 TNT NC32461:X</display-name>
+    <display-name>301</display-name>
+    <display-name>TNT</display-name>
+    <display-name>Turner Network TV</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I11180.labs.zap2it.com">
+    <display-name>354 TRAV</display-name>
+    <display-name>354 TRAV NC32461:X</display-name>
+    <display-name>354</display-name>
+    <display-name>TRAV</display-name>
+    <display-name>The Travel Channel</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I11187.labs.zap2it.com">
+    <display-name>418 TWC</display-name>
+    <display-name>418 TWC NC32461:X</display-name>
+    <display-name>418</display-name>
+    <display-name>TWC</display-name>
+    <display-name>The Weather Channel</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I11207.labs.zap2it.com">
+    <display-name>300 USA</display-name>
+    <display-name>300 USA NC32461:X</display-name>
+    <display-name>300</display-name>
+    <display-name>USA</display-name>
+    <display-name>USA Network</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I11211.labs.zap2it.com">
+    <display-name>771 IN1</display-name>
+    <display-name>771 IN1 NC32461:X</display-name>
+    <display-name>771</display-name>
+    <display-name>IN1</display-name>
+    <display-name>iN Demand 1</display-name>
+    <display-name>(AO) Pay-Per-View</display-name>
+  </channel>
+  <channel id="I11218.labs.zap2it.com">
+    <display-name>454 VH1</display-name>
+    <display-name>454 VH1 NC32461:X</display-name>
+    <display-name>454</display-name>
+    <display-name>VH1</display-name>
+    <display-name>VH1 - Video Hits One</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I11221.labs.zap2it.com">
+    <display-name>218 HALL</display-name>
+    <display-name>218 HALL NC32461:X</display-name>
+    <display-name>218</display-name>
+    <display-name>HALL</display-name>
+    <display-name>Hallmark Channel</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I11289.labs.zap2it.com">
+    <display-name>168 WAUGLP</display-name>
+    <display-name>168 WAUGLP NC32461:X</display-name>
+    <display-name>168</display-name>
+    <display-name>68 WAUGLP fcc</display-name>
+    <display-name>WAUGLP</display-name>
+    <display-name>WAUG</display-name>
+    <display-name>Low Power</display-name>
+  </channel>
+  <channel id="I11604.labs.zap2it.com">
+    <display-name>11 WUVC</display-name>
+    <display-name>11 WUVC NC32461:X</display-name>
+    <display-name>11</display-name>
+    <display-name>40 WUVC fcc</display-name>
+    <display-name>WUVC</display-name>
+    <display-name>WUVC</display-name>
+    <display-name>Univision (SI) Affiliate</display-name>
+  </channel>
+  <channel id="I11640.labs.zap2it.com">
+    <display-name>10 WLFL</display-name>
+    <display-name>10 WLFL NC32461:X</display-name>
+    <display-name>10</display-name>
+    <display-name>22 WLFL fcc</display-name>
+    <display-name>WLFL</display-name>
+    <display-name>WLFL</display-name>
+    <display-name>CW Affiliate</display-name>
+  </channel>
+  <channel id="I11809.labs.zap2it.com">
+    <display-name>105 WRAL</display-name>
+    <display-name>105 WRAL NC32461:X</display-name>
+    <display-name>105</display-name>
+    <display-name>5 WRAL fcc</display-name>
+    <display-name>WRAL</display-name>
+    <display-name>WRAL</display-name>
+    <display-name>CBS Affiliate</display-name>
+  </channel>
+  <channel id="I11813.labs.zap2it.com">
+    <display-name>12 WRDC</display-name>
+    <display-name>12 WRDC NC32461:X</display-name>
+    <display-name>12</display-name>
+    <display-name>28 WRDC fcc</display-name>
+    <display-name>WRDC</display-name>
+    <display-name>WRDC</display-name>
+    <display-name>MyNetworkTV Affiliate</display-name>
+  </channel>
+  <channel id="I11867.labs.zap2it.com">
+    <display-name>302 TBS</display-name>
+    <display-name>302 TBS NC32461:X</display-name>
+    <display-name>302</display-name>
+    <display-name>TBS</display-name>
+    <display-name>Turner Broadcasting System</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I11910.labs.zap2it.com">
+    <display-name>111 WTVD</display-name>
+    <display-name>111 WTVD NC32461:X</display-name>
+    <display-name>111</display-name>
+    <display-name>11 WTVD fcc</display-name>
+    <display-name>WTVD</display-name>
+    <display-name>WTVD</display-name>
+    <display-name>ABC Affiliate</display-name>
+  </channel>
+  <channel id="I11939.labs.zap2it.com">
+    <display-name>9 WUNC</display-name>
+    <display-name>9 WUNC NC32461:X</display-name>
+    <display-name>9</display-name>
+    <display-name>4 WUNC fcc</display-name>
+    <display-name>WUNC</display-name>
+    <display-name>WUNC North Carolina Public TV</display-name>
+    <display-name>PBS Affiliate</display-name>
+  </channel>
+  <channel id="I12010.labs.zap2it.com">
+    <display-name>2 WNCN</display-name>
+    <display-name>2 WNCN NC32461:X</display-name>
+    <display-name>2</display-name>
+    <display-name>17 WNCN fcc</display-name>
+    <display-name>WNCN</display-name>
+    <display-name>WNCN</display-name>
+    <display-name>NBC Affiliate</display-name>
+  </channel>
+  <channel id="I12131.labs.zap2it.com">
+    <display-name>213 TOON</display-name>
+    <display-name>213 TOON NC32461:X</display-name>
+    <display-name>213</display-name>
+    <display-name>TOON</display-name>
+    <display-name>Cartoon Network</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I12317.labs.zap2it.com">
+    <display-name>22 WRPX</display-name>
+    <display-name>22 WRPX NC32461:X</display-name>
+    <display-name>22</display-name>
+    <display-name>47 WRPX fcc</display-name>
+    <display-name>WRPX</display-name>
+    <display-name>WRPX</display-name>
+    <display-name>ION Affiliate</display-name>
+  </channel>
+  <channel id="I12324.labs.zap2it.com">
+    <display-name>868 TVJPN</display-name>
+    <display-name>868 TVJPN NC32461:X</display-name>
+    <display-name>868</display-name>
+    <display-name>TVJPN</display-name>
+    <display-name>TV Japan</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I12444.labs.zap2it.com">
+    <display-name>501 ESPN2</display-name>
+    <display-name>501 ESPN2 NC32461:X</display-name>
+    <display-name>501</display-name>
+    <display-name>ESPN2</display-name>
+    <display-name>ESPN2</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I12508.labs.zap2it.com">
+    <display-name>716 MAXP</display-name>
+    <display-name>716 MAXP NC32461:X</display-name>
+    <display-name>716</display-name>
+    <display-name>MAXP</display-name>
+    <display-name>CineMAX (Pacific)</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I12510.labs.zap2it.com">
+    <display-name>201 DISNP</display-name>
+    <display-name>201 DISNP NC32461:X</display-name>
+    <display-name>201</display-name>
+    <display-name>DISNP</display-name>
+    <display-name>Disney Channel (Pacific)</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I12574.labs.zap2it.com">
+    <display-name>351 FOOD</display-name>
+    <display-name>351 FOOD NC32461:X</display-name>
+    <display-name>351</display-name>
+    <display-name>FOOD</display-name>
+    <display-name>Food Network</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I12719.labs.zap2it.com">
+    <display-name>750 STARZ</display-name>
+    <display-name>750 STARZ NC32461:X</display-name>
+    <display-name>750</display-name>
+    <display-name>STARZ</display-name>
+    <display-name>Starz</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I12750.labs.zap2it.com">
+    <display-name>844 SUR</display-name>
+    <display-name>844 SUR NC32461:X</display-name>
+    <display-name>844</display-name>
+    <display-name>SUR</display-name>
+    <display-name>Canal Sur</display-name>
+    <display-name>Latin American Satellite</display-name>
+  </channel>
+  <channel id="I12852.labs.zap2it.com">
+    <display-name>621 TCM</display-name>
+    <display-name>621 TCM NC32461:X</display-name>
+    <display-name>621</display-name>
+    <display-name>TCM</display-name>
+    <display-name>Turner Classic Movies</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I14075.labs.zap2it.com">
+    <display-name>780 PLAYBOY</display-name>
+    <display-name>780 PLAYBOY NC32461:X</display-name>
+    <display-name>780</display-name>
+    <display-name>PLAYBOY</display-name>
+    <display-name>Playboy TV</display-name>
+    <display-name>(AO) Pay-Per-View</display-name>
+  </channel>
+  <channel id="I14321.labs.zap2it.com">
+    <display-name>312 FX</display-name>
+    <display-name>312 FX NC32461:X</display-name>
+    <display-name>312</display-name>
+    <display-name>FX</display-name>
+    <display-name>FX</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I14755.labs.zap2it.com">
+    <display-name>412 BLOOM</display-name>
+    <display-name>412 BLOOM NC32461:X</display-name>
+    <display-name>412</display-name>
+    <display-name>BLOOM</display-name>
+    <display-name>Bloomberg Business Television</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I14763.labs.zap2it.com">
+    <display-name>873 ASIA</display-name>
+    <display-name>873 ASIA NC32461:X</display-name>
+    <display-name>873</display-name>
+    <display-name>ASIA</display-name>
+    <display-name>TV Asia</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I14764.labs.zap2it.com">
+    <display-name>639 ENCRL</display-name>
+    <display-name>639 ENCRL NC32461:X</display-name>
+    <display-name>639</display-name>
+    <display-name>ENCRL</display-name>
+    <display-name>Encore Love</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I14765.labs.zap2it.com">
+    <display-name>641 ENCRWS</display-name>
+    <display-name>641 ENCRWS NC32461:X</display-name>
+    <display-name>641</display-name>
+    <display-name>ENCRWS</display-name>
+    <display-name>Encore Westerns</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I14766.labs.zap2it.com">
+    <display-name>640 ENCSUS</display-name>
+    <display-name>640 ENCSUS NC32461:X</display-name>
+    <display-name>640</display-name>
+    <display-name>ENCSUS</display-name>
+    <display-name>Encore Suspense</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I14767.labs.zap2it.com">
+    <display-name>286 TBN</display-name>
+    <display-name>286 TBN NC32461:X</display-name>
+    <display-name>286</display-name>
+    <display-name>TBN</display-name>
+    <display-name>Trinity Broadcasting Network</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I14771.labs.zap2it.com">
+    <display-name>263 HISTORY</display-name>
+    <display-name>263 HISTORY NC32461:X</display-name>
+    <display-name>263</display-name>
+    <display-name>HISTORY</display-name>
+    <display-name>History</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I14776.labs.zap2it.com">
+    <display-name>541 OUTD</display-name>
+    <display-name>541 OUTD NC32461:X</display-name>
+    <display-name>541</display-name>
+    <display-name>OUTD</display-name>
+    <display-name>Outdoor Channel</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I14791.labs.zap2it.com">
+    <display-name>838 MUN2</display-name>
+    <display-name>838 MUN2 NC32461:X</display-name>
+    <display-name>838</display-name>
+    <display-name>MUN2</display-name>
+    <display-name>Mun2</display-name>
+    <display-name>Latin American Satellite</display-name>
+  </channel>
+  <channel id="I14870.labs.zap2it.com">
+    <display-name>638 ENCRD</display-name>
+    <display-name>638 ENCRD NC32461:X</display-name>
+    <display-name>638</display-name>
+    <display-name>ENCRD</display-name>
+    <display-name>Encore Drama</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I14871.labs.zap2it.com">
+    <display-name>637 ENCRA</display-name>
+    <display-name>637 ENCRA NC32461:X</display-name>
+    <display-name>637</display-name>
+    <display-name>ENCRA</display-name>
+    <display-name>Encore Action</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I14873.labs.zap2it.com">
+    <display-name>631 IFC</display-name>
+    <display-name>631 IFC NC32461:X</display-name>
+    <display-name>631</display-name>
+    <display-name>IFC</display-name>
+    <display-name>Independent Film Channel</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I14886.labs.zap2it.com">
+    <display-name>642 ENCFAM</display-name>
+    <display-name>642 ENCFAM NC32461:X</display-name>
+    <display-name>642</display-name>
+    <display-name>ENCFAM</display-name>
+    <display-name>Encore Family</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I14897.labs.zap2it.com">
+    <display-name>458 CTRC</display-name>
+    <display-name>458 CTRC NC32461:X</display-name>
+    <display-name>458</display-name>
+    <display-name>CTRC</display-name>
+    <display-name>Centric</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I14899.labs.zap2it.com">
+    <display-name>515 GOLF</display-name>
+    <display-name>515 GOLF NC32461:X</display-name>
+    <display-name>515</display-name>
+    <display-name>GOLF</display-name>
+    <display-name>The Golf Channel</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I14902.labs.zap2it.com">
+    <display-name>350 HGTV</display-name>
+    <display-name>350 HGTV NC32461:X</display-name>
+    <display-name>350</display-name>
+    <display-name>HGTV</display-name>
+    <display-name>Home &amp; Garden Television</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I14909.labs.zap2it.com">
+    <display-name>317 GSN</display-name>
+    <display-name>317 GSN NC32461:X</display-name>
+    <display-name>317</display-name>
+    <display-name>GSN</display-name>
+    <display-name>GSN</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I14929.labs.zap2it.com">
+    <display-name>456 FUSE</display-name>
+    <display-name>456 FUSE NC32461:X</display-name>
+    <display-name>456</display-name>
+    <display-name>FUSE</display-name>
+    <display-name>Fuse</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I14948.labs.zap2it.com">
+    <display-name>372 SHOPNBC</display-name>
+    <display-name>372 SHOPNBC NC32461:X</display-name>
+    <display-name>372</display-name>
+    <display-name>SHOPNBC</display-name>
+    <display-name>ShopNBC</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I14968.labs.zap2it.com">
+    <display-name>864 FILIP</display-name>
+    <display-name>864 FILIP NC32461:X</display-name>
+    <display-name>864</display-name>
+    <display-name>FILIP</display-name>
+    <display-name>The Filipino Channel</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I14988.labs.zap2it.com">
+    <display-name>630 FMC</display-name>
+    <display-name>630 FMC NC32461:X</display-name>
+    <display-name>630</display-name>
+    <display-name>FMC</display-name>
+    <display-name>Fox Movie Channel</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I15362.labs.zap2it.com">
+    <display-name>5 WRAY</display-name>
+    <display-name>5 WRAY NC32461:X</display-name>
+    <display-name>5</display-name>
+    <display-name>30 WRAY fcc</display-name>
+    <display-name>WRAY</display-name>
+    <display-name>WRAY</display-name>
+    <display-name>Independent</display-name>
+  </channel>
+  <channel id="I15377.labs.zap2it.com">
+    <display-name>818 FXDEP</display-name>
+    <display-name>818 FXDEP NC32461:X</display-name>
+    <display-name>818</display-name>
+    <display-name>FXDEP</display-name>
+    <display-name>Fox Deportes</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I15451.labs.zap2it.com">
+    <display-name>525 ESPNCL</display-name>
+    <display-name>525 ESPNCL NC32461:X</display-name>
+    <display-name>525</display-name>
+    <display-name>ESPNCL</display-name>
+    <display-name>ESPN Classic</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I15569.labs.zap2it.com">
+    <display-name>150 WRAZ</display-name>
+    <display-name>150 WRAZ NC32461:X</display-name>
+    <display-name>150</display-name>
+    <display-name>50 WRAZ fcc</display-name>
+    <display-name>WRAZ</display-name>
+    <display-name>WRAZ</display-name>
+    <display-name>Fox Affiliate</display-name>
+  </channel>
+  <channel id="I15807.labs.zap2it.com">
+    <display-name>326 OVATION</display-name>
+    <display-name>326 OVATION NC32461:X</display-name>
+    <display-name>326</display-name>
+    <display-name>OVATION</display-name>
+    <display-name>Ovation TV</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I15952.labs.zap2it.com">
+    <display-name>514 VERSUS</display-name>
+    <display-name>514 VERSUS NC32461:X</display-name>
+    <display-name>514</display-name>
+    <display-name>VERSUS</display-name>
+    <display-name>VERSUS</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I16011.labs.zap2it.com">
+    <display-name>512 SPEED</display-name>
+    <display-name>512 SPEED NC32461:X</display-name>
+    <display-name>512</display-name>
+    <display-name>SPEED</display-name>
+    <display-name>Speed Channel</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I16062.labs.zap2it.com">
+    <display-name>461 GAC</display-name>
+    <display-name>461 GAC NC32461:X</display-name>
+    <display-name>461</display-name>
+    <display-name>GAC</display-name>
+    <display-name>Great American Country</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I16108.labs.zap2it.com">
+    <display-name>628 SUNDANC</display-name>
+    <display-name>628 SUNDANC NC32461:X</display-name>
+    <display-name>628</display-name>
+    <display-name>SUNDANC</display-name>
+    <display-name>Sundance Channel</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I16123.labs.zap2it.com">
+    <display-name>216 TVLAND</display-name>
+    <display-name>216 TVLAND NC32461:X</display-name>
+    <display-name>216</display-name>
+    <display-name>TVLAND</display-name>
+    <display-name>TV Land</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I16125.labs.zap2it.com">
+    <display-name>521 DFH</display-name>
+    <display-name>521 DFH NC32461:X</display-name>
+    <display-name>521</display-name>
+    <display-name>DFH</display-name>
+    <display-name>Discovery Fit and Health</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I16141.labs.zap2it.com">
+    <display-name>831 TOONL</display-name>
+    <display-name>831 TOONL NC32461:X</display-name>
+    <display-name>831</display-name>
+    <display-name>TOONL</display-name>
+    <display-name>Cartoon Network LatinAm</display-name>
+    <display-name>Latin American Satellite</display-name>
+  </channel>
+  <channel id="I16153.labs.zap2it.com">
+    <display-name>732 SHOCSE</display-name>
+    <display-name>732 SHOCSE NC32461:X</display-name>
+    <display-name>732</display-name>
+    <display-name>SHOCSE</display-name>
+    <display-name>Showtime Showcase</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I16288.labs.zap2it.com">
+    <display-name>847 DEPEL</display-name>
+    <display-name>847 DEPEL NC32461:X</display-name>
+    <display-name>847</display-name>
+    <display-name>DEPEL</display-name>
+    <display-name>De Pelicula</display-name>
+    <display-name>MX Pay</display-name>
+  </channel>
+  <channel id="I16300.labs.zap2it.com">
+    <display-name>406 MSNBC</display-name>
+    <display-name>406 MSNBC NC32461:X</display-name>
+    <display-name>406</display-name>
+    <display-name>MSNBC</display-name>
+    <display-name>MSNBC</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I16311.labs.zap2it.com">
+    <display-name>752 STZE</display-name>
+    <display-name>752 STZE NC32461:X</display-name>
+    <display-name>752</display-name>
+    <display-name>STZE</display-name>
+    <display-name>Starz Edge</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I16331.labs.zap2it.com">
+    <display-name>252 APL</display-name>
+    <display-name>252 APL NC32461:X</display-name>
+    <display-name>252</display-name>
+    <display-name>APL</display-name>
+    <display-name>Animal Planet</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I16345.labs.zap2it.com">
+    <display-name>879 DW</display-name>
+    <display-name>879 DW NC32461:X</display-name>
+    <display-name>879</display-name>
+    <display-name>DW</display-name>
+    <display-name>Deutsche Welle TV</display-name>
+    <display-name>European Satellite</display-name>
+  </channel>
+  <channel id="I16350.labs.zap2it.com">
+    <display-name>827 EWTNL</display-name>
+    <display-name>827 EWTNL NC32461:X</display-name>
+    <display-name>827</display-name>
+    <display-name>EWTNL</display-name>
+    <display-name>EWTN Latin America</display-name>
+    <display-name>Latin American Satellite</display-name>
+  </channel>
+  <channel id="I16361.labs.zap2it.com">
+    <display-name>451 MTV2</display-name>
+    <display-name>451 MTV2 NC32461:X</display-name>
+    <display-name>451</display-name>
+    <display-name>MTV2</display-name>
+    <display-name>MTV2: Music Television</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I16365.labs.zap2it.com">
+    <display-name>537 CBSSN</display-name>
+    <display-name>537 CBSSN NC32461:X</display-name>
+    <display-name>537</display-name>
+    <display-name>CBSSN</display-name>
+    <display-name>CBS Sports Network</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I16374.labs.zap2it.com">
+    <display-name>403 FNC</display-name>
+    <display-name>403 FNC NC32461:X</display-name>
+    <display-name>403</display-name>
+    <display-name>FNC</display-name>
+    <display-name>Fox News Channel</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I16402.labs.zap2it.com">
+    <display-name>629 SUNDANP</display-name>
+    <display-name>629 SUNDANP NC32461:X</display-name>
+    <display-name>629</display-name>
+    <display-name>SUNDANP</display-name>
+    <display-name>Sundance Channel (Pacific)</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I16409.labs.zap2it.com">
+    <display-name>324 WE</display-name>
+    <display-name>324 WE NC32461:X</display-name>
+    <display-name>324</display-name>
+    <display-name>WE</display-name>
+    <display-name>WE tv</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I16444.labs.zap2it.com">
+    <display-name>731 SHO2P</display-name>
+    <display-name>731 SHO2P NC32461:X</display-name>
+    <display-name>731</display-name>
+    <display-name>SHO2P</display-name>
+    <display-name>SHO 2 (Pacific)</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I16485.labs.zap2it.com">
+    <display-name>503 ESPNEWS</display-name>
+    <display-name>503 ESPNEWS NC32461:X</display-name>
+    <display-name>503</display-name>
+    <display-name>ESPNEWS</display-name>
+    <display-name>ESPNEWS</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I16575.labs.zap2it.com">
+    <display-name>633 FLIXP</display-name>
+    <display-name>633 FLIXP NC32461:X</display-name>
+    <display-name>633</display-name>
+    <display-name>FLIXP</display-name>
+    <display-name>Flix (Pacific)</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I16576.labs.zap2it.com">
+    <display-name>707 HBOSIGP</display-name>
+    <display-name>707 HBOSIGP NC32461:X</display-name>
+    <display-name>707</display-name>
+    <display-name>HBOSIGP</display-name>
+    <display-name>HBO Signature (Pacific)</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I16584.labs.zap2it.com">
+    <display-name>733 SHOCSEP</display-name>
+    <display-name>733 SHOCSEP NC32461:X</display-name>
+    <display-name>733</display-name>
+    <display-name>SHOCSEP</display-name>
+    <display-name>Showtime Showcase (Pacific)</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I16585.labs.zap2it.com">
+    <display-name>704 HBOF</display-name>
+    <display-name>704 HBOF NC32461:X</display-name>
+    <display-name>704</display-name>
+    <display-name>HBOF</display-name>
+    <display-name>HBO Family</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I16604.labs.zap2it.com">
+    <display-name>358 JWLTV</display-name>
+    <display-name>358 JWLTV NC32461:X</display-name>
+    <display-name>358</display-name>
+    <display-name>JWLTV</display-name>
+    <display-name>Jewelry Television</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I16611.labs.zap2it.com">
+    <display-name>773 IN3</display-name>
+    <display-name>773 IN3 NC32461:X</display-name>
+    <display-name>773</display-name>
+    <display-name>IN3</display-name>
+    <display-name>iN Demand 3</display-name>
+    <display-name>Pay-Per-View</display-name>
+  </channel>
+  <channel id="I16615.labs.zap2it.com">
+    <display-name>251 ID</display-name>
+    <display-name>251 ID NC32461:X</display-name>
+    <display-name>251</display-name>
+    <display-name>ID</display-name>
+    <display-name>Investigation Discovery</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I16616.labs.zap2it.com">
+    <display-name>260 SCIENCE</display-name>
+    <display-name>260 SCIENCE NC32461:X</display-name>
+    <display-name>260</display-name>
+    <display-name>SCIENCE</display-name>
+    <display-name>Science</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I16617.labs.zap2it.com">
+    <display-name>256 GREEN</display-name>
+    <display-name>256 GREEN NC32461:X</display-name>
+    <display-name>256</display-name>
+    <display-name>GREEN</display-name>
+    <display-name>Planet Green</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I16618.labs.zap2it.com">
+    <display-name>211 HUB</display-name>
+    <display-name>211 HUB NC32461:X</display-name>
+    <display-name>211</display-name>
+    <display-name>HUB</display-name>
+    <display-name>The Hub</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I16619.labs.zap2it.com">
+    <display-name>705 HBOFP</display-name>
+    <display-name>705 HBOFP NC32461:X</display-name>
+    <display-name>705</display-name>
+    <display-name>HBOFP</display-name>
+    <display-name>HBO Family (Pacific)</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I16620.labs.zap2it.com">
+    <display-name>718 MOMAXP</display-name>
+    <display-name>718 MOMAXP NC32461:X</display-name>
+    <display-name>718</display-name>
+    <display-name>MOMAXP</display-name>
+    <display-name>MoreMAX (Pacific)</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I16690.labs.zap2it.com">
+    <display-name>772 IN2</display-name>
+    <display-name>772 IN2 NC32461:X</display-name>
+    <display-name>772</display-name>
+    <display-name>IN2</display-name>
+    <display-name>iN Demand 2</display-name>
+    <display-name>Pay-Per-View</display-name>
+  </channel>
+  <channel id="I16715.labs.zap2it.com">
+    <display-name>0 TVGN</display-name>
+    <display-name>0 TVGN NC32461:X</display-name>
+    <display-name>0</display-name>
+    <display-name>TVGN</display-name>
+    <display-name>TV Guide Network</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I16788.labs.zap2it.com">
+    <display-name>781 PLAYL</display-name>
+    <display-name>781 PLAYL NC32461:X</display-name>
+    <display-name>781</display-name>
+    <display-name>PLAYL</display-name>
+    <display-name>Playboy TV Latin America</display-name>
+    <display-name>Latin (AO) Pay-Per-View</display-name>
+  </channel>
+  <channel id="I16833.labs.zap2it.com">
+    <display-name>753 STZIB</display-name>
+    <display-name>753 STZIB NC32461:X</display-name>
+    <display-name>753</display-name>
+    <display-name>STZIB</display-name>
+    <display-name>Starz in Black</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I16834.labs.zap2it.com">
+    <display-name>266 BIO</display-name>
+    <display-name>266 BIO NC32461:X</display-name>
+    <display-name>266</display-name>
+    <display-name>BIO</display-name>
+    <display-name>The Biography Channel</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I17021.labs.zap2it.com">
+    <display-name>222 YOUTV</display-name>
+    <display-name>222 YOUTV NC32461:X</display-name>
+    <display-name>222</display-name>
+    <display-name>YOUTV</display-name>
+    <display-name>YOUTOO</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I17098.labs.zap2it.com">
+    <display-name>303 WGNAMER</display-name>
+    <display-name>303 WGNAMER NC32461:X</display-name>
+    <display-name>303</display-name>
+    <display-name>WGNAMER</display-name>
+    <display-name>WGN America</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I17125.labs.zap2it.com">
+    <display-name>636 ENCORP</display-name>
+    <display-name>636 ENCORP NC32461:X</display-name>
+    <display-name>636</display-name>
+    <display-name>ENCORP</display-name>
+    <display-name>Encore (Pacific)</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I17250.labs.zap2it.com">
+    <display-name>877 RAII</display-name>
+    <display-name>877 RAII NC32461:X</display-name>
+    <display-name>877</display-name>
+    <display-name>RAII</display-name>
+    <display-name>RAI Italia</display-name>
+    <display-name>European Satellite</display-name>
+  </channel>
+  <channel id="I17663.labs.zap2it.com">
+    <display-name>747 TMCX</display-name>
+    <display-name>747 TMCX NC32461:X</display-name>
+    <display-name>747</display-name>
+    <display-name>TMCX</display-name>
+    <display-name>The Movie Channel Extra</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I17665.labs.zap2it.com">
+    <display-name>417 CSPAN3</display-name>
+    <display-name>417 CSPAN3 NC32461:X</display-name>
+    <display-name>417</display-name>
+    <display-name>CSPAN3</display-name>
+    <display-name>CSPAN3</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I17927.labs.zap2it.com">
+    <display-name>511 FSC</display-name>
+    <display-name>511 FSC NC32461:X</display-name>
+    <display-name>511</display-name>
+    <display-name>FSC</display-name>
+    <display-name>Fox Soccer</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I18086.labs.zap2it.com">
+    <display-name>734 SHOWX</display-name>
+    <display-name>734 SHOWX NC32461:X</display-name>
+    <display-name>734</display-name>
+    <display-name>SHOWX</display-name>
+    <display-name>Showtime Extreme</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I18179.labs.zap2it.com">
+    <display-name>311 G4</display-name>
+    <display-name>311 G4 NC32461:X</display-name>
+    <display-name>311</display-name>
+    <display-name>G4</display-name>
+    <display-name>G4</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I18262.labs.zap2it.com">
+    <display-name>850 NUVOTV</display-name>
+    <display-name>850 NUVOTV NC32461:X</display-name>
+    <display-name>850</display-name>
+    <display-name>NUVOTV</display-name>
+    <display-name>nuvoTV</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I18279.labs.zap2it.com">
+    <display-name>202 DXD</display-name>
+    <display-name>202 DXD NC32461:X</display-name>
+    <display-name>202</display-name>
+    <display-name>DXD</display-name>
+    <display-name>Disney XD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I18284.labs.zap2it.com">
+    <display-name>261 MILI</display-name>
+    <display-name>261 MILI NC32461:X</display-name>
+    <display-name>261</display-name>
+    <display-name>MILI</display-name>
+    <display-name>The Military Channel</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I18332.labs.zap2it.com">
+    <display-name>327 BBCA</display-name>
+    <display-name>327 BBCA NC32461:X</display-name>
+    <display-name>327</display-name>
+    <display-name>BBCA</display-name>
+    <display-name>BBC America</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I18424.labs.zap2it.com">
+    <display-name>887 RTN</display-name>
+    <display-name>887 RTN NC32461:X</display-name>
+    <display-name>887</display-name>
+    <display-name>RTN</display-name>
+    <display-name>WMNB Russian TV (RTN TV)</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I18429.labs.zap2it.com">
+    <display-name>708 HBOC</display-name>
+    <display-name>708 HBOC NC32461:X</display-name>
+    <display-name>708</display-name>
+    <display-name>HBOC</display-name>
+    <display-name>HBO Comedy</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I18431.labs.zap2it.com">
+    <display-name>710 HBOZ</display-name>
+    <display-name>710 HBOZ NC32461:X</display-name>
+    <display-name>710</display-name>
+    <display-name>HBOZ</display-name>
+    <display-name>HBO Zone</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I18433.labs.zap2it.com">
+    <display-name>719 ACMAX</display-name>
+    <display-name>719 ACMAX NC32461:X</display-name>
+    <display-name>719</display-name>
+    <display-name>ACMAX</display-name>
+    <display-name>ActionMAX</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I18434.labs.zap2it.com">
+    <display-name>720 ACMAXP</display-name>
+    <display-name>720 ACMAXP NC32461:X</display-name>
+    <display-name>720</display-name>
+    <display-name>ACMAXP</display-name>
+    <display-name>ActionMAX (Pacific)</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I18435.labs.zap2it.com">
+    <display-name>721 THMAX</display-name>
+    <display-name>721 THMAX NC32461:X</display-name>
+    <display-name>721</display-name>
+    <display-name>THMAX</display-name>
+    <display-name>ThrillerMAX</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I18436.labs.zap2it.com">
+    <display-name>722 THMAXP</display-name>
+    <display-name>722 THMAXP NC32461:X</display-name>
+    <display-name>722</display-name>
+    <display-name>THMAXP</display-name>
+    <display-name>ThrillerMAX (Pacific)</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I18480.labs.zap2it.com">
+    <display-name>623 LMN</display-name>
+    <display-name>623 LMN NC32461:X</display-name>
+    <display-name>623</display-name>
+    <display-name>LMN</display-name>
+    <display-name>Lifetime Movie Network</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I18511.labs.zap2it.com">
+    <display-name>357 STYLE</display-name>
+    <display-name>357 STYLE NC32461:X</display-name>
+    <display-name>357</display-name>
+    <display-name>STYLE</display-name>
+    <display-name>Style</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I18525.labs.zap2it.com">
+    <display-name>787 PENT</display-name>
+    <display-name>787 PENT NC32461:X</display-name>
+    <display-name>787</display-name>
+    <display-name>PENT</display-name>
+    <display-name>Penthouse TV- New Frontier</display-name>
+    <display-name>(AO) Pay-Per-View</display-name>
+  </channel>
+  <channel id="I18544.labs.zap2it.com">
+    <display-name>356 DIY</display-name>
+    <display-name>356 DIY NC32461:X</display-name>
+    <display-name>356</display-name>
+    <display-name>DIY</display-name>
+    <display-name>Do-It-Yourself Network</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I18644.labs.zap2it.com">
+    <display-name>872 SETH</display-name>
+    <display-name>872 SETH NC32461:X</display-name>
+    <display-name>872</display-name>
+    <display-name>SETH</display-name>
+    <display-name>SET - Asia International</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I18715.labs.zap2it.com">
+    <display-name>837 TR3S</display-name>
+    <display-name>837 TR3S NC32461:X</display-name>
+    <display-name>837</display-name>
+    <display-name>TR3S</display-name>
+    <display-name>Tr3s: MTV, Musica y Mas</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I18822.labs.zap2it.com">
+    <display-name>265 HI</display-name>
+    <display-name>265 HI NC32461:X</display-name>
+    <display-name>265</display-name>
+    <display-name>HI</display-name>
+    <display-name>History International</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I19026.labs.zap2it.com">
+    <display-name>284 DYSTR</display-name>
+    <display-name>284 DYSTR NC32461:X</display-name>
+    <display-name>284</display-name>
+    <display-name>DYSTR</display-name>
+    <display-name>Daystar Television Network</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I19059.labs.zap2it.com">
+    <display-name>881 TV5MOND</display-name>
+    <display-name>881 TV5MOND NC32461:X</display-name>
+    <display-name>881</display-name>
+    <display-name>TV5MOND</display-name>
+    <display-name>TV5MONDE Etats Unis</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I19142.labs.zap2it.com">
+    <display-name>915 MCALT</display-name>
+    <display-name>915 MCALT NC32461:X</display-name>
+    <display-name>915</display-name>
+    <display-name>MCALT</display-name>
+    <display-name>Music Choice: Alternative</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I19211.labs.zap2it.com">
+    <display-name>206 NICJR</display-name>
+    <display-name>206 NICJR NC32461:X</display-name>
+    <display-name>206</display-name>
+    <display-name>NICJR</display-name>
+    <display-name>Nick Jr</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I19219.labs.zap2it.com">
+    <display-name>1105 WRALDT</display-name>
+    <display-name>1105 WRALDT NC32461:X</display-name>
+    <display-name>1105</display-name>
+    <display-name>48 WRALDT fcc</display-name>
+    <display-name>WRALDT</display-name>
+    <display-name>WRALDT (WRAL-DT)</display-name>
+    <display-name>CBS Affiliate</display-name>
+  </channel>
+  <channel id="I19247.labs.zap2it.com">
+    <display-name>810 TDCES</display-name>
+    <display-name>810 TDCES NC32461:X</display-name>
+    <display-name>810</display-name>
+    <display-name>TDCES</display-name>
+    <display-name>Discovery en Espanol</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I19283.labs.zap2it.com">
+    <display-name>871 ZEETV</display-name>
+    <display-name>871 ZEETV NC32461:X</display-name>
+    <display-name>871</display-name>
+    <display-name>ZEETV</display-name>
+    <display-name>Zee TV USA, Inc.</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I19310.labs.zap2it.com">
+    <display-name>914 MCMET</display-name>
+    <display-name>914 MCMET NC32461:X</display-name>
+    <display-name>914</display-name>
+    <display-name>MCMET</display-name>
+    <display-name>Music Choice: Metal</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I19311.labs.zap2it.com">
+    <display-name>917 MCAAL</display-name>
+    <display-name>917 MCAAL NC32461:X</display-name>
+    <display-name>917</display-name>
+    <display-name>MCAAL</display-name>
+    <display-name>Music Choice: Adult Alternative</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I19312.labs.zap2it.com">
+    <display-name>912 MCRRK</display-name>
+    <display-name>912 MCRRK NC32461:X</display-name>
+    <display-name>912</display-name>
+    <display-name>MCRRK</display-name>
+    <display-name>Music Choice: Retro Rock</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I19313.labs.zap2it.com">
+    <display-name>900 MCHIT</display-name>
+    <display-name>900 MCHIT NC32461:X</display-name>
+    <display-name>900</display-name>
+    <display-name>MCHIT</display-name>
+    <display-name>Music Choice: Hit List</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I19314.labs.zap2it.com">
+    <display-name>919 MCPHT</display-name>
+    <display-name>919 MCPHT NC32461:X</display-name>
+    <display-name>919</display-name>
+    <display-name>MCPHT</display-name>
+    <display-name>Music Choice: Pop Hits</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I19315.labs.zap2it.com">
+    <display-name>918 MCSRK</display-name>
+    <display-name>918 MCSRK NC32461:X</display-name>
+    <display-name>918</display-name>
+    <display-name>MCSRK</display-name>
+    <display-name>Music Choice: Soft Rock</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I19316.labs.zap2it.com">
+    <display-name>939 MCCMP</display-name>
+    <display-name>939 MCCMP NC32461:X</display-name>
+    <display-name>939</display-name>
+    <display-name>MCCMP</display-name>
+    <display-name>Music Choice: Classical Masterpieces</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I19317.labs.zap2it.com">
+    <display-name>940 MCLTC</display-name>
+    <display-name>940 MCLTC NC32461:X</display-name>
+    <display-name>940</display-name>
+    <display-name>MCLTC</display-name>
+    <display-name>Music Choice: Light Classical</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I19319.labs.zap2it.com">
+    <display-name>933 MCSSP</display-name>
+    <display-name>933 MCSSP NC32461:X</display-name>
+    <display-name>933</display-name>
+    <display-name>MCSSP</display-name>
+    <display-name>Music Choice: Soundscapes</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I19320.labs.zap2it.com">
+    <display-name>937 MCSWG</display-name>
+    <display-name>937 MCSWG NC32461:X</display-name>
+    <display-name>937</display-name>
+    <display-name>MCSWG</display-name>
+    <display-name>Music Choice: Singers &amp; Swing</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I19324.labs.zap2it.com">
+    <display-name>934 MCSJZ</display-name>
+    <display-name>934 MCSJZ NC32461:X</display-name>
+    <display-name>934</display-name>
+    <display-name>MCSJZ</display-name>
+    <display-name>Music Choice: Smooth Jazz</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I19325.labs.zap2it.com">
+    <display-name>930 MCCLC</display-name>
+    <display-name>930 MCCLC NC32461:X</display-name>
+    <display-name>930</display-name>
+    <display-name>MCCLC</display-name>
+    <display-name>Music Choice: Classic Country</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I19326.labs.zap2it.com">
+    <display-name>928 MCTDC</display-name>
+    <display-name>928 MCTDC NC32461:X</display-name>
+    <display-name>928</display-name>
+    <display-name>MCTDC</display-name>
+    <display-name>Music Choice: Today's Country</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I19327.labs.zap2it.com">
+    <display-name>922 MC70S</display-name>
+    <display-name>922 MC70S NC32461:X</display-name>
+    <display-name>922</display-name>
+    <display-name>MC70S</display-name>
+    <display-name>Music Choice: 70's</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I19328.labs.zap2it.com">
+    <display-name>921 MC80S</display-name>
+    <display-name>921 MC80S NC32461:X</display-name>
+    <display-name>921</display-name>
+    <display-name>MC80S</display-name>
+    <display-name>Music Choice: 80's</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I19329.labs.zap2it.com">
+    <display-name>924 MCPRT</display-name>
+    <display-name>924 MCPRT NC32461:X</display-name>
+    <display-name>924</display-name>
+    <display-name>MCPRT</display-name>
+    <display-name>Music Choice: Party Favorites</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I19330.labs.zap2it.com">
+    <display-name>923 MCGLD</display-name>
+    <display-name>923 MCGLD NC32461:X</display-name>
+    <display-name>923</display-name>
+    <display-name>MCGLD</display-name>
+    <display-name>Music Choice: Solid Gold Oldies</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I19332.labs.zap2it.com">
+    <display-name>903 MCDAE</display-name>
+    <display-name>903 MCDAE NC32461:X</display-name>
+    <display-name>903</display-name>
+    <display-name>MCDAE</display-name>
+    <display-name>Music Choice: Dance/Electronica</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I19335.labs.zap2it.com">
+    <display-name>938 MCELS</display-name>
+    <display-name>938 MCELS NC32461:X</display-name>
+    <display-name>938</display-name>
+    <display-name>MCELS</display-name>
+    <display-name>Music Choice: Easy Listening</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I19336.labs.zap2it.com">
+    <display-name>926 MCKID</display-name>
+    <display-name>926 MCKID NC32461:X</display-name>
+    <display-name>926</display-name>
+    <display-name>MCKID</display-name>
+    <display-name>Music Choice: Kidz Only!</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I19339.labs.zap2it.com">
+    <display-name>906 MCTJM</display-name>
+    <display-name>906 MCTJM NC32461:X</display-name>
+    <display-name>906</display-name>
+    <display-name>MCTJM</display-name>
+    <display-name>Music Choice: Throwback Jamz</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I19341.labs.zap2it.com">
+    <display-name>945 MCROM</display-name>
+    <display-name>945 MCROM NC32461:X</display-name>
+    <display-name>945</display-name>
+    <display-name>MCROM</display-name>
+    <display-name>Music Choice: Romances</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I19342.labs.zap2it.com">
+    <display-name>932 MCSEA</display-name>
+    <display-name>932 MCSEA NC32461:X</display-name>
+    <display-name>932</display-name>
+    <display-name>MCSEA</display-name>
+    <display-name>Music Choice: Sounds of the Season</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I19344.labs.zap2it.com">
+    <display-name>908 MCRBS</display-name>
+    <display-name>908 MCRBS NC32461:X</display-name>
+    <display-name>908</display-name>
+    <display-name>MCRBS</display-name>
+    <display-name>Music Choice: R&amp;B &amp; Soul</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I19346.labs.zap2it.com">
+    <display-name>901 MCHPR</display-name>
+    <display-name>901 MCHPR NC32461:X</display-name>
+    <display-name>901</display-name>
+    <display-name>MCHPR</display-name>
+    <display-name>Music Choice: Hip Hop and R&amp;B</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I19357.labs.zap2it.com">
+    <display-name>944 MCMEX</display-name>
+    <display-name>944 MCMEX NC32461:X</display-name>
+    <display-name>944</display-name>
+    <display-name>MCMEX</display-name>
+    <display-name>Music Choice: Mexicana</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I19358.labs.zap2it.com">
+    <display-name>941 MCURB</display-name>
+    <display-name>941 MCURB NC32461:X</display-name>
+    <display-name>941</display-name>
+    <display-name>MCURB</display-name>
+    <display-name>Music Choice: Musica Urbana</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I19362.labs.zap2it.com">
+    <display-name>943 MCTRP</display-name>
+    <display-name>943 MCTRP NC32461:X</display-name>
+    <display-name>943</display-name>
+    <display-name>MCTRP</display-name>
+    <display-name>Music Choice: Tropicales</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I19548.labs.zap2it.com">
+    <display-name>1700 HBOHD</display-name>
+    <display-name>1700 HBOHD NC32461:X</display-name>
+    <display-name>1700</display-name>
+    <display-name>HBOHD</display-name>
+    <display-name>HBO HD</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I19566.labs.zap2it.com">
+    <display-name>1701 HBOHDP</display-name>
+    <display-name>1701 HBOHDP NC32461:X</display-name>
+    <display-name>1701</display-name>
+    <display-name>HBOHDP</display-name>
+    <display-name>HBO HD (Pacific)</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I19634.labs.zap2it.com">
+    <display-name>755 STZCI</display-name>
+    <display-name>755 STZCI NC32461:X</display-name>
+    <display-name>755</display-name>
+    <display-name>STZCI</display-name>
+    <display-name>Starz Cinema</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I19635.labs.zap2it.com">
+    <display-name>754 STZK</display-name>
+    <display-name>754 STZK NC32461:X</display-name>
+    <display-name>754</display-name>
+    <display-name>STZK</display-name>
+    <display-name>Starz Kids</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I19979.labs.zap2it.com">
+    <display-name>890 ARTAMER</display-name>
+    <display-name>890 ARTAMER NC32461:X</display-name>
+    <display-name>890</display-name>
+    <display-name>ARTAMER</display-name>
+    <display-name>Art America</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I20622.labs.zap2it.com">
+    <display-name>736 SHOWB</display-name>
+    <display-name>736 SHOWB NC32461:X</display-name>
+    <display-name>736</display-name>
+    <display-name>SHOWB</display-name>
+    <display-name>Showtime Beyond</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I20655.labs.zap2it.com">
+    <display-name>852 CTIZTC</display-name>
+    <display-name>852 CTIZTC NC32461:X</display-name>
+    <display-name>852</display-name>
+    <display-name>CTIZTC</display-name>
+    <display-name>CTI  Zhong Tian Channel</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I20810.labs.zap2it.com">
+    <display-name>571 TEAM1</display-name>
+    <display-name>571 TEAM1 NC32461:X</display-name>
+    <display-name>571</display-name>
+    <display-name>TEAM1</display-name>
+    <display-name>NBA League Pass 1</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I20811.labs.zap2it.com">
+    <display-name>572 TEAM2</display-name>
+    <display-name>572 TEAM2 NC32461:X</display-name>
+    <display-name>572</display-name>
+    <display-name>TEAM2</display-name>
+    <display-name>NBA League Pass 2</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I20812.labs.zap2it.com">
+    <display-name>573 TEAM3</display-name>
+    <display-name>573 TEAM3 NC32461:X</display-name>
+    <display-name>573</display-name>
+    <display-name>TEAM3</display-name>
+    <display-name>NBA League Pass 3</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I21044.labs.zap2it.com">
+    <display-name>574 TEAM4</display-name>
+    <display-name>574 TEAM4 NC32461:X</display-name>
+    <display-name>574</display-name>
+    <display-name>TEAM4</display-name>
+    <display-name>NBA League Pass 4</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I21045.labs.zap2it.com">
+    <display-name>575 TEAM5</display-name>
+    <display-name>575 TEAM5 NC32461:X</display-name>
+    <display-name>575</display-name>
+    <display-name>TEAM5</display-name>
+    <display-name>NBA League Pass 5</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I21046.labs.zap2it.com">
+    <display-name>576 TEAM6</display-name>
+    <display-name>576 TEAM6 NC32461:X</display-name>
+    <display-name>576</display-name>
+    <display-name>TEAM6</display-name>
+    <display-name>NBA League Pass 6</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I21047.labs.zap2it.com">
+    <display-name>577 TEAM7</display-name>
+    <display-name>577 TEAM7 NC32461:X</display-name>
+    <display-name>577</display-name>
+    <display-name>TEAM7</display-name>
+    <display-name>NBA League Pass 7</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I21048.labs.zap2it.com">
+    <display-name>578 TEAM8</display-name>
+    <display-name>578 TEAM8 NC32461:X</display-name>
+    <display-name>578</display-name>
+    <display-name>TEAM8</display-name>
+    <display-name>NBA League Pass 8</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I21049.labs.zap2it.com">
+    <display-name>579 TEAM9</display-name>
+    <display-name>579 TEAM9 NC32461:X</display-name>
+    <display-name>579</display-name>
+    <display-name>TEAM9</display-name>
+    <display-name>NBA League Pass 9</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I21063.labs.zap2it.com">
+    <display-name>886 RTVINT</display-name>
+    <display-name>886 RTVINT NC32461:X</display-name>
+    <display-name>886</display-name>
+    <display-name>RTVINT</display-name>
+    <display-name>RTV International</display-name>
+    <display-name>European Satellite</display-name>
+  </channel>
+  <channel id="I21103.labs.zap2it.com">
+    <display-name>1111 WTVDDT</display-name>
+    <display-name>1111 WTVDDT NC32461:X</display-name>
+    <display-name>1111</display-name>
+    <display-name>11 WTVDDT fcc</display-name>
+    <display-name>WTVDDT</display-name>
+    <display-name>WTVDDT (WTVD-DT)</display-name>
+    <display-name>ABC Affiliate</display-name>
+  </channel>
+  <channel id="I21115.labs.zap2it.com">
+    <display-name>580 TEAM10</display-name>
+    <display-name>580 TEAM10 NC32461:X</display-name>
+    <display-name>580</display-name>
+    <display-name>TEAM10</display-name>
+    <display-name>NBA League Pass 10</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I21239.labs.zap2it.com">
+    <display-name>1117 WNCNDT</display-name>
+    <display-name>1117 WNCNDT NC32461:X</display-name>
+    <display-name>1117</display-name>
+    <display-name>17 WNCNDT fcc</display-name>
+    <display-name>WNCNDT</display-name>
+    <display-name>WNCNDT (WNCN-DT)</display-name>
+    <display-name>NBC Affiliate</display-name>
+  </channel>
+  <channel id="I21240.labs.zap2it.com">
+    <display-name>1122 WLFLDT</display-name>
+    <display-name>1122 WLFLDT NC32461:X</display-name>
+    <display-name>1122</display-name>
+    <display-name>27 WLFLDT fcc</display-name>
+    <display-name>WLFLDT</display-name>
+    <display-name>WLFLDT (WLFL-DT)</display-name>
+    <display-name>CW Affiliate</display-name>
+  </channel>
+  <channel id="I21284.labs.zap2it.com">
+    <display-name>323 SOAP</display-name>
+    <display-name>323 SOAP NC32461:X</display-name>
+    <display-name>323</display-name>
+    <display-name>SOAP</display-name>
+    <display-name>SoapNet</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I21484.labs.zap2it.com">
+    <display-name>320 OXYGEN</display-name>
+    <display-name>320 OXYGEN NC32461:X</display-name>
+    <display-name>320</display-name>
+    <display-name>OXYGEN</display-name>
+    <display-name>Oxygen</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I21781.labs.zap2it.com">
+    <display-name>285 WORD</display-name>
+    <display-name>285 WORD NC32461:X</display-name>
+    <display-name>285</display-name>
+    <display-name>WORD</display-name>
+    <display-name>The Word Network</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I21784.labs.zap2it.com">
+    <display-name>24 CAROL24</display-name>
+    <display-name>24 CAROL24 NC32461:X</display-name>
+    <display-name>24</display-name>
+    <display-name>CAROL24</display-name>
+    <display-name>Carolina 24</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I21855.labs.zap2it.com">
+    <display-name>287 BYUTV</display-name>
+    <display-name>287 BYUTV NC32461:X</display-name>
+    <display-name>287</display-name>
+    <display-name>BYUTV</display-name>
+    <display-name>BYU-TV</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I21868.labs.zap2it.com">
+    <display-name>1728 SHOWHD</display-name>
+    <display-name>1728 SHOWHD NC32461:X</display-name>
+    <display-name>1728</display-name>
+    <display-name>SHOWHD</display-name>
+    <display-name>Showtime HD</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I21883.labs.zap2it.com">
+    <display-name>214 BOOM</display-name>
+    <display-name>214 BOOM NC32461:X</display-name>
+    <display-name>214</display-name>
+    <display-name>BOOM</display-name>
+    <display-name>Boomerang</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I21915.labs.zap2it.com">
+    <display-name>106 WRALDT2</display-name>
+    <display-name>106 WRALDT2 NC32461:X</display-name>
+    <display-name>106</display-name>
+    <display-name>48 WRALDT2 fcc</display-name>
+    <display-name>WRALDT2</display-name>
+    <display-name>WRALDT2 (WRAL-DT)</display-name>
+    <display-name>Independent</display-name>
+  </channel>
+  <channel id="I22118.labs.zap2it.com">
+    <display-name>4 EDAC004</display-name>
+    <display-name>4 EDAC004 NC32461:X</display-name>
+    <display-name>4</display-name>
+    <display-name>EDAC004</display-name>
+    <display-name>Educational Access - EDAC004</display-name>
+    <display-name>Educational</display-name>
+  </channel>
+  <channel id="I22532.labs.zap2it.com">
+    <display-name>1729 SHOWHDP</display-name>
+    <display-name>1729 SHOWHDP NC32461:X</display-name>
+    <display-name>1729</display-name>
+    <display-name>SHOWHDP</display-name>
+    <display-name>Showtime HD (Pacific)</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I22561.labs.zap2it.com">
+    <display-name>455 VH1CL</display-name>
+    <display-name>455 VH1CL NC32461:X</display-name>
+    <display-name>455</display-name>
+    <display-name>VH1CL</display-name>
+    <display-name>VH1 Classic</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I23316.labs.zap2it.com">
+    <display-name>8 LOOR008</display-name>
+    <display-name>8 LOOR008 NC32461:X</display-name>
+    <display-name>8</display-name>
+    <display-name>LOOR008</display-name>
+    <display-name>Local Origination - LOOR008</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I23894.labs.zap2it.com">
+    <display-name>18 PEG018</display-name>
+    <display-name>18 PEG018 NC32461:X</display-name>
+    <display-name>18</display-name>
+    <display-name>PEG018</display-name>
+    <display-name>Public, Educational, Government PEG018</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I24115.labs.zap2it.com">
+    <display-name>1150 WRAZDT</display-name>
+    <display-name>1150 WRAZDT NC32461:X</display-name>
+    <display-name>1150</display-name>
+    <display-name>49 WRAZDT fcc</display-name>
+    <display-name>WRAZDT</display-name>
+    <display-name>WRAZDT (WRAZ-DT)</display-name>
+    <display-name>Fox Affiliate</display-name>
+  </channel>
+  <channel id="I24231.labs.zap2it.com">
+    <display-name>785 TEN</display-name>
+    <display-name>785 TEN NC32461:X</display-name>
+    <display-name>785</display-name>
+    <display-name>TEN</display-name>
+    <display-name>TEN-New Frontier</display-name>
+    <display-name>(AO) Pay-Per-View</display-name>
+  </channel>
+  <channel id="I24248.labs.zap2it.com">
+    <display-name>851 CCTV4</display-name>
+    <display-name>851 CCTV4 NC32461:X</display-name>
+    <display-name>851</display-name>
+    <display-name>CCTV4</display-name>
+    <display-name>CCTV4--China Central TV</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I24378.labs.zap2it.com">
+    <display-name>905 MCHHC</display-name>
+    <display-name>905 MCHHC NC32461:X</display-name>
+    <display-name>905</display-name>
+    <display-name>MCHHC</display-name>
+    <display-name>Music Choice: Hip Hop Classic</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I24380.labs.zap2it.com">
+    <display-name>935 MCJAZ</display-name>
+    <display-name>935 MCJAZ NC32461:X</display-name>
+    <display-name>935</display-name>
+    <display-name>MCJAZ</display-name>
+    <display-name>Music Choice: Jazz</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I24382.labs.zap2it.com">
+    <display-name>936 MCBLU</display-name>
+    <display-name>936 MCBLU NC32461:X</display-name>
+    <display-name>936</display-name>
+    <display-name>MCBLU</display-name>
+    <display-name>Music Choice: Blues</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I24405.labs.zap2it.com">
+    <display-name>927 MCTOT</display-name>
+    <display-name>927 MCTOT NC32461:X</display-name>
+    <display-name>927</display-name>
+    <display-name>MCTOT</display-name>
+    <display-name>Music Choice: Toddler Tunes</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I24553.labs.zap2it.com">
+    <display-name>712 HBOLAT</display-name>
+    <display-name>712 HBOLAT NC32461:X</display-name>
+    <display-name>712</display-name>
+    <display-name>HBOLAT</display-name>
+    <display-name>HBO Latino</display-name>
+    <display-name>Latin American PAY</display-name>
+  </channel>
+  <channel id="I24935.labs.zap2it.com">
+    <display-name>854 PNAX</display-name>
+    <display-name>854 PNAX NC32461:X</display-name>
+    <display-name>854</display-name>
+    <display-name>PNAX</display-name>
+    <display-name>Phoenix Satellite TV</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I24959.labs.zap2it.com">
+    <display-name>253 NGC</display-name>
+    <display-name>253 NGC NC32461:X</display-name>
+    <display-name>253</display-name>
+    <display-name>NGC</display-name>
+    <display-name>National Geographic Channel</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I25003.labs.zap2it.com">
+    <display-name>998 LOOR998</display-name>
+    <display-name>998 LOOR998 NC32461:X</display-name>
+    <display-name>998</display-name>
+    <display-name>LOOR998</display-name>
+    <display-name>Local Origination - LOOR998</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I25270.labs.zap2it.com">
+    <display-name>738 NEXT</display-name>
+    <display-name>738 NEXT NC32461:X</display-name>
+    <display-name>738</display-name>
+    <display-name>NEXT</display-name>
+    <display-name>Showtime Next</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I25272.labs.zap2it.com">
+    <display-name>740 WOMEN</display-name>
+    <display-name>740 WOMEN NC32461:X</display-name>
+    <display-name>740</display-name>
+    <display-name>WOMEN</display-name>
+    <display-name>Showtime Women</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I25274.labs.zap2it.com">
+    <display-name>742 FAMZ</display-name>
+    <display-name>742 FAMZ NC32461:X</display-name>
+    <display-name>742</display-name>
+    <display-name>FAMZ</display-name>
+    <display-name>Showtime Familyzone</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I25347.labs.zap2it.com">
+    <display-name>849 SORPRESA</display-name>
+    <display-name>849 SORPRESA NC32461:X</display-name>
+    <display-name>849</display-name>
+    <display-name>SORPRESA</display-name>
+    <display-name>Sorpresa</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I25510.labs.zap2it.com">
+    <display-name>151 WRAZDT2</display-name>
+    <display-name>151 WRAZDT2 NC32461:X</display-name>
+    <display-name>151</display-name>
+    <display-name>49 WRAZDT2 fcc</display-name>
+    <display-name>WRAZDT2</display-name>
+    <display-name>WRAZDT2 (WRAZ-DT2)</display-name>
+    <display-name>Independent</display-name>
+  </channel>
+  <channel id="I25511.labs.zap2it.com">
+    <display-name>1112 WTVDDT2</display-name>
+    <display-name>1112 WTVDDT2 NC32461:X</display-name>
+    <display-name>1112</display-name>
+    <display-name>11 WTVDDT2 fcc</display-name>
+    <display-name>WTVDDT2</display-name>
+    <display-name>WTVDDT2 (WTVD-DT2)</display-name>
+    <display-name>ABC Affiliate</display-name>
+  </channel>
+  <channel id="I25595.labs.zap2it.com">
+    <display-name>817 ESPND</display-name>
+    <display-name>817 ESPND NC32461:X</display-name>
+    <display-name>817</display-name>
+    <display-name>ESPND</display-name>
+    <display-name>ESPN Deportes</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I25620.labs.zap2it.com">
+    <display-name>725 5MAX</display-name>
+    <display-name>725 5MAX NC32461:X</display-name>
+    <display-name>725</display-name>
+    <display-name>5MAX</display-name>
+    <display-name>5 StarMAX</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I25621.labs.zap2it.com">
+    <display-name>723 WOMAX</display-name>
+    <display-name>723 WOMAX NC32461:X</display-name>
+    <display-name>723</display-name>
+    <display-name>WOMAX</display-name>
+    <display-name>WMAX</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I25622.labs.zap2it.com">
+    <display-name>726 OMAX</display-name>
+    <display-name>726 OMAX NC32461:X</display-name>
+    <display-name>726</display-name>
+    <display-name>OMAX</display-name>
+    <display-name>OuterMAX</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I25623.labs.zap2it.com">
+    <display-name>724 ATMAX</display-name>
+    <display-name>724 ATMAX NC32461:X</display-name>
+    <display-name>724</display-name>
+    <display-name>ATMAX</display-name>
+    <display-name>AtMAX</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I25748.labs.zap2it.com">
+    <display-name>832 DXDS</display-name>
+    <display-name>832 DXDS NC32461:X</display-name>
+    <display-name>832</display-name>
+    <display-name>DXDS</display-name>
+    <display-name>Disney XD en Espanol</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I26077.labs.zap2it.com">
+    <display-name>533 FCSA</display-name>
+    <display-name>533 FCSA NC32461:X</display-name>
+    <display-name>533</display-name>
+    <display-name>FCSA</display-name>
+    <display-name>Fox College Sports - Atlantic</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I26078.labs.zap2it.com">
+    <display-name>534 FCSC</display-name>
+    <display-name>534 FCSC NC32461:X</display-name>
+    <display-name>534</display-name>
+    <display-name>FCSC</display-name>
+    <display-name>Fox College Sports - Central</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I26079.labs.zap2it.com">
+    <display-name>535 FCSP</display-name>
+    <display-name>535 FCSP NC32461:X</display-name>
+    <display-name>535</display-name>
+    <display-name>FCSP</display-name>
+    <display-name>Fox College Sports - Pacific</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I26089.labs.zap2it.com">
+    <display-name>830 BOOML</display-name>
+    <display-name>830 BOOML NC32461:X</display-name>
+    <display-name>830</display-name>
+    <display-name>BOOML</display-name>
+    <display-name>Boomerang Latin America</display-name>
+    <display-name>Latin American Satellite</display-name>
+  </channel>
+  <channel id="I26221.labs.zap2it.com">
+    <display-name>911 MCCRK</display-name>
+    <display-name>911 MCCRK NC32461:X</display-name>
+    <display-name>911</display-name>
+    <display-name>MCCRK</display-name>
+    <display-name>Music Choice: Classic Rock</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I26228.labs.zap2it.com">
+    <display-name>925 MCSSC</display-name>
+    <display-name>925 MCSSC NC32461:X</display-name>
+    <display-name>925</display-name>
+    <display-name>MCSSC</display-name>
+    <display-name>Music Choice: Stage &amp; Screen</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I26229.labs.zap2it.com">
+    <display-name>910 MCREG</display-name>
+    <display-name>910 MCREG NC32461:X</display-name>
+    <display-name>910</display-name>
+    <display-name>MCREG</display-name>
+    <display-name>Music Choice: Reggae</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I26230.labs.zap2it.com">
+    <display-name>904 MCRAP</display-name>
+    <display-name>904 MCRAP NC32461:X</display-name>
+    <display-name>904</display-name>
+    <display-name>MCRAP</display-name>
+    <display-name>Music Choice: Rap</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I26232.labs.zap2it.com">
+    <display-name>907 MCRBC</display-name>
+    <display-name>907 MCRBC NC32461:X</display-name>
+    <display-name>907</display-name>
+    <display-name>MCRBC</display-name>
+    <display-name>Music Choice: R&amp;B Classics</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I26248.labs.zap2it.com">
+    <display-name>931 MCCCH</display-name>
+    <display-name>931 MCCCH NC32461:X</display-name>
+    <display-name>931</display-name>
+    <display-name>MCCCH</display-name>
+    <display-name>Music Choice: Contemporary Christian</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I26250.labs.zap2it.com">
+    <display-name>909 MCGOS</display-name>
+    <display-name>909 MCGOS NC32461:X</display-name>
+    <display-name>909</display-name>
+    <display-name>MCGOS</display-name>
+    <display-name>Music Choice: Gospel</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I26480.labs.zap2it.com">
+    <display-name>902 MCMIX</display-name>
+    <display-name>902 MCMIX NC32461:X</display-name>
+    <display-name>902</display-name>
+    <display-name>MCMIX</display-name>
+    <display-name>Music Choice: Mixtape</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I26643.labs.zap2it.com">
+    <display-name>375 GEM</display-name>
+    <display-name>375 GEM NC32461:X</display-name>
+    <display-name>375</display-name>
+    <display-name>GEM</display-name>
+    <display-name>Gem Shopping Network</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I26849.labs.zap2it.com">
+    <display-name>408 CNBCWLD</display-name>
+    <display-name>408 CNBCWLD NC32461:X</display-name>
+    <display-name>408</display-name>
+    <display-name>CNBCWLD</display-name>
+    <display-name>CNBC World</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I27773.labs.zap2it.com">
+    <display-name>822 CNNLM</display-name>
+    <display-name>822 CNNLM NC32461:X</display-name>
+    <display-name>822</display-name>
+    <display-name>CNNLM</display-name>
+    <display-name>CNN En Espanol- Mexico and US</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I29612.labs.zap2it.com">
+    <display-name>322 LRW</display-name>
+    <display-name>322 LRW NC32461:X</display-name>
+    <display-name>322</display-name>
+    <display-name>LRW</display-name>
+    <display-name>Lifetime Real Women</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I30156.labs.zap2it.com">
+    <display-name>353 COOK</display-name>
+    <display-name>353 COOK NC32461:X</display-name>
+    <display-name>353</display-name>
+    <display-name>COOK</display-name>
+    <display-name>Cooking Channel</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I30210.labs.zap2it.com">
+    <display-name>114 NWS14</display-name>
+    <display-name>114 NWS14 NC32461:X</display-name>
+    <display-name>114</display-name>
+    <display-name>NWS14</display-name>
+    <display-name>News 14 Carolina (NWS14)</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I30324.labs.zap2it.com">
+    <display-name>866 SBN</display-name>
+    <display-name>866 SBN NC32461:X</display-name>
+    <display-name>866</display-name>
+    <display-name>SBN</display-name>
+    <display-name>Saigon Broadcasting Network</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I30325.labs.zap2it.com">
+    <display-name>508 FSCR1</display-name>
+    <display-name>508 FSCR1 NC32461:X</display-name>
+    <display-name>508</display-name>
+    <display-name>FSCR1</display-name>
+    <display-name>Fox Sports Carolinas - North Carolina Ea</display-name>
+    <display-name>Sports Regional</display-name>
+  </channel>
+  <channel id="I30418.labs.zap2it.com">
+    <display-name>452 MTVHIT</display-name>
+    <display-name>452 MTVHIT NC32461:X</display-name>
+    <display-name>452</display-name>
+    <display-name>MTVHIT</display-name>
+    <display-name>MTV Hits (U.S.)</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I30420.labs.zap2it.com">
+    <display-name>207 NIKTON</display-name>
+    <display-name>207 NIKTON NC32461:X</display-name>
+    <display-name>207</display-name>
+    <display-name>NIKTON</display-name>
+    <display-name>Nicktoons Network</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I30623.labs.zap2it.com">
+    <display-name>112 WTVDDT3</display-name>
+    <display-name>112 WTVDDT3 NC32461:X</display-name>
+    <display-name>112</display-name>
+    <display-name>11 WTVDDT3 fcc</display-name>
+    <display-name>WTVDDT3</display-name>
+    <display-name>WTVDDT3 (WTVD-DT3)</display-name>
+    <display-name>Independent</display-name>
+  </channel>
+  <channel id="I30645.labs.zap2it.com">
+    <display-name>170 WUNCDT</display-name>
+    <display-name>170 WUNCDT NC32461:X</display-name>
+    <display-name>170</display-name>
+    <display-name>25 WUNCDT fcc</display-name>
+    <display-name>WUNCDT</display-name>
+    <display-name>WUNCDT (WUNC-DT)</display-name>
+    <display-name>PBS Affiliate</display-name>
+  </channel>
+  <channel id="I31028.labs.zap2it.com">
+    <display-name>942 MCPLT</display-name>
+    <display-name>942 MCPLT NC32461:X</display-name>
+    <display-name>942</display-name>
+    <display-name>MCPLT</display-name>
+    <display-name>Music Choice: Pop Latino</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I31029.labs.zap2it.com">
+    <display-name>916 MCCAL</display-name>
+    <display-name>916 MCCAL NC32461:X</display-name>
+    <display-name>916</display-name>
+    <display-name>MCCAL</display-name>
+    <display-name>Music Choice: Classic Alternative</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I31030.labs.zap2it.com">
+    <display-name>913 MCROK</display-name>
+    <display-name>913 MCROK NC32461:X</display-name>
+    <display-name>913</display-name>
+    <display-name>MCROK</display-name>
+    <display-name>Music Choice: Rock</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I31038.labs.zap2it.com">
+    <display-name>1147 WRPXDT</display-name>
+    <display-name>1147 WRPXDT NC32461:X</display-name>
+    <display-name>1147</display-name>
+    <display-name>15 WRPXDT fcc</display-name>
+    <display-name>WRPXDT</display-name>
+    <display-name>WRPXDT (WRPX-DT)</display-name>
+    <display-name>ION Affiliate</display-name>
+  </channel>
+  <channel id="I31046.labs.zap2it.com">
+    <display-name>1270 HDT</display-name>
+    <display-name>1270 HDT NC32461:X</display-name>
+    <display-name>1270</display-name>
+    <display-name>HDT</display-name>
+    <display-name>HD Theater</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I31570.labs.zap2it.com">
+    <display-name>763 TMCDM</display-name>
+    <display-name>763 TMCDM NC32461:X</display-name>
+    <display-name>763</display-name>
+    <display-name>TMCDM</display-name>
+    <display-name>TMC On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I31571.labs.zap2it.com">
+    <display-name>761 MAXDM</display-name>
+    <display-name>761 MAXDM NC32461:X</display-name>
+    <display-name>761</display-name>
+    <display-name>MAXDM</display-name>
+    <display-name>Cinemax On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I31590.labs.zap2it.com">
+    <display-name>792 ADLTDM</display-name>
+    <display-name>792 ADLTDM NC32461:X</display-name>
+    <display-name>792</display-name>
+    <display-name>ADLTDM</display-name>
+    <display-name>Adult On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I31591.labs.zap2it.com">
+    <display-name>600 MVDM</display-name>
+    <display-name>600 MVDM NC32461:X</display-name>
+    <display-name>600</display-name>
+    <display-name>MVDM</display-name>
+    <display-name>Movies On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I31596.labs.zap2it.com">
+    <display-name>480 MSCDM</display-name>
+    <display-name>480 MSCDM NC32461:X</display-name>
+    <display-name>480</display-name>
+    <display-name>MSCDM</display-name>
+    <display-name>Music On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I31601.labs.zap2it.com">
+    <display-name>343 BBCADM</display-name>
+    <display-name>343 BBCADM NC32461:X</display-name>
+    <display-name>343</display-name>
+    <display-name>BBCADM</display-name>
+    <display-name>BBC America On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I32026.labs.zap2it.com">
+    <display-name>762 SHOWDM</display-name>
+    <display-name>762 SHOWDM NC32461:X</display-name>
+    <display-name>762</display-name>
+    <display-name>SHOWDM</display-name>
+    <display-name>Showtime On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I32235.labs.zap2it.com">
+    <display-name>788 VAVOOM</display-name>
+    <display-name>788 VAVOOM NC32461:X</display-name>
+    <display-name>788</display-name>
+    <display-name>VAVOOM</display-name>
+    <display-name>VAVOOM - New Frontier</display-name>
+    <display-name>(AO) Pay-Per-View</display-name>
+  </channel>
+  <channel id="I32236.labs.zap2it.com">
+    <display-name>786 SEXSEE</display-name>
+    <display-name>786 SEXSEE NC32461:X</display-name>
+    <display-name>786</display-name>
+    <display-name>SEXSEE</display-name>
+    <display-name>SEXSEE-New Frontier</display-name>
+    <display-name>(AO) Pay-Per-View</display-name>
+  </channel>
+  <channel id="I32238.labs.zap2it.com">
+    <display-name>1128 WRDCDT</display-name>
+    <display-name>1128 WRDCDT NC32461:X</display-name>
+    <display-name>1128</display-name>
+    <display-name>28 WRDCDT fcc</display-name>
+    <display-name>WRDCDT</display-name>
+    <display-name>WRDCDT (WRDC-DT)</display-name>
+    <display-name>MyNetworkTV Affiliate</display-name>
+  </channel>
+  <channel id="I32281.labs.zap2it.com">
+    <display-name>527 NBATV</display-name>
+    <display-name>527 NBATV NC32461:X</display-name>
+    <display-name>527</display-name>
+    <display-name>NBATV</display-name>
+    <display-name>NBA TV</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I33178.labs.zap2it.com">
+    <display-name>544 FUEL</display-name>
+    <display-name>544 FUEL NC32461:X</display-name>
+    <display-name>544</display-name>
+    <display-name>FUEL</display-name>
+    <display-name>Fuel TV</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I33395.labs.zap2it.com">
+    <display-name>542 TENNIS</display-name>
+    <display-name>542 TENNIS NC32461:X</display-name>
+    <display-name>542</display-name>
+    <display-name>TENNIS</display-name>
+    <display-name>Tennis Channel</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I33628.labs.zap2it.com">
+    <display-name>848 DEPELC</display-name>
+    <display-name>848 DEPELC NC32461:X</display-name>
+    <display-name>848</display-name>
+    <display-name>DEPELC</display-name>
+    <display-name>De Pelicula Clasico</display-name>
+    <display-name>MX Pay</display-name>
+  </channel>
+  <channel id="I33652.labs.zap2it.com">
+    <display-name>802 AZTECAE</display-name>
+    <display-name>802 AZTECAE NC32461:X</display-name>
+    <display-name>802</display-name>
+    <display-name>AZTECAE</display-name>
+    <display-name>Azteca America Network - Eastern</display-name>
+    <display-name>Network</display-name>
+  </channel>
+  <channel id="I33669.labs.zap2it.com">
+    <display-name>806 TFSAT</display-name>
+    <display-name>806 TFSAT NC32461:X</display-name>
+    <display-name>806</display-name>
+    <display-name>TFSAT</display-name>
+    <display-name>Telefutura Satellite Feed</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I33691.labs.zap2it.com">
+    <display-name>819 GOLTVE</display-name>
+    <display-name>819 GOLTVE NC32461:X</display-name>
+    <display-name>819</display-name>
+    <display-name>GOLTVE</display-name>
+    <display-name>GOLTV (English)</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I33930.labs.zap2it.com">
+    <display-name>516 SPRTMAN</display-name>
+    <display-name>516 SPRTMAN NC32461:X</display-name>
+    <display-name>516</display-name>
+    <display-name>SPRTMAN</display-name>
+    <display-name>The Sportsman Channel</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I34055.labs.zap2it.com">
+    <display-name>232 DISNDM</display-name>
+    <display-name>232 DISNDM NC32461:X</display-name>
+    <display-name>232</display-name>
+    <display-name>DISNDM</display-name>
+    <display-name>Disney On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I34128.labs.zap2it.com">
+    <display-name>885 C1RWN</display-name>
+    <display-name>885 C1RWN NC32461:X</display-name>
+    <display-name>885</display-name>
+    <display-name>C1RWN</display-name>
+    <display-name>Channel One Russia Worldwide Network</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I34294.labs.zap2it.com">
+    <display-name>1081 LOCDM</display-name>
+    <display-name>1081 LOCDM NC32461:X</display-name>
+    <display-name>1081</display-name>
+    <display-name>LOCDM</display-name>
+    <display-name>Local On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I34351.labs.zap2it.com">
+    <display-name>230 KIDSDM</display-name>
+    <display-name>230 KIDSDM NC32461:X</display-name>
+    <display-name>230</display-name>
+    <display-name>KIDSDM</display-name>
+    <display-name>KIDS (Kids Channel) On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I34763.labs.zap2it.com">
+    <display-name>1626 UHD</display-name>
+    <display-name>1626 UHD NC32461:X</display-name>
+    <display-name>1626</display-name>
+    <display-name>UHD</display-name>
+    <display-name>Universal HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I34901.labs.zap2it.com">
+    <display-name>756 STZC</display-name>
+    <display-name>756 STZC NC32461:X</display-name>
+    <display-name>756</display-name>
+    <display-name>STZC</display-name>
+    <display-name>Starz Comedy</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I34933.labs.zap2it.com">
+    <display-name>1715 MAXHD</display-name>
+    <display-name>1715 MAXHD NC32461:X</display-name>
+    <display-name>1715</display-name>
+    <display-name>MAXHD</display-name>
+    <display-name>CineMAX HD</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I34941.labs.zap2it.com">
+    <display-name>1750 STZHD</display-name>
+    <display-name>1750 STZHD NC32461:X</display-name>
+    <display-name>1750</display-name>
+    <display-name>STZHD</display-name>
+    <display-name>Starz HD</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I35329.labs.zap2it.com">
+    <display-name>1745 TMCHD</display-name>
+    <display-name>1745 TMCHD NC32461:X</display-name>
+    <display-name>1745</display-name>
+    <display-name>TMCHD</display-name>
+    <display-name>The Movie Channel HD</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I35513.labs.zap2it.com">
+    <display-name>330 TVONE</display-name>
+    <display-name>330 TVONE NC32461:X</display-name>
+    <display-name>330</display-name>
+    <display-name>TVONE</display-name>
+    <display-name>TV ONE</display-name>
+    <display-name>Regional</display-name>
+  </channel>
+  <channel id="I35763.labs.zap2it.com">
+    <display-name>1020 EVNDM</display-name>
+    <display-name>1020 EVNDM NC32461:X</display-name>
+    <display-name>1020</display-name>
+    <display-name>EVNDM</display-name>
+    <display-name>Events On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I35780.labs.zap2it.com">
+    <display-name>171 UNCKD</display-name>
+    <display-name>171 UNCKD NC32461:X</display-name>
+    <display-name>171</display-name>
+    <display-name>UNCKD</display-name>
+    <display-name>Cable Feed of WUNCDT3</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I35781.labs.zap2it.com">
+    <display-name>172 UNCMX</display-name>
+    <display-name>172 UNCMX NC32461:X</display-name>
+    <display-name>172</display-name>
+    <display-name>UNCMX</display-name>
+    <display-name>Time Warner Digital Feed of WUNCDT4</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I35782.labs.zap2it.com">
+    <display-name>173 UNCEX</display-name>
+    <display-name>173 UNCEX NC32461:X</display-name>
+    <display-name>173</display-name>
+    <display-name>UNCEX</display-name>
+    <display-name>Cable Feed of WUNDCDT5</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I35975.labs.zap2it.com">
+    <display-name>1716 MAXHDP</display-name>
+    <display-name>1716 MAXHDP NC32461:X</display-name>
+    <display-name>1716</display-name>
+    <display-name>MAXHDP</display-name>
+    <display-name>CineMAX HD (Pacific)</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I36178.labs.zap2it.com">
+    <display-name>1170 UNCTV</display-name>
+    <display-name>1170 UNCTV NC32461:X</display-name>
+    <display-name>1170</display-name>
+    <display-name>UNCTV</display-name>
+    <display-name>Time Warner Digital Feed of WUNCDT2</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I36225.labs.zap2it.com">
+    <display-name>1635 ENCRHD</display-name>
+    <display-name>1635 ENCRHD NC32461:X</display-name>
+    <display-name>1635</display-name>
+    <display-name>ENCRHD</display-name>
+    <display-name>Encore HD</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I38589.labs.zap2it.com">
+    <display-name>760 HBODM</display-name>
+    <display-name>760 HBODM NC32461:X</display-name>
+    <display-name>760</display-name>
+    <display-name>HBODM</display-name>
+    <display-name>HBO on Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I42642.labs.zap2it.com">
+    <display-name>1301 TNTHD</display-name>
+    <display-name>1301 TNTHD NC32461:X</display-name>
+    <display-name>1301</display-name>
+    <display-name>TNTHD</display-name>
+    <display-name>TNTHD (TNT-HD)</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I42982.labs.zap2it.com">
+    <display-name>118 WNCNDT2</display-name>
+    <display-name>118 WNCNDT2 NC32461:X</display-name>
+    <display-name>118</display-name>
+    <display-name>17 WNCNDT2 fcc</display-name>
+    <display-name>WNCNDT2</display-name>
+    <display-name>WNCNDT2 (WNCN-DT2)</display-name>
+    <display-name>Independent</display-name>
+  </channel>
+  <channel id="I43335.labs.zap2it.com">
+    <display-name>920 MC90S</display-name>
+    <display-name>920 MC90S NC32461:X</display-name>
+    <display-name>920</display-name>
+    <display-name>MC90S</display-name>
+    <display-name>Music Choice: 90s Channel</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I43362.labs.zap2it.com">
+    <display-name>814 HISTE</display-name>
+    <display-name>814 HISTE NC32461:X</display-name>
+    <display-name>814</display-name>
+    <display-name>HISTE</display-name>
+    <display-name>HISTORY CHANNEL EN ESPANOL</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I44059.labs.zap2it.com">
+    <display-name>929 MCTRC</display-name>
+    <display-name>929 MCTRC NC32461:X</display-name>
+    <display-name>929</display-name>
+    <display-name>MCTRC</display-name>
+    <display-name>Music Choice: True Country</display-name>
+    <display-name>Music</display-name>
+  </channel>
+  <channel id="I44076.labs.zap2it.com">
+    <display-name>1771 HDPPV</display-name>
+    <display-name>1771 HDPPV NC32461:X</display-name>
+    <display-name>1771</display-name>
+    <display-name>HDPPV</display-name>
+    <display-name>In Demand HDPV (HD Events)</display-name>
+    <display-name>(AO) Pay-Per-View</display-name>
+  </channel>
+  <channel id="I44244.labs.zap2it.com">
+    <display-name>1520 SPHDTV</display-name>
+    <display-name>1520 SPHDTV NC32461:X</display-name>
+    <display-name>1520</display-name>
+    <display-name>SPHDTV</display-name>
+    <display-name>EPG Special Events HDTV</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I44617.labs.zap2it.com">
+    <display-name>853 PHNIN</display-name>
+    <display-name>853 PHNIN NC32461:X</display-name>
+    <display-name>853</display-name>
+    <display-name>PHNIN</display-name>
+    <display-name>Phoenix Info News</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I44940.labs.zap2it.com">
+    <display-name>283 GMC</display-name>
+    <display-name>283 GMC NC32461:X</display-name>
+    <display-name>283</display-name>
+    <display-name>GMC</display-name>
+    <display-name>GOSPEL MUSIC CHANNEL</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I45526.labs.zap2it.com">
+    <display-name>1527 NBATVHD</display-name>
+    <display-name>1527 NBATVHD NC32461:X</display-name>
+    <display-name>1527</display-name>
+    <display-name>NBATVHD</display-name>
+    <display-name>NBA TV HDTV</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I45542.labs.zap2it.com">
+    <display-name>1001 HDMVDM</display-name>
+    <display-name>1001 HDMVDM NC32461:X</display-name>
+    <display-name>1001</display-name>
+    <display-name>HDMVDM</display-name>
+    <display-name>HD Movies On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I45654.labs.zap2it.com">
+    <display-name>502 ESPNU</display-name>
+    <display-name>502 ESPNU NC32461:X</display-name>
+    <display-name>502</display-name>
+    <display-name>ESPNU</display-name>
+    <display-name>ESPNU</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I45742.labs.zap2it.com">
+    <display-name>119 WNCNDT3</display-name>
+    <display-name>119 WNCNDT3 NC32461:X</display-name>
+    <display-name>119</display-name>
+    <display-name>17 WNCNDT3 fcc</display-name>
+    <display-name>WNCNDT3</display-name>
+    <display-name>WNCNDT3 (WNCN-DT3)</display-name>
+    <display-name>NBC Affiliate</display-name>
+  </channel>
+  <channel id="I46463.labs.zap2it.com">
+    <display-name>860 GMAPNY</display-name>
+    <display-name>860 GMAPNY NC32461:X</display-name>
+    <display-name>860</display-name>
+    <display-name>GMAPNY</display-name>
+    <display-name>GMA Pinoy TV</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I46710.labs.zap2it.com">
+    <display-name>1624 HMCHD</display-name>
+    <display-name>1624 HMCHD NC32461:X</display-name>
+    <display-name>1624</display-name>
+    <display-name>HMCHD</display-name>
+    <display-name>Hallmark Movie Channel HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I46737.labs.zap2it.com">
+    <display-name>1541 OUTHD2</display-name>
+    <display-name>1541 OUTHD2 NC32461:X</display-name>
+    <display-name>1541</display-name>
+    <display-name>OUTHD2</display-name>
+    <display-name>Outdoor Channel HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I46762.labs.zap2it.com">
+    <display-name>325 LOGO</display-name>
+    <display-name>325 LOGO NC32461:X</display-name>
+    <display-name>325</display-name>
+    <display-name>LOGO</display-name>
+    <display-name>LOGO</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I47176.labs.zap2it.com">
+    <display-name>413 CURRENT</display-name>
+    <display-name>413 CURRENT NC32461:X</display-name>
+    <display-name>413</display-name>
+    <display-name>CURRENT</display-name>
+    <display-name>Current TV</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I47187.labs.zap2it.com">
+    <display-name>605 KDTNDM</display-name>
+    <display-name>605 KDTNDM NC32461:X</display-name>
+    <display-name>605</display-name>
+    <display-name>KDTNDM</display-name>
+    <display-name>Kids and Teens On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I47188.labs.zap2it.com">
+    <display-name>548 SPFTDM</display-name>
+    <display-name>548 SPFTDM NC32461:X</display-name>
+    <display-name>548</display-name>
+    <display-name>SPFTDM</display-name>
+    <display-name>Sports and Fitness On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I47196.labs.zap2it.com">
+    <display-name>341 CEDGDM</display-name>
+    <display-name>341 CEDGDM NC32461:X</display-name>
+    <display-name>341</display-name>
+    <display-name>CEDGDM</display-name>
+    <display-name>Cutting Edge On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I47303.labs.zap2it.com">
+    <display-name>834 LFC</display-name>
+    <display-name>834 LFC NC32461:X</display-name>
+    <display-name>834</display-name>
+    <display-name>LFC</display-name>
+    <display-name>La Familia Cosmovision</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I47540.labs.zap2it.com">
+    <display-name>210 SPROUT</display-name>
+    <display-name>210 SPROUT NC32461:X</display-name>
+    <display-name>210</display-name>
+    <display-name>SPROUT</display-name>
+    <display-name>PBS Kids Sprout</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I48003.labs.zap2it.com">
+    <display-name>365 LIFESDM</display-name>
+    <display-name>365 LIFESDM NC32461:X</display-name>
+    <display-name>365</display-name>
+    <display-name>LIFESDM</display-name>
+    <display-name>Lifestyle On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I48544.labs.zap2it.com">
+    <display-name>794 HWTVDM</display-name>
+    <display-name>794 HWTVDM NC32461:X</display-name>
+    <display-name>794</display-name>
+    <display-name>HWTVDM</display-name>
+    <display-name>Howard TV On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I48639.labs.zap2it.com">
+    <display-name>1514 VSHD</display-name>
+    <display-name>1514 VSHD NC32461:X</display-name>
+    <display-name>1514</display-name>
+    <display-name>VSHD</display-name>
+    <display-name>VERSUS HD</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I48761.labs.zap2it.com">
+    <display-name>583 SPO1RAL</display-name>
+    <display-name>583 SPO1RAL NC32461:X</display-name>
+    <display-name>583</display-name>
+    <display-name>SPO1RAL</display-name>
+    <display-name>SPO1RAL (Raleigh/Durham)</display-name>
+    <display-name>Local Pay-Per-View</display-name>
+  </channel>
+  <channel id="I48764.labs.zap2it.com">
+    <display-name>584 SPO2RAL</display-name>
+    <display-name>584 SPO2RAL NC32461:X</display-name>
+    <display-name>584</display-name>
+    <display-name>SPO2RAL</display-name>
+    <display-name>SPO2RAL (Raleigh/Durham)</display-name>
+    <display-name>Local Pay-Per-View</display-name>
+  </channel>
+  <channel id="I48766.labs.zap2it.com">
+    <display-name>587 SPO3RAL</display-name>
+    <display-name>587 SPO3RAL NC32461:X</display-name>
+    <display-name>587</display-name>
+    <display-name>SPO3RAL</display-name>
+    <display-name>SPO3RAL (Raleigh/Durham)</display-name>
+    <display-name>Local Pay-Per-View</display-name>
+  </channel>
+  <channel id="I48768.labs.zap2it.com">
+    <display-name>588 SPO4RAL</display-name>
+    <display-name>588 SPO4RAL NC32461:X</display-name>
+    <display-name>588</display-name>
+    <display-name>SPO4RAL</display-name>
+    <display-name>SPO4RAL (Raleigh/Durham)</display-name>
+    <display-name>Local Pay-Per-View</display-name>
+  </channel>
+  <channel id="I48770.labs.zap2it.com">
+    <display-name>589 SPO5RAL</display-name>
+    <display-name>589 SPO5RAL NC32461:X</display-name>
+    <display-name>589</display-name>
+    <display-name>SPO5RAL</display-name>
+    <display-name>SPO5RAL (Raleigh/Durham)</display-name>
+    <display-name>Local Pay-Per-View</display-name>
+  </channel>
+  <channel id="I48772.labs.zap2it.com">
+    <display-name>590 SPO6RAL</display-name>
+    <display-name>590 SPO6RAL NC32461:X</display-name>
+    <display-name>590</display-name>
+    <display-name>SPO6RAL</display-name>
+    <display-name>SPO6RAL (Raleigh/Durham)</display-name>
+    <display-name>Local Pay-Per-View</display-name>
+  </channel>
+  <channel id="I48969.labs.zap2it.com">
+    <display-name>316 CLOO</display-name>
+    <display-name>316 CLOO NC32461:X</display-name>
+    <display-name>316</display-name>
+    <display-name>CLOO</display-name>
+    <display-name>Cloo</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I49141.labs.zap2it.com">
+    <display-name>1453 PLDHD</display-name>
+    <display-name>1453 PLDHD NC32461:X</display-name>
+    <display-name>1453</display-name>
+    <display-name>PLDHD</display-name>
+    <display-name>PALLADIA</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I49426.labs.zap2it.com">
+    <display-name>1140 WUVCDT</display-name>
+    <display-name>1140 WUVCDT NC32461:X</display-name>
+    <display-name>1140</display-name>
+    <display-name>38 WUVCDT fcc</display-name>
+    <display-name>WUVCDT</display-name>
+    <display-name>WUVCDT (WUVC-DT)</display-name>
+    <display-name>Univision (SI) Affiliate</display-name>
+  </channel>
+  <channel id="I49438.labs.zap2it.com">
+    <display-name>1253 NGCHD</display-name>
+    <display-name>1253 NGCHD NC32461:X</display-name>
+    <display-name>1253</display-name>
+    <display-name>NGCHD</display-name>
+    <display-name>National Geographic HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I49742.labs.zap2it.com">
+    <display-name>602 MVTRDM</display-name>
+    <display-name>602 MVTRDM NC32461:X</display-name>
+    <display-name>602</display-name>
+    <display-name>MVTRDM</display-name>
+    <display-name>Movie Trailers On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I49788.labs.zap2it.com">
+    <display-name>1350 HGTVD</display-name>
+    <display-name>1350 HGTVD NC32461:X</display-name>
+    <display-name>1350</display-name>
+    <display-name>HGTVD</display-name>
+    <display-name>HGTV HD (HGHD)</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I49934.labs.zap2it.com">
+    <display-name>620 FRMVDM</display-name>
+    <display-name>620 FRMVDM NC32461:X</display-name>
+    <display-name>620</display-name>
+    <display-name>FRMVDM</display-name>
+    <display-name>Free Movies On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I50180.labs.zap2it.com">
+    <display-name>381 AMAUCTN</display-name>
+    <display-name>381 AMAUCTN NC32461:X</display-name>
+    <display-name>381</display-name>
+    <display-name>AMAUCTN</display-name>
+    <display-name>America's Auction Network</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I50673.labs.zap2it.com">
+    <display-name>1017 INMVDM</display-name>
+    <display-name>1017 INMVDM NC32461:X</display-name>
+    <display-name>1017</display-name>
+    <display-name>INMVDM</display-name>
+    <display-name>International Movies On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I50747.labs.zap2it.com">
+    <display-name>1351 FOODHD</display-name>
+    <display-name>1351 FOODHD NC32461:X</display-name>
+    <display-name>1351</display-name>
+    <display-name>FOODHD</display-name>
+    <display-name>Food HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I50916.labs.zap2it.com">
+    <display-name>129 WRDCDT2</display-name>
+    <display-name>129 WRDCDT2 NC32461:X</display-name>
+    <display-name>129</display-name>
+    <display-name>28 WRDCDT2 fcc</display-name>
+    <display-name>WRDCDT2</display-name>
+    <display-name>WRDCDT2 (WRDC-DT2)</display-name>
+    <display-name>Independent</display-name>
+  </channel>
+  <channel id="I51529.labs.zap2it.com">
+    <display-name>1306 AETVHD</display-name>
+    <display-name>1306 AETVHD NC32461:X</display-name>
+    <display-name>1306</display-name>
+    <display-name>AETVHD</display-name>
+    <display-name>A&amp;E HD East</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I51659.labs.zap2it.com">
+    <display-name>199 CAROLDM</display-name>
+    <display-name>199 CAROLDM NC32461:X</display-name>
+    <display-name>199</display-name>
+    <display-name>CAROLDM</display-name>
+    <display-name>Carolina On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I51879.labs.zap2it.com">
+    <display-name>481 MUSCDM</display-name>
+    <display-name>481 MUSCDM NC32461:X</display-name>
+    <display-name>481</display-name>
+    <display-name>MUSCDM</display-name>
+    <display-name>Music Choice On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I51972.labs.zap2it.com">
+    <display-name>795 TMFTVDM</display-name>
+    <display-name>795 TMFTVDM NC32461:X</display-name>
+    <display-name>795</display-name>
+    <display-name>TMFTVDM</display-name>
+    <display-name>Too Much For TV On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I52195.labs.zap2it.com">
+    <display-name>898 BOLLYDM</display-name>
+    <display-name>898 BOLLYDM NC32461:X</display-name>
+    <display-name>898</display-name>
+    <display-name>BOLLYDM</display-name>
+    <display-name>Bollywood On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I52199.labs.zap2it.com">
+    <display-name>619 REELZ</display-name>
+    <display-name>619 REELZ NC32461:X</display-name>
+    <display-name>619</display-name>
+    <display-name>REELZ</display-name>
+    <display-name>ReelzChannel</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I53344.labs.zap2it.com">
+    <display-name>798 OUTTVDM</display-name>
+    <display-name>798 OUTTVDM NC32461:X</display-name>
+    <display-name>798</display-name>
+    <display-name>OUTTVDM</display-name>
+    <display-name>Outrageous TV On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I53623.labs.zap2it.com">
+    <display-name>386 AUTOMDM</display-name>
+    <display-name>386 AUTOMDM NC32461:X</display-name>
+    <display-name>386</display-name>
+    <display-name>AUTOMDM</display-name>
+    <display-name>Automotive On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I54196.labs.zap2it.com">
+    <display-name>1016 ESPNLDM</display-name>
+    <display-name>1016 ESPNLDM NC32461:X</display-name>
+    <display-name>1016</display-name>
+    <display-name>ESPNLDM</display-name>
+    <display-name>Espanol On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I54544.labs.zap2it.com">
+    <display-name>387 TRVLDM</display-name>
+    <display-name>387 TRVLDM NC32461:X</display-name>
+    <display-name>387</display-name>
+    <display-name>TRVLDM</display-name>
+    <display-name>Travel On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I54867.labs.zap2it.com">
+    <display-name>840 BANDAUS</display-name>
+    <display-name>840 BANDAUS NC32461:X</display-name>
+    <display-name>840</display-name>
+    <display-name>BANDAUS</display-name>
+    <display-name>BandaMax US Feed</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I55040.labs.zap2it.com">
+    <display-name>231 KDPREDM</display-name>
+    <display-name>231 KDPREDM NC32461:X</display-name>
+    <display-name>231</display-name>
+    <display-name>KDPREDM</display-name>
+    <display-name>Kids/Pre-School On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I55205.labs.zap2it.com">
+    <display-name>625 CHILLER</display-name>
+    <display-name>625 CHILLER NC32461:X</display-name>
+    <display-name>625</display-name>
+    <display-name>CHILLER</display-name>
+    <display-name>Chiller</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I55382.labs.zap2it.com">
+    <display-name>555 GAM1RL</display-name>
+    <display-name>555 GAM1RL NC32461:X</display-name>
+    <display-name>555</display-name>
+    <display-name>GAM1RL</display-name>
+    <display-name>Time Warner Raleigh Game 1</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I55385.labs.zap2it.com">
+    <display-name>556 GAM2RL</display-name>
+    <display-name>556 GAM2RL NC32461:X</display-name>
+    <display-name>556</display-name>
+    <display-name>GAM2RL</display-name>
+    <display-name>Time Warner Raleigh Game 2</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I55387.labs.zap2it.com">
+    <display-name>557 GAM3RL</display-name>
+    <display-name>557 GAM3RL NC32461:X</display-name>
+    <display-name>557</display-name>
+    <display-name>GAM3RL</display-name>
+    <display-name>Time Warner Raleigh Game 3</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I55389.labs.zap2it.com">
+    <display-name>558 GAM4RL</display-name>
+    <display-name>558 GAM4RL NC32461:X</display-name>
+    <display-name>558</display-name>
+    <display-name>GAM4RL</display-name>
+    <display-name>Time Warner Raleigh Game 4</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I55391.labs.zap2it.com">
+    <display-name>559 GAM5RL</display-name>
+    <display-name>559 GAM5RL NC32461:X</display-name>
+    <display-name>559</display-name>
+    <display-name>GAM5RL</display-name>
+    <display-name>Time Warner Raleigh Game 5</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I55393.labs.zap2it.com">
+    <display-name>560 GAM6RL</display-name>
+    <display-name>560 GAM6RL NC32461:X</display-name>
+    <display-name>560</display-name>
+    <display-name>GAM6RL</display-name>
+    <display-name>Time Warner Raleigh Game 6</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I55395.labs.zap2it.com">
+    <display-name>561 GAM7RL</display-name>
+    <display-name>561 GAM7RL NC32461:X</display-name>
+    <display-name>561</display-name>
+    <display-name>GAM7RL</display-name>
+    <display-name>Time Warner Raleigh Game 7</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I55397.labs.zap2it.com">
+    <display-name>562 GAM8RL</display-name>
+    <display-name>562 GAM8RL NC32461:X</display-name>
+    <display-name>562</display-name>
+    <display-name>GAM8RL</display-name>
+    <display-name>Time Warner Raleigh Game 8</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I55399.labs.zap2it.com">
+    <display-name>563 GAM9RL</display-name>
+    <display-name>563 GAM9RL NC32461:X</display-name>
+    <display-name>563</display-name>
+    <display-name>GAM9RL</display-name>
+    <display-name>Time Warner Raleigh Game 9</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I55401.labs.zap2it.com">
+    <display-name>564 GAM10RL</display-name>
+    <display-name>564 GAM10RL NC32461:X</display-name>
+    <display-name>564</display-name>
+    <display-name>GAM10RL</display-name>
+    <display-name>Time Warner Raleigh Game 10</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I55405.labs.zap2it.com">
+    <display-name>565 GAM11RL</display-name>
+    <display-name>565 GAM11RL NC32461:X</display-name>
+    <display-name>565</display-name>
+    <display-name>GAM11RL</display-name>
+    <display-name>Time Warner Raleigh Game 11</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I55407.labs.zap2it.com">
+    <display-name>566 GAM12RL</display-name>
+    <display-name>566 GAM12RL NC32461:X</display-name>
+    <display-name>566</display-name>
+    <display-name>GAM12RL</display-name>
+    <display-name>Time Warner Raleigh Game 12</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I55409.labs.zap2it.com">
+    <display-name>567 GAM13RL</display-name>
+    <display-name>567 GAM13RL NC32461:X</display-name>
+    <display-name>567</display-name>
+    <display-name>GAM13RL</display-name>
+    <display-name>Time Warner Raleigh Game 13</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I55411.labs.zap2it.com">
+    <display-name>568 GAM14RL</display-name>
+    <display-name>568 GAM14RL NC32461:X</display-name>
+    <display-name>568</display-name>
+    <display-name>GAM14RL</display-name>
+    <display-name>Time Warner Raleigh Game 14</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I55596.labs.zap2it.com">
+    <display-name>569 GAMEHD</display-name>
+    <display-name>569 GAMEHD NC32461:X</display-name>
+    <display-name>569</display-name>
+    <display-name>GAMEHD</display-name>
+    <display-name>Game HD</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I55597.labs.zap2it.com">
+    <display-name>581 TEAMHD</display-name>
+    <display-name>581 TEAMHD NC32461:X</display-name>
+    <display-name>581</display-name>
+    <display-name>TEAMHD</display-name>
+    <display-name>TEAM HD</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I55817.labs.zap2it.com">
+    <display-name>1762 SHWHDDM</display-name>
+    <display-name>1762 SHWHDDM NC32461:X</display-name>
+    <display-name>1762</display-name>
+    <display-name>SHWHDDM</display-name>
+    <display-name>Showtime HD On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I55887.labs.zap2it.com">
+    <display-name>1623 LMNHD</display-name>
+    <display-name>1623 LMNHD NC32461:X</display-name>
+    <display-name>1623</display-name>
+    <display-name>LMNHD</display-name>
+    <display-name>Lifetime Movie Network HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I56032.labs.zap2it.com">
+    <display-name>376 LIQUID</display-name>
+    <display-name>376 LIQUID NC32461:X</display-name>
+    <display-name>376</display-name>
+    <display-name>LIQUID</display-name>
+    <display-name>Liquidation Channel</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I56149.labs.zap2it.com">
+    <display-name>606 THMOVDM</display-name>
+    <display-name>606 THMOVDM NC32461:X</display-name>
+    <display-name>606</display-name>
+    <display-name>THMOVDM</display-name>
+    <display-name>Thriller Movies On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I56748.labs.zap2it.com">
+    <display-name>1339 HDSHWDM</display-name>
+    <display-name>1339 HDSHWDM NC32461:X</display-name>
+    <display-name>1339</display-name>
+    <display-name>HDSHWDM</display-name>
+    <display-name>Hd Showcase on Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I56783.labs.zap2it.com">
+    <display-name>538 BIGTEN</display-name>
+    <display-name>538 BIGTEN NC32461:X</display-name>
+    <display-name>538</display-name>
+    <display-name>BIGTEN</display-name>
+    <display-name>Big Ten Network</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I56905.labs.zap2it.com">
+    <display-name>1250 DSCHD</display-name>
+    <display-name>1250 DSCHD NC32461:X</display-name>
+    <display-name>1250</display-name>
+    <display-name>DSCHD</display-name>
+    <display-name>The Discovery Channel HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I57390.labs.zap2it.com">
+    <display-name>1260 SCIHD</display-name>
+    <display-name>1260 SCIHD NC32461:X</display-name>
+    <display-name>1260</display-name>
+    <display-name>SCIHD</display-name>
+    <display-name>Science Channel HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I57391.labs.zap2it.com">
+    <display-name>1258 TLCHD</display-name>
+    <display-name>1258 TLCHD NC32461:X</display-name>
+    <display-name>1258</display-name>
+    <display-name>TLCHD</display-name>
+    <display-name>The Learning Channel HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I57394.labs.zap2it.com">
+    <display-name>1252 APLHD</display-name>
+    <display-name>1252 APLHD NC32461:X</display-name>
+    <display-name>1252</display-name>
+    <display-name>APLHD</display-name>
+    <display-name>Animal Planet HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I57569.labs.zap2it.com">
+    <display-name>1756 STZCHD</display-name>
+    <display-name>1756 STZCHD NC32461:X</display-name>
+    <display-name>1756</display-name>
+    <display-name>STZCHD</display-name>
+    <display-name>Starz Comedy HD</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I57573.labs.zap2it.com">
+    <display-name>1752 STZEHD</display-name>
+    <display-name>1752 STZEHD NC32461:X</display-name>
+    <display-name>1752</display-name>
+    <display-name>STZEHD</display-name>
+    <display-name>Starz Edge HD</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I57581.labs.zap2it.com">
+    <display-name>1754 STZKHD</display-name>
+    <display-name>1754 STZKHD NC32461:X</display-name>
+    <display-name>1754</display-name>
+    <display-name>STZKHD</display-name>
+    <display-name>Starz Kids HD</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I57708.labs.zap2it.com">
+    <display-name>1263 HSTRYHD</display-name>
+    <display-name>1263 HSTRYHD NC32461:X</display-name>
+    <display-name>1263</display-name>
+    <display-name>HSTRYHD</display-name>
+    <display-name>History HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I58321.labs.zap2it.com">
+    <display-name>1538 BIG10HD</display-name>
+    <display-name>1538 BIG10HD NC32461:X</display-name>
+    <display-name>1538</display-name>
+    <display-name>BIG10HD</display-name>
+    <display-name>Big Ten Network HD</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I58333.labs.zap2it.com">
+    <display-name>183 RTTV</display-name>
+    <display-name>183 RTTV NC32461:X</display-name>
+    <display-name>183</display-name>
+    <display-name>RTTV</display-name>
+    <display-name>Russia Today</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I58428.labs.zap2it.com">
+    <display-name>811 DFAME</display-name>
+    <display-name>811 DFAME NC32461:X</display-name>
+    <display-name>811</display-name>
+    <display-name>DFAME</display-name>
+    <display-name>Discovery Familia En Espanol</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I58452.labs.zap2it.com">
+    <display-name>1300 USAHD</display-name>
+    <display-name>1300 USAHD NC32461:X</display-name>
+    <display-name>1300</display-name>
+    <display-name>USAHD</display-name>
+    <display-name>USA Network HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I58508.labs.zap2it.com">
+    <display-name>1512 SPEEDHD</display-name>
+    <display-name>1512 SPEEDHD NC32461:X</display-name>
+    <display-name>1512</display-name>
+    <display-name>SPEEDHD</display-name>
+    <display-name>Speed HD</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I58515.labs.zap2it.com">
+    <display-name>1302 TBSHD</display-name>
+    <display-name>1302 TBSHD NC32461:X</display-name>
+    <display-name>1302</display-name>
+    <display-name>TBSHD</display-name>
+    <display-name>TBS HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I58530.labs.zap2it.com">
+    <display-name>1627 MGMHD</display-name>
+    <display-name>1627 MGMHD NC32461:X</display-name>
+    <display-name>1627</display-name>
+    <display-name>MGMHD</display-name>
+    <display-name>MGM HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I58532.labs.zap2it.com">
+    <display-name>1264 SMTHHD</display-name>
+    <display-name>1264 SMTHHD NC32461:X</display-name>
+    <display-name>1264</display-name>
+    <display-name>SMTHHD</display-name>
+    <display-name>Smithsonian HD Network</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I58533.labs.zap2it.com">
+    <display-name>1730 SHO2HD</display-name>
+    <display-name>1730 SHO2HD NC32461:X</display-name>
+    <display-name>1730</display-name>
+    <display-name>SHO2HD</display-name>
+    <display-name>SHO 2 HD</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I58570.labs.zap2it.com">
+    <display-name>526 NHLNET</display-name>
+    <display-name>526 NHLNET NC32461:X</display-name>
+    <display-name>526</display-name>
+    <display-name>NHLNET</display-name>
+    <display-name>NHL Network</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I58574.labs.zap2it.com">
+    <display-name>1312 FXHD</display-name>
+    <display-name>1312 FXHD NC32461:X</display-name>
+    <display-name>1312</display-name>
+    <display-name>FXHD</display-name>
+    <display-name>FX HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I58623.labs.zap2it.com">
+    <display-name>1315 SYFYHD</display-name>
+    <display-name>1315 SYFYHD NC32461:X</display-name>
+    <display-name>1315</display-name>
+    <display-name>SYFYHD</display-name>
+    <display-name>Syfy HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I58625.labs.zap2it.com">
+    <display-name>1307 BRAVOHD</display-name>
+    <display-name>1307 BRAVOHD NC32461:X</display-name>
+    <display-name>1307</display-name>
+    <display-name>BRAVOHD</display-name>
+    <display-name>Bravo HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I58646.labs.zap2it.com">
+    <display-name>1400 CNNHD</display-name>
+    <display-name>1400 CNNHD NC32461:X</display-name>
+    <display-name>1400</display-name>
+    <display-name>CNNHD</display-name>
+    <display-name>CNN HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I58649.labs.zap2it.com">
+    <display-name>404 FBN</display-name>
+    <display-name>404 FBN NC32461:X</display-name>
+    <display-name>404</display-name>
+    <display-name>FBN</display-name>
+    <display-name>Fox Business</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I58690.labs.zap2it.com">
+    <display-name>1526 NHLHD</display-name>
+    <display-name>1526 NHLHD NC32461:X</display-name>
+    <display-name>1526</display-name>
+    <display-name>NHLHD</display-name>
+    <display-name>NHL Network HD</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I58718.labs.zap2it.com">
+    <display-name>1404 FBNHD</display-name>
+    <display-name>1404 FBNHD NC32461:X</display-name>
+    <display-name>1404</display-name>
+    <display-name>FBNHD</display-name>
+    <display-name>Fox Business HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I58780.labs.zap2it.com">
+    <display-name>1407 CNBCHD</display-name>
+    <display-name>1407 CNBCHD NC32461:X</display-name>
+    <display-name>1407</display-name>
+    <display-name>CNBCHD</display-name>
+    <display-name>CNBC HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I58926.labs.zap2it.com">
+    <display-name>470 BLUHWYS</display-name>
+    <display-name>470 BLUHWYS NC32461:X</display-name>
+    <display-name>470</display-name>
+    <display-name>BLUHWYS</display-name>
+    <display-name>BlueHighways TV</display-name>
+    <display-name>Regional</display-name>
+  </channel>
+  <channel id="I58988.labs.zap2it.com">
+    <display-name>1266 BIOHD</display-name>
+    <display-name>1266 BIOHD NC32461:X</display-name>
+    <display-name>1266</display-name>
+    <display-name>BIOHD</display-name>
+    <display-name>The Biography Channel HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I59036.labs.zap2it.com">
+    <display-name>208 TNCK</display-name>
+    <display-name>208 TNCK NC32461:X</display-name>
+    <display-name>208</display-name>
+    <display-name>TNCK</display-name>
+    <display-name>Teen Nick</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I59090.labs.zap2it.com">
+    <display-name>650 MPASSDM</display-name>
+    <display-name>650 MPASSDM NC32461:X</display-name>
+    <display-name>650</display-name>
+    <display-name>MPASSDM</display-name>
+    <display-name>MoviePass On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I59116.labs.zap2it.com">
+    <display-name>1456 FUSEHD</display-name>
+    <display-name>1456 FUSEHD NC32461:X</display-name>
+    <display-name>1456</display-name>
+    <display-name>FUSEHD</display-name>
+    <display-name>Fuse HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I59140.labs.zap2it.com">
+    <display-name>1650 MVPHDDM</display-name>
+    <display-name>1650 MVPHDDM NC32461:X</display-name>
+    <display-name>1650</display-name>
+    <display-name>MVPHDDM</display-name>
+    <display-name>Moviepass HD on Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I59186.labs.zap2it.com">
+    <display-name>1310 SPIKEHD</display-name>
+    <display-name>1310 SPIKEHD NC32461:X</display-name>
+    <display-name>1310</display-name>
+    <display-name>SPIKEHD</display-name>
+    <display-name>Spike TV HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I59250.labs.zap2it.com">
+    <display-name>1537 CBSSNHD</display-name>
+    <display-name>1537 CBSSNHD NC32461:X</display-name>
+    <display-name>1537</display-name>
+    <display-name>CBSSNHD</display-name>
+    <display-name>CBS Sports Network HD</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I59296.labs.zap2it.com">
+    <display-name>1324 WEHD</display-name>
+    <display-name>1324 WEHD NC32461:X</display-name>
+    <display-name>1324</display-name>
+    <display-name>WEHD</display-name>
+    <display-name>WE tv HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I59303.labs.zap2it.com">
+    <display-name>1354 TRAVHD</display-name>
+    <display-name>1354 TRAVHD NC32461:X</display-name>
+    <display-name>1354</display-name>
+    <display-name>TRAVHD</display-name>
+    <display-name>The Travel Channel HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I59337.labs.zap2it.com">
+    <display-name>1622 AMCHD</display-name>
+    <display-name>1622 AMCHD NC32461:X</display-name>
+    <display-name>1622</display-name>
+    <display-name>AMCHD</display-name>
+    <display-name>AMC HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I59357.labs.zap2it.com">
+    <display-name>1704 HBOFHD</display-name>
+    <display-name>1704 HBOFHD NC32461:X</display-name>
+    <display-name>1704</display-name>
+    <display-name>HBOFHD</display-name>
+    <display-name>HBO Family HD</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I59363.labs.zap2it.com">
+    <display-name>1706 HBOSGHD</display-name>
+    <display-name>1706 HBOSGHD NC32461:X</display-name>
+    <display-name>1706</display-name>
+    <display-name>HBOSGHD</display-name>
+    <display-name>HBO Signature HD</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I59368.labs.zap2it.com">
+    <display-name>1702 HBO2HD</display-name>
+    <display-name>1702 HBO2HD NC32461:X</display-name>
+    <display-name>1702</display-name>
+    <display-name>HBO2HD</display-name>
+    <display-name>HBO 2 HD</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I59373.labs.zap2it.com">
+    <display-name>1717 MOMAXHD</display-name>
+    <display-name>1717 MOMAXHD NC32461:X</display-name>
+    <display-name>1717</display-name>
+    <display-name>MOMAXHD</display-name>
+    <display-name>MoreMax HD</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I59432.labs.zap2it.com">
+    <display-name>1205 NIKHD</display-name>
+    <display-name>1205 NIKHD NC32461:X</display-name>
+    <display-name>1205</display-name>
+    <display-name>NIKHD</display-name>
+    <display-name>Nickelodeon HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I59440.labs.zap2it.com">
+    <display-name>1460 CMTVHD</display-name>
+    <display-name>1460 CMTVHD NC32461:X</display-name>
+    <display-name>1460</display-name>
+    <display-name>CMTVHD</display-name>
+    <display-name>Country Music Television HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I59444.labs.zap2it.com">
+    <display-name>1631 IFCHD</display-name>
+    <display-name>1631 IFCHD NC32461:X</display-name>
+    <display-name>1631</display-name>
+    <display-name>IFCHD</display-name>
+    <display-name>Independent Film Channel HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I59479.labs.zap2it.com">
+    <display-name>31 TWRESPN</display-name>
+    <display-name>31 TWRESPN NC32461:X</display-name>
+    <display-name>31</display-name>
+    <display-name>TWRESPN</display-name>
+    <display-name>Time Warner Raleigh ESPN B/O</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I59481.labs.zap2it.com">
+    <display-name>1500 TWRESHD</display-name>
+    <display-name>1500 TWRESHD NC32461:X</display-name>
+    <display-name>1500</display-name>
+    <display-name>TWRESHD</display-name>
+    <display-name>Time Warner Raleigh ESPN HD B/O</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I59483.labs.zap2it.com">
+    <display-name>32 TWRESP2</display-name>
+    <display-name>32 TWRESP2 NC32461:X</display-name>
+    <display-name>32</display-name>
+    <display-name>TWRESP2</display-name>
+    <display-name>Time Warner Raleigh ESPN 2 B/O</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I59486.labs.zap2it.com">
+    <display-name>1501 TWRE2HD</display-name>
+    <display-name>1501 TWRE2HD NC32461:X</display-name>
+    <display-name>1501</display-name>
+    <display-name>TWRE2HD</display-name>
+    <display-name>Time Warner Raleigh ESPN2 HD B/O</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I59615.labs.zap2it.com">
+    <display-name>1215 ABCFHD</display-name>
+    <display-name>1215 ABCFHD NC32461:X</display-name>
+    <display-name>1215</display-name>
+    <display-name>ABCFHD</display-name>
+    <display-name>ABC Family Channel HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I59684.labs.zap2it.com">
+    <display-name>1200 DISNHD</display-name>
+    <display-name>1200 DISNHD NC32461:X</display-name>
+    <display-name>1200</display-name>
+    <display-name>DISNHD</display-name>
+    <display-name>Disney Channel HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I59837.labs.zap2it.com">
+    <display-name>1712 HBOLAHD</display-name>
+    <display-name>1712 HBOLAHD NC32461:X</display-name>
+    <display-name>1712</display-name>
+    <display-name>HBOLAHD</display-name>
+    <display-name>HBO Latino HD</display-name>
+    <display-name>Latin American PAY</display-name>
+  </channel>
+  <channel id="I59839.labs.zap2it.com">
+    <display-name>1708 HBOCHD</display-name>
+    <display-name>1708 HBOCHD NC32461:X</display-name>
+    <display-name>1708</display-name>
+    <display-name>HBOCHD</display-name>
+    <display-name>HBO Comedy HD</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I59845.labs.zap2it.com">
+    <display-name>1710 HBOZHD</display-name>
+    <display-name>1710 HBOZHD NC32461:X</display-name>
+    <display-name>1710</display-name>
+    <display-name>HBOZHD</display-name>
+    <display-name>HBO Zone HD</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I59948.labs.zap2it.com">
+    <display-name>1719 ACMAXHD</display-name>
+    <display-name>1719 ACMAXHD NC32461:X</display-name>
+    <display-name>1719</display-name>
+    <display-name>ACMAXHD</display-name>
+    <display-name>ActionMAX HD East</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I59952.labs.zap2it.com">
+    <display-name>1726 OMAXHD</display-name>
+    <display-name>1726 OMAXHD NC32461:X</display-name>
+    <display-name>1726</display-name>
+    <display-name>OMAXHD</display-name>
+    <display-name>OuterMAX HD</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I59954.labs.zap2it.com">
+    <display-name>1721 THMAXHD</display-name>
+    <display-name>1721 THMAXHD NC32461:X</display-name>
+    <display-name>1721</display-name>
+    <display-name>THMAXHD</display-name>
+    <display-name>ThrillerMAX HD East</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I59961.labs.zap2it.com">
+    <display-name>1725 5MAXHD</display-name>
+    <display-name>1725 5MAXHD NC32461:X</display-name>
+    <display-name>1725</display-name>
+    <display-name>5MAXHD</display-name>
+    <display-name>5 StarMAX HD East</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I59963.labs.zap2it.com">
+    <display-name>1723 WOMAXHD</display-name>
+    <display-name>1723 WOMAXHD NC32461:X</display-name>
+    <display-name>1723</display-name>
+    <display-name>WOMAXHD</display-name>
+    <display-name>WMAX HD East</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I59965.labs.zap2it.com">
+    <display-name>1724 ATMAXHD</display-name>
+    <display-name>1724 ATMAXHD NC32461:X</display-name>
+    <display-name>1724</display-name>
+    <display-name>ATMAXHD</display-name>
+    <display-name>AtMAX HD East</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I59976.labs.zap2it.com">
+    <display-name>1503 ESPNWHD</display-name>
+    <display-name>1503 ESPNWHD NC32461:X</display-name>
+    <display-name>1503</display-name>
+    <display-name>ESPNWHD</display-name>
+    <display-name>ESPNEWS HD</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I60006.labs.zap2it.com">
+    <display-name>1202 DXDHD</display-name>
+    <display-name>1202 DXDHD NC32461:X</display-name>
+    <display-name>1202</display-name>
+    <display-name>DXDHD</display-name>
+    <display-name>Disney XD HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I60034.labs.zap2it.com">
+    <display-name>385 FINDDM</display-name>
+    <display-name>385 FINDDM NC32461:X</display-name>
+    <display-name>385</display-name>
+    <display-name>FINDDM</display-name>
+    <display-name>Find It On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I60046.labs.zap2it.com">
+    <display-name>1454 VH1HD</display-name>
+    <display-name>1454 VH1HD NC32461:X</display-name>
+    <display-name>1454</display-name>
+    <display-name>VH1HD</display-name>
+    <display-name>VH1 HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I60048.labs.zap2it.com">
+    <display-name>1213 TOONHD</display-name>
+    <display-name>1213 TOONHD NC32461:X</display-name>
+    <display-name>1213</display-name>
+    <display-name>TOONHD</display-name>
+    <display-name>Cartoon Network HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I60150.labs.zap2it.com">
+    <display-name>1321 LIFEHD</display-name>
+    <display-name>1321 LIFEHD NC32461:X</display-name>
+    <display-name>1321</display-name>
+    <display-name>LIFEHD</display-name>
+    <display-name>Lifetime HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I60152.labs.zap2it.com">
+    <display-name>861 GMALIFE</display-name>
+    <display-name>861 GMALIFE NC32461:X</display-name>
+    <display-name>861</display-name>
+    <display-name>GMALIFE</display-name>
+    <display-name>GMA Life TV</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I60179.labs.zap2it.com">
+    <display-name>1403 FNCHD</display-name>
+    <display-name>1403 FNCHD NC32461:X</display-name>
+    <display-name>1403</display-name>
+    <display-name>FNCHD</display-name>
+    <display-name>Fox News Channel HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I60316.labs.zap2it.com">
+    <display-name>1542 TENISHD</display-name>
+    <display-name>1542 TENISHD NC32461:X</display-name>
+    <display-name>1542</display-name>
+    <display-name>TENISHD</display-name>
+    <display-name>The Tennis Channel HD</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I60468.labs.zap2it.com">
+    <display-name>1256 GRNHD</display-name>
+    <display-name>1256 GRNHD NC32461:X</display-name>
+    <display-name>1256</display-name>
+    <display-name>GRNHD</display-name>
+    <display-name>Planet Green HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I60601.labs.zap2it.com">
+    <display-name>425 NEWWODM</display-name>
+    <display-name>425 NEWWODM NC32461:X</display-name>
+    <display-name>425</display-name>
+    <display-name>NEWWODM</display-name>
+    <display-name>News &amp; World On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I60696.labs.zap2it.com">
+    <display-name>1502 ESPNUHD</display-name>
+    <display-name>1502 ESPNUHD NC32461:X</display-name>
+    <display-name>1502</display-name>
+    <display-name>ESPNUHD</display-name>
+    <display-name>ESPN University HD</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I60699.labs.zap2it.com">
+    <display-name>1275 SMITHDM</display-name>
+    <display-name>1275 SMITHDM NC32461:X</display-name>
+    <display-name>1275</display-name>
+    <display-name>SMITHDM</display-name>
+    <display-name>Smithsonian HD On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I60918.labs.zap2it.com">
+    <display-name>389 MYLIFDM</display-name>
+    <display-name>389 MYLIFDM NC32461:X</display-name>
+    <display-name>389</display-name>
+    <display-name>MYLIFDM</display-name>
+    <display-name>My LIfe on Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I60947.labs.zap2it.com">
+    <display-name>1734 SHOWXHD</display-name>
+    <display-name>1734 SHOWXHD NC32461:X</display-name>
+    <display-name>1734</display-name>
+    <display-name>SHOWXHD</display-name>
+    <display-name>Showtime Extreme HD</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I60951.labs.zap2it.com">
+    <display-name>1747 TMCXHD</display-name>
+    <display-name>1747 TMCXHD NC32461:X</display-name>
+    <display-name>1747</display-name>
+    <display-name>TMCXHD</display-name>
+    <display-name>The Movie Channel Extra HD</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I60964.labs.zap2it.com">
+    <display-name>1450 MTVHD</display-name>
+    <display-name>1450 MTVHD NC32461:X</display-name>
+    <display-name>1450</display-name>
+    <display-name>MTVHD</display-name>
+    <display-name>MTV - Music Television HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I61001.labs.zap2it.com">
+    <display-name>1732 SHOCSHD</display-name>
+    <display-name>1732 SHOCSHD NC32461:X</display-name>
+    <display-name>1732</display-name>
+    <display-name>SHOCSHD</display-name>
+    <display-name>Showtime Showcase HD</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I61036.labs.zap2it.com">
+    <display-name>1328 MAVTVHD</display-name>
+    <display-name>1328 MAVTVHD NC32461:X</display-name>
+    <display-name>1328</display-name>
+    <display-name>MAVTVHD</display-name>
+    <display-name>MavTV HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I61143.labs.zap2it.com">
+    <display-name>1539 BTENOHD</display-name>
+    <display-name>1539 BTENOHD NC32461:X</display-name>
+    <display-name>1539</display-name>
+    <display-name>BTENOHD</display-name>
+    <display-name>Big Ten Network Overflow HD</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I61287.labs.zap2it.com">
+    <display-name>388 CARHODM</display-name>
+    <display-name>388 CARHODM NC32461:X</display-name>
+    <display-name>388</display-name>
+    <display-name>CARHODM</display-name>
+    <display-name>Carolina Home On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I61399.labs.zap2it.com">
+    <display-name>888 RUSKINO</display-name>
+    <display-name>888 RUSKINO NC32461:X</display-name>
+    <display-name>888</display-name>
+    <display-name>RUSKINO</display-name>
+    <display-name>Russian Kino</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I61469.labs.zap2it.com">
+    <display-name>1268 CINHD</display-name>
+    <display-name>1268 CINHD NC32461:X</display-name>
+    <display-name>1268</display-name>
+    <display-name>CINHD</display-name>
+    <display-name>Crime &amp; Investigation Network HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I61522.labs.zap2it.com">
+    <display-name>624 HMC</display-name>
+    <display-name>624 HMC NC32461:X</display-name>
+    <display-name>624</display-name>
+    <display-name>HMC</display-name>
+    <display-name>Hallmark Movie Channel</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I61563.labs.zap2it.com">
+    <display-name>1074 BTHDDM</display-name>
+    <display-name>1074 BTHDDM NC32461:X</display-name>
+    <display-name>1074</display-name>
+    <display-name>BTHDDM</display-name>
+    <display-name>Big Ten HD OD</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I61565.labs.zap2it.com">
+    <display-name>549 BIG10DM</display-name>
+    <display-name>549 BIG10DM NC32461:X</display-name>
+    <display-name>549</display-name>
+    <display-name>BIG10DM</display-name>
+    <display-name>Big Ten OD</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I61812.labs.zap2it.com">
+    <display-name>1305 EHD</display-name>
+    <display-name>1305 EHD NC32461:X</display-name>
+    <display-name>1305</display-name>
+    <display-name>EHD</display-name>
+    <display-name>E! Entertainment Television HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I61854.labs.zap2it.com">
+    <display-name>1515 GOLFHD</display-name>
+    <display-name>1515 GOLFHD NC32461:X</display-name>
+    <display-name>1515</display-name>
+    <display-name>GOLFHD</display-name>
+    <display-name>The Golf Channel HD</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I61960.labs.zap2it.com">
+    <display-name>1330 TVONEHD</display-name>
+    <display-name>1330 TVONEHD NC32461:X</display-name>
+    <display-name>1330</display-name>
+    <display-name>TVONEHD</display-name>
+    <display-name>TV ONE HD</display-name>
+    <display-name>Regional</display-name>
+  </channel>
+  <channel id="I62079.labs.zap2it.com">
+    <display-name>524 MLBN</display-name>
+    <display-name>524 MLBN NC32461:X</display-name>
+    <display-name>524</display-name>
+    <display-name>MLBN</display-name>
+    <display-name>MLB Network</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I62081.labs.zap2it.com">
+    <display-name>1524 MLBHD</display-name>
+    <display-name>1524 MLBHD NC32461:X</display-name>
+    <display-name>1524</display-name>
+    <display-name>MLBHD</display-name>
+    <display-name>MLB Network HD</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I62097.labs.zap2it.com">
+    <display-name>282 UPLIFT</display-name>
+    <display-name>282 UPLIFT NC32461:X</display-name>
+    <display-name>282</display-name>
+    <display-name>UPLIFT</display-name>
+    <display-name>Uplift</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I62113.labs.zap2it.com">
+    <display-name>1508 FSCR1HD</display-name>
+    <display-name>1508 FSCR1HD NC32461:X</display-name>
+    <display-name>1508</display-name>
+    <display-name>FSCR1HD</display-name>
+    <display-name>Fox Sports Carolinas - North Carolina Ea</display-name>
+    <display-name>Sports Regional</display-name>
+  </channel>
+  <channel id="I62401.labs.zap2it.com">
+    <display-name>846 CINLUS</display-name>
+    <display-name>846 CINLUS NC32461:X</display-name>
+    <display-name>846</display-name>
+    <display-name>CINLUS</display-name>
+    <display-name>Cine Latino US</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I62420.labs.zap2it.com">
+    <display-name>1304 CCHD</display-name>
+    <display-name>1304 CCHD NC32461:X</display-name>
+    <display-name>1304</display-name>
+    <display-name>CCHD</display-name>
+    <display-name>Comedy Central HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I62601.labs.zap2it.com">
+    <display-name>195 PTIMEDM</display-name>
+    <display-name>195 PTIMEDM NC32461:X</display-name>
+    <display-name>195</display-name>
+    <display-name>PTIMEDM</display-name>
+    <display-name>Primetime On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I62713.labs.zap2it.com">
+    <display-name>233 DISFMDM</display-name>
+    <display-name>233 DISFMDM NC32461:X</display-name>
+    <display-name>233</display-name>
+    <display-name>DISFMDM</display-name>
+    <display-name>Disney Family Movies On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I63236.labs.zap2it.com">
+    <display-name>1308 BETHD</display-name>
+    <display-name>1308 BETHD NC32461:X</display-name>
+    <display-name>1308</display-name>
+    <display-name>BETHD</display-name>
+    <display-name>BET HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I63477.labs.zap2it.com">
+    <display-name>528 YESNAT</display-name>
+    <display-name>528 YESNAT NC32461:X</display-name>
+    <display-name>528</display-name>
+    <display-name>YESNAT</display-name>
+    <display-name>YES Network National Feed</display-name>
+    <display-name>Sports Regional</display-name>
+  </channel>
+  <channel id="I63717.labs.zap2it.com">
+    <display-name>1359 RFDHD</display-name>
+    <display-name>1359 RFDHD NC32461:X</display-name>
+    <display-name>1359</display-name>
+    <display-name>RFDHD</display-name>
+    <display-name>RFD TV HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I64241.labs.zap2it.com">
+    <display-name>1406 MNBCHD</display-name>
+    <display-name>1406 MNBCHD NC32461:X</display-name>
+    <display-name>1406</display-name>
+    <display-name>MNBCHD</display-name>
+    <display-name>MSNBC HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I64312.labs.zap2it.com">
+    <display-name>1621 TCMHD</display-name>
+    <display-name>1621 TCMHD NC32461:X</display-name>
+    <display-name>1621</display-name>
+    <display-name>TCMHD</display-name>
+    <display-name>Turner Classic Movies HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I64365.labs.zap2it.com">
+    <display-name>1064 MEJORDM</display-name>
+    <display-name>1064 MEJORDM NC32461:X</display-name>
+    <display-name>1064</display-name>
+    <display-name>MEJORDM</display-name>
+    <display-name>Lo Mejor On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I64490.labs.zap2it.com">
+    <display-name>1313 TRUTVHD</display-name>
+    <display-name>1313 TRUTVHD NC32461:X</display-name>
+    <display-name>1313</display-name>
+    <display-name>TRUTVHD</display-name>
+    <display-name>truTV HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I64492.labs.zap2it.com">
+    <display-name>1327 BBCAHD</display-name>
+    <display-name>1327 BBCAHD NC32461:X</display-name>
+    <display-name>1327</display-name>
+    <display-name>BBCAHD</display-name>
+    <display-name>BBC America HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I64549.labs.zap2it.com">
+    <display-name>1401 HLNHD</display-name>
+    <display-name>1401 HLNHD NC32461:X</display-name>
+    <display-name>1401</display-name>
+    <display-name>HLNHD</display-name>
+    <display-name>HLN HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I65149.labs.zap2it.com">
+    <display-name>506 TWSECSP</display-name>
+    <display-name>506 TWSECSP NC32461:X</display-name>
+    <display-name>506</display-name>
+    <display-name>TWSECSP</display-name>
+    <display-name>Time Warner Sports Carolina Region</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I65310.labs.zap2it.com">
+    <display-name>377 BSC</display-name>
+    <display-name>377 BSC NC32461:X</display-name>
+    <display-name>377</display-name>
+    <display-name>BSC</display-name>
+    <display-name>Black Shopping Channel</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I65342.labs.zap2it.com">
+    <display-name>1251 IDHD</display-name>
+    <display-name>1251 IDHD NC32461:X</display-name>
+    <display-name>1251</display-name>
+    <display-name>IDHD</display-name>
+    <display-name>Investigation Discovery HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I65500.labs.zap2it.com">
+    <display-name>796 HERETDM</display-name>
+    <display-name>796 HERETDM NC32461:X</display-name>
+    <display-name>796</display-name>
+    <display-name>HERETDM</display-name>
+    <display-name>Here TV On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I65631.labs.zap2it.com">
+    <display-name>764 STZDM</display-name>
+    <display-name>764 STZDM NC32461:X</display-name>
+    <display-name>764</display-name>
+    <display-name>STZDM</display-name>
+    <display-name>Starz On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I65732.labs.zap2it.com">
+    <display-name>1265 HIHD</display-name>
+    <display-name>1265 HIHD NC32461:X</display-name>
+    <display-name>1265</display-name>
+    <display-name>HIHD</display-name>
+    <display-name>History International HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I66112.labs.zap2it.com">
+    <display-name>570 GAMEHD2</display-name>
+    <display-name>570 GAMEHD2 NC32461:X</display-name>
+    <display-name>570</display-name>
+    <display-name>GAMEHD2</display-name>
+    <display-name>Game HD2</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I66138.labs.zap2it.com">
+    <display-name>100 ONTWC</display-name>
+    <display-name>100 ONTWC NC32461:X</display-name>
+    <display-name>100</display-name>
+    <display-name>ONTWC</display-name>
+    <display-name>TW CUST ONTWC</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I66268.labs.zap2it.com">
+    <display-name>1218 HALLHD</display-name>
+    <display-name>1218 HALLHD NC32461:X</display-name>
+    <display-name>1218</display-name>
+    <display-name>HALLHD</display-name>
+    <display-name>Hallmark Channel HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I66804.labs.zap2it.com">
+    <display-name>254 NGWILD</display-name>
+    <display-name>254 NGWILD NC32461:X</display-name>
+    <display-name>254</display-name>
+    <display-name>NGWILD</display-name>
+    <display-name>National Geographic Wild</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I66879.labs.zap2it.com">
+    <display-name>536 FSP</display-name>
+    <display-name>536 FSP NC32461:X</display-name>
+    <display-name>536</display-name>
+    <display-name>FSP</display-name>
+    <display-name>Fox Soccer Plus</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I66880.labs.zap2it.com">
+    <display-name>1536 FSCPLHD</display-name>
+    <display-name>1536 FSCPLHD NC32461:X</display-name>
+    <display-name>1536</display-name>
+    <display-name>FSCPLHD</display-name>
+    <display-name>Fox Soccer Plus HD</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I67331.labs.zap2it.com">
+    <display-name>1254 NGWILDH</display-name>
+    <display-name>1254 NGWILDH NC32461:X</display-name>
+    <display-name>1254</display-name>
+    <display-name>NGWILDH</display-name>
+    <display-name>National Geographic Wild HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I67373.labs.zap2it.com">
+    <display-name>863 DZBBRA</display-name>
+    <display-name>863 DZBBRA NC32461:X</display-name>
+    <display-name>863</display-name>
+    <display-name>DZBBRA</display-name>
+    <display-name>DZBB Radio From GMA Pinoy</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I67374.labs.zap2it.com">
+    <display-name>862 DWLSRA</display-name>
+    <display-name>862 DWLSRA NC32461:X</display-name>
+    <display-name>862</display-name>
+    <display-name>DWLSRA</display-name>
+    <display-name>DWLS Radio From GMA Pinoy/Life</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I67444.labs.zap2it.com">
+    <display-name>604 MOVHTDM</display-name>
+    <display-name>604 MOVHTDM NC32461:X</display-name>
+    <display-name>604</display-name>
+    <display-name>MOVHTDM</display-name>
+    <display-name>Movies on Demand-Hits</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I67516.labs.zap2it.com">
+    <display-name>529 NESNAT</display-name>
+    <display-name>529 NESNAT NC32461:X</display-name>
+    <display-name>529</display-name>
+    <display-name>NESNAT</display-name>
+    <display-name>New England Sports Network National</display-name>
+    <display-name>Sports Regional</display-name>
+  </channel>
+  <channel id="I67749.labs.zap2it.com">
+    <display-name>1211 HUBHD</display-name>
+    <display-name>1211 HUBHD NC32461:X</display-name>
+    <display-name>1211</display-name>
+    <display-name>HUBHD</display-name>
+    <display-name>HUBHD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I68030.labs.zap2it.com">
+    <display-name>1505 ESPN3D</display-name>
+    <display-name>1505 ESPN3D NC32461:X</display-name>
+    <display-name>1505</display-name>
+    <display-name>ESPN3D</display-name>
+    <display-name>ESPN 3D</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I68069.labs.zap2it.com">
+    <display-name>425 HISNADM</display-name>
+    <display-name>425 HISNADM NC32461:X</display-name>
+    <display-name>425</display-name>
+    <display-name>HISNADM</display-name>
+    <display-name>Nature &amp; Knowledge on Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I68205.labs.zap2it.com">
+    <display-name>1333 3DTV</display-name>
+    <display-name>1333 3DTV NC32461:X</display-name>
+    <display-name>1333</display-name>
+    <display-name>3DTV</display-name>
+    <display-name>3D TV</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I68338.labs.zap2it.com">
+    <display-name>1740 WOMENHD</display-name>
+    <display-name>1740 WOMENHD NC32461:X</display-name>
+    <display-name>1740</display-name>
+    <display-name>WOMENHD</display-name>
+    <display-name>Showtime Women HD</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I68340.labs.zap2it.com">
+    <display-name>1736 SHOWBHD</display-name>
+    <display-name>1736 SHOWBHD NC32461:X</display-name>
+    <display-name>1736</display-name>
+    <display-name>SHOWBHD</display-name>
+    <display-name>Showtime Beyond HD</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I68342.labs.zap2it.com">
+    <display-name>1738 NEXTHD</display-name>
+    <display-name>1738 NEXTHD NC32461:X</display-name>
+    <display-name>1738</display-name>
+    <display-name>NEXTHD</display-name>
+    <display-name>Showtime Next HD</display-name>
+    <display-name>PAY</display-name>
+  </channel>
+  <channel id="I68740.labs.zap2it.com">
+    <display-name>89 ZEAL5</display-name>
+    <display-name>89 ZEAL5 NC32461:X</display-name>
+    <display-name>89</display-name>
+    <display-name>ZEAL5</display-name>
+    <display-name>ZEAL5</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I68742.labs.zap2it.com">
+    <display-name>383 ZEALM</display-name>
+    <display-name>383 ZEALM NC32461:X</display-name>
+    <display-name>383</display-name>
+    <display-name>ZEALM</display-name>
+    <display-name>ZEALM</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I68744.labs.zap2it.com">
+    <display-name>90 ZEAL3</display-name>
+    <display-name>90 ZEAL3 NC32461:X</display-name>
+    <display-name>90</display-name>
+    <display-name>ZEAL3</display-name>
+    <display-name>ZEAL3</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I68745.labs.zap2it.com">
+    <display-name>92 ZEAL2</display-name>
+    <display-name>92 ZEAL2 NC32461:X</display-name>
+    <display-name>92</display-name>
+    <display-name>ZEAL2</display-name>
+    <display-name>ZEAL2</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I69035.labs.zap2it.com">
+    <display-name>1540 ESPNGLH</display-name>
+    <display-name>1540 ESPNGLH NC32461:X</display-name>
+    <display-name>1540</display-name>
+    <display-name>ESPNGLH</display-name>
+    <display-name>ESPN Goal Line HD</display-name>
+    <display-name>Sports Satellite</display-name>
+  </channel>
+  <channel id="I69101.labs.zap2it.com">
+    <display-name>1819 GOLTVEH</display-name>
+    <display-name>1819 GOLTVEH NC32461:X</display-name>
+    <display-name>1819</display-name>
+    <display-name>GOLTVEH</display-name>
+    <display-name>GOLTV (English) HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I69331.labs.zap2it.com">
+    <display-name>1195 PTHDDM</display-name>
+    <display-name>1195 PTHDDM NC32461:X</display-name>
+    <display-name>1195</display-name>
+    <display-name>PTHDDM</display-name>
+    <display-name>Bright House Primetime HD On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I69647.labs.zap2it.com">
+    <display-name>123 WLFLDT2</display-name>
+    <display-name>123 WLFLDT2 NC32461:X</display-name>
+    <display-name>123</display-name>
+    <display-name>27 WLFLDT2 fcc</display-name>
+    <display-name>WLFLDT2</display-name>
+    <display-name>WLFLDT2 (WLFL-DT2)</display-name>
+    <display-name>Independent</display-name>
+  </channel>
+  <channel id="I70387.labs.zap2it.com">
+    <display-name>259 OWN</display-name>
+    <display-name>259 OWN NC32461:X</display-name>
+    <display-name>259</display-name>
+    <display-name>OWN</display-name>
+    <display-name>Oprah Winfrey Network</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I70388.labs.zap2it.com">
+    <display-name>1259 OWNHD</display-name>
+    <display-name>1259 OWNHD NC32461:X</display-name>
+    <display-name>1259</display-name>
+    <display-name>OWNHD</display-name>
+    <display-name>Oprah Winfrey Network HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I70492.labs.zap2it.com">
+    <display-name>644 FEAR</display-name>
+    <display-name>644 FEAR NC32461:X</display-name>
+    <display-name>644</display-name>
+    <display-name>FEAR</display-name>
+    <display-name>FEARnet</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I70522.labs.zap2it.com">
+    <display-name>1320 OXYGNHD</display-name>
+    <display-name>1320 OXYGNHD NC32461:X</display-name>
+    <display-name>1320</display-name>
+    <display-name>OXYGNHD</display-name>
+    <display-name>Oxygen HD</display-name>
+    <display-name>Satellite</display-name>
+  </channel>
+  <channel id="I71539.labs.zap2it.com">
+    <display-name>519 TWCALSE</display-name>
+    <display-name>519 TWCALSE NC32461:X</display-name>
+    <display-name>519</display-name>
+    <display-name>TWCALSE</display-name>
+    <display-name>Time Warner Carolinas Special Event 1</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I71540.labs.zap2it.com">
+    <display-name>520 TWCALS2</display-name>
+    <display-name>520 TWCALS2 NC32461:X</display-name>
+    <display-name>520</display-name>
+    <display-name>TWCALS2</display-name>
+    <display-name>Time Warner Carolinas Special Event 2</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <channel id="I71892.labs.zap2it.com">
+    <display-name>1151 TWBULLS</display-name>
+    <display-name>1151 TWBULLS NC32461:X</display-name>
+    <display-name>1151</display-name>
+    <display-name>TWBULLS</display-name>
+    <display-name>Time Warner Durham Bulls</display-name>
+    <display-name>Sports Regional</display-name>
+  </channel>
+  <channel id="I72647.labs.zap2it.com">
+    <display-name>411 HOWTOOD</display-name>
+    <display-name>411 HOWTOOD NC32461:X</display-name>
+    <display-name>411</display-name>
+    <display-name>HOWTOOD</display-name>
+    <display-name>Time Warner Cable How To On Demand</display-name>
+    <display-name>Cablecast</display-name>
+  </channel>
+  <programme start="20110925010000 -0400" stop="20110925033000 -0400" channel="I10021.labs.zap2it.com">
+    <title lang="en">Gone Baby Gone</title>
+    <desc lang="en">Two private investigators (Casey Affleck, Michelle Monaghan) tread dangerous ground as they scour the Boston underworld for a kidnapped child.</desc>
+    <credits>
+      <director>Ben Affleck</director>
+      <actor>Casey Affleck</actor>
+      <actor>Michelle Monaghan</actor>
+      <actor>Morgan Freeman</actor>
+      <actor>Ed Harris</actor>
+      <actor>John Ashton</actor>
+      <actor>Amy Ryan</actor>
+      <actor>Amy Madigan</actor>
+      <actor>Titus Welliver</actor>
+      <actor>Michael Kenneth Williams</actor>
+      <actor>Edi Gathegi</actor>
+      <writer>Ben Affleck</writer>
+      <writer>Aaron Stockard</writer>
+      <producer>Alan Ladd Jr.</producer>
+      <producer>Sean Bailey</producer>
+      <producer>Danton Rissner</producer>
+    </credits>
+    <date>2007</date>
+    <category lang="en">Mystery</category>
+    <category lang="en">Movie</category>
+    <length units="minutes">115</length>
+    <episode-num system="dd_progid">MV00194205.0000</episode-num>
+    <rating system="advisory">
+      <value>Adult Situations</value>
+    </rating>
+    <rating system="advisory">
+      <value>Language</value>
+    </rating>
+    <rating system="advisory">
+      <value>Violence</value>
+    </rating>
+    <rating system="MPAA">
+      <value>R</value>
+    </rating>
+    <star-rating>
+      <value>3/4</value>
+    </star-rating>
+  </programme>
+  <programme start="20110925033000 -0400" stop="20110925060000 -0400" channel="I10021.labs.zap2it.com">
+    <title lang="en">Cape Fear</title>
+    <desc lang="en">A Southern lawyer (Gregory Peck) sets a trap on a houseboat for a twisted ex-convict (Robert Mitchum) terrorizing his family.</desc>
+    <credits>
+      <director>J. Lee Thompson</director>
+      <actor>Gregory Peck</actor>
+      <actor>Robert Mitchum</actor>
+      <actor>Polly Bergen</actor>
+      <actor>Lori Martin</actor>
+      <actor>Martin Balsam</actor>
+      <actor>Jack Kruschen</actor>
+      <actor>Telly Savalas</actor>
+      <actor>Barrie Chase</actor>
+      <actor>Paul Comi</actor>
+      <actor>John McKee</actor>
+      <actor>Page Slattery</actor>
+      <actor>Ward Ramsey</actor>
+      <actor>Edward Platt</actor>
+      <actor>Will Wright</actor>
+      <actor>Joan Staley</actor>
+      <actor>Norma Yost</actor>
+      <actor>Mack Williams</actor>
+      <actor>Thomas Newman</actor>
+      <actor>Alan Reynolds</actor>
+      <actor>Herb Armstrong</actor>
+      <writer>James R. Webb</writer>
+      <producer>Sy Bartlett</producer>
+    </credits>
+    <date>1962</date>
+    <category lang="en">Suspense</category>
+    <category lang="en">Movie</category>
+    <length units="minutes">105</length>
+    <episode-num system="dd_progid">MV00001472.0000</episode-num>
+    <video>
+      <colour>no</colour>
+    </video>
+    <subtitles type="teletext" />
+    <rating system="VCHIP">
+      <value>TV-14</value>
+    </rating>
+    <rating system="advisory">
+      <value>Adult Situations</value>
+    </rating>
+    <rating system="MPAA">
+      <value>NR</value>
+    </rating>
+    <star-rating>
+      <value>3/4</value>
+    </star-rating>
+  </programme>
+  <programme start="20110925060000 -0400" stop="20110925070000 -0400" channel="I10021.labs.zap2it.com">
+    <title lang="en">Mad Men</title>
+    <sub-title lang="en">The Mountain King</sub-title>
+    <desc lang="en">Don meets up with an old friend; Pete's personal life presents problems; Joan brings her boyfriend to the office.</desc>
+    <credits>
+      <actor>Jon Hamm</actor>
+      <actor>John Slattery</actor>
+      <actor>Rich Sommer</actor>
+      <actor>Bryan Batt</actor>
+      <actor>Vincent Kartheiser</actor>
+      <actor>Christina Hendricks</actor>
+      <actor>January Jones</actor>
+      <actor>Elisabeth Moss</actor>
+      <actor>Rosemarie DeWitt</actor>
+      <actor>Maggie Siff</actor>
+      <actor>Aaron Staton</actor>
+      <actor>Michael Gladis</actor>
+      <actor>Robert Morse</actor>
+      <actor>Darby Stanchfield</actor>
+      <actor>Anne Dudek</actor>
+    </credits>
+    <date>20081019</date>
+    <category lang="en">Drama</category>
+    <category lang="en">Series</category>
+    <episode-num system="dd_progid">EP00935777.0026</episode-num>
+    <episode-num system="onscreen">212</episode-num>
+    <previously-shown start="20081019000000" />
+    <subtitles type="teletext" />
+    <rating system="VCHIP">
+      <value>TV-14</value>
+    </rating>
+  </programme>
+  <programme start="20110925070000 -0400" stop="20110925080000 -0400" channel="I10021.labs.zap2it.com">
+    <title lang="en">Mad Men</title>
+    <sub-title lang="en">Meditations in an Emergency</sub-title>
+    <desc lang="en">The office scrambles without Don; Betty learns some disconcerting news.</desc>
+    <credits>
+      <actor>Jon Hamm</actor>
+      <actor>John Slattery</actor>
+      <actor>Rich Sommer</actor>
+      <actor>Bryan Batt</actor>
+      <actor>Vincent Kartheiser</actor>
+      <actor>Christina Hendricks</actor>
+      <actor>January Jones</actor>
+      <actor>Elisabeth Moss</actor>
+      <actor>Rosemarie DeWitt</actor>
+      <actor>Maggie Siff</actor>
+      <actor>Aaron Staton</actor>
+      <actor>Michael Gladis</actor>
+      <actor>Robert Morse</actor>
+      <actor>Darby Stanchfield</actor>
+      <actor>Anne Dudek</actor>
+    </credits>
+    <date>20081026</date>
+    <category lang="en">Drama</category>
+    <category lang="en">Series</category>
+    <episode-num system="dd_progid">EP00935777.0027</episode-num>
+    <episode-num system="onscreen">213</episode-num>
+    <previously-shown start="20081026000000" />
+    <subtitles type="teletext" />
+    <rating system="VCHIP">
+      <value>TV-14</value>
+    </rating>
+  </programme>
+</tv>
