@@ -1,10 +1,5 @@
 import java.io.File;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import event.Event;
+import java.util.*;
 import parser.*;
 import writer.*;
 import event.*;
@@ -25,7 +20,6 @@ public class TivooSystem
 
     static
     {
-
         myMap.put("DukeBasketBall.xml", new DukeBasketballParser());
         myMap.put("dukecal.xml", new DukeCalendarParser());
         myMap.put("googlecal.xml", new GoogleCalendarParserChen());
@@ -81,9 +75,9 @@ public class TivooSystem
     }
 
 
-    public void addFilterByKeywordInGeneral (String keyword)
+    public void addFilterByKeywordList (List<String> keywordList)
     {
-        FilterByKeywordInGeneral filter = new FilterByKeywordInGeneral(keyword);
+        FilterByKeywordList filter = new FilterByKeywordList(keywordList);
         addFilter(filter);
     }
 
