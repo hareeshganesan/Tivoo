@@ -1,5 +1,7 @@
 package writer;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import com.hp.gagawa.java.elements.Html;
 import com.hp.gagawa.java.elements.Table;
@@ -22,8 +24,15 @@ public class ListWriter extends Writer
     @Override
     public void outputHTML (List<Event> events)
     {
-
-        sortEvents(events);
+        Collections.sort(events, new Comparator<Event>()
+        {
+            @Override
+            public int compare (Event e1, Event e2)
+            {
+                return e1.get("startTime").compareTo(e2.get("startTime"));
+            }
+        });
+        
         Html html = initializeHTMLDocument();
 
         Table table = new Table();

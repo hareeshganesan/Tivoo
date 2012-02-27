@@ -1,5 +1,10 @@
 import java.io.File;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import event.Event;
 import parser.*;
 import writer.*;
 import event.*;
@@ -107,6 +112,12 @@ public class TivooSystem
     public void addConflictWriter (String directory)
     {
         Writer writer = new ConflictWriter(directory);
+        addWriter(writer);
+    }
+    
+    public void addCalendarWriter (String directory, String startDate, String timeFrame)
+    {
+        Writer writer = new CalendarWriter(directory, startDate, timeFrame);
         addWriter(writer);
     }
 

@@ -70,7 +70,9 @@ public abstract class Parser
         return new Event(getMyFields(currentEvent));
     }
 
-
+//!!getRepeatPeriod(currentEvent) must be called after getStartDate(currentEvent)
+// this is because the information indicating whether a event is recurring or not
+// is hidden and mixed with startTime in googlecal.xml.
     protected HashMap<String, String> getMyFields (Node currentEvent)
     {
         HashMap<String, String> fields = new HashMap<String, String>();
