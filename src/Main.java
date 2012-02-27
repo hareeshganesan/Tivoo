@@ -10,18 +10,18 @@ public class Main
         try
         {
 
-//            File file1 = new File("./xml/dukecal.xml");
-            File file2 = new File("./xml/DukeBasketBall.xml");
+            File file1 = new File("./xml/dukecal.xml");
+//            File file2 = new File("./xml/DukeBasketBall.xml");
+            File file3 = new File("./xml/TVTest.xml");
 
-            model.loadFile(file2);
+            model.loadFile(file3);
 //            model.loadFile(file2);
-//            model.addFilterByKeyword("vs");
+            model.addFilterByKeyword("vs");
 //            model.addFilterByTimeFrame("11/21/11 6:30:00 PM", "01/21/12 1:00:00 PM"); 
 
-            model.addFilterByKeywordInGeneral("Duke");
-//            System.out.println("hello");
-
-            model.addFilterByKeywordSorting("title");
+//            model.addFilterByKeywordInGeneral("Duke");
+//
+//            model.addFilterByKeywordSorting("title");
 
             model.addSummaryAndDetailPagesWriter("html/summary.html");
 

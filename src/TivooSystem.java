@@ -1,28 +1,10 @@
 import java.io.File;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import parser.DukeBasketballParser;
-import parser.DukeCalendarParser;
-import parser.GoogleCalenderParser;
-import parser.NFLParser;
-import parser.Parser;
-import writer.ConflictWriter;
-import writer.ListWriter;
-import writer.SummaryAndDetailsPagesWriter;
-import writer.Writer;
-import event.Event;
-import exception.TivooNoFilterSelected;
-import exception.TivooNoParserSelected;
-import exception.TivooNoWriterSelected;
-import exception.TivooUnrecognizedFeed;
-import filter.FilterByKeyword;
-import filter.FilterByKeywordInGeneral;
-import filter.FilterByKeywordSorting;
-import filter.FilterByTimeFrame;
-import filter.FilterDecorator;
+import java.util.*;
+import parser.*;
+import writer.*;
+import event.*;
+import exception.*;
+import filter.*;
 
 
 public class TivooSystem
@@ -43,6 +25,8 @@ public class TivooSystem
         myMap.put("dukecal.xml", new DukeCalendarParser());
         myMap.put("googlecal.xml", new GoogleCalenderParser());
         myMap.put("NFL.xml", new NFLParser());
+        myMap.put("tv.xml", new TVParser());
+        myMap.put("TVTest.xml", new TVParser());
     }
 
 
@@ -188,9 +172,9 @@ public class TivooSystem
 
         for (Writer writer : myWriters)
         {
-            System.out.println("Looping and Writing");
+
             writer.outputHTML(myFilteredList);
-            System.out.println("output");
+
         }
     }
 
