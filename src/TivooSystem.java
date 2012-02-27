@@ -1,5 +1,4 @@
 import java.io.File;
-<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;

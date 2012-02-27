@@ -20,11 +20,6 @@ import filter.FilterDecorator;
 public class CalendarWriter extends Writer
 {
 
-    public static enum TimeFrame
-    {
-        DAY, MONTH, YEAR
-    }
-
     String myStartDate;
     String myTimeFrame;
 
