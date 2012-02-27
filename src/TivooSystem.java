@@ -9,6 +9,7 @@ import parser.DukeCalendarParser;
 import parser.GoogleCalenderParser;
 import parser.NFLParser;
 import parser.Parser;
+import writer.CalendarWriter;
 import writer.ConflictWriter;
 import writer.ListWriter;
 import writer.SummaryAndDetailsPagesWriter;
@@ -123,6 +124,12 @@ public class TivooSystem
     public void addConflictWriter (String directory)
     {
         Writer writer = new ConflictWriter(directory);
+        addWriter(writer);
+    }
+    
+    public void addCalendarWriter (String directory, String startDate, String timeFrame)
+    {
+        Writer writer = new CalendarWriter(directory, startDate, timeFrame);
         addWriter(writer);
     }
 

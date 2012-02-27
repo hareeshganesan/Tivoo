@@ -13,9 +13,8 @@ import exception.TivooSystemError;
 public class FilterByTimeFrame extends FilterDecorator
 {
 
-    private static String defaultDateFormatString = "MM/dd/yy hh:mm:ss a";
     private static DateFormat defaultDateFormat =
-        new SimpleDateFormat(defaultDateFormatString);
+        new SimpleDateFormat(Event.dateFormat);
 
     private Date myStartTime, myEndTime;
 
@@ -26,6 +25,7 @@ public class FilterByTimeFrame extends FilterDecorator
         Date start, end;
         try
         {
+            System.out.println("hello");
             start = defaultDateFormat.parse(startTime);
             end = defaultDateFormat.parse(endTime);
         }
@@ -49,12 +49,6 @@ public class FilterByTimeFrame extends FilterDecorator
                 myFilteredList.add(entry);
             }
         }
-    }
-
-
-    public static String getDefaultDateFormat ()
-    {
-        return defaultDateFormatString;
     }
 
 

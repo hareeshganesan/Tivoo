@@ -27,8 +27,9 @@ public class Main
 
             model.addConflictWriter("html/conflicts.html");
 
-            model.addListWriter("./html/listview.html");
+            model.addListWriter("html/listview.html");
 
+            model.addCalendarWriter("html/calendarview.html", "2011-11-21 18:30:00", "MONTH");
             model.perform();
 
         }
