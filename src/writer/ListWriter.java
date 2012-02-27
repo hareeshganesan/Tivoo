@@ -52,24 +52,4 @@ public class ListWriter extends Writer
         write(html, getMyDirectory());
     }
 
-
-    private void sortEvents (List<Event> events)
-    {
-        Event temp;
-        for (int i = 0; i < events.size(); i++)
-        {
-            for (int j = 1; j < (events.size() - i); j++)
-            {
-                if (events.get(j - 1)
-                          .get("startTime")
-                          .compareTo(events.get(j).get("startTime")) > 0)
-                {
-                    temp = events.get(j - 1);
-                    events.set(j - 1, events.get(j));
-                    events.set(j, temp);
-                }
-            }
-        }
-    }
-
 }
