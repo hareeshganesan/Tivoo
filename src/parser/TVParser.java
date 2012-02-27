@@ -28,20 +28,20 @@ public class TVParser extends Parser
 
     protected String getURL (Node currentEvent)
     {
-        return getTagValue(currentEvent, "/attribute::channel");
+        return getTagValue(currentEvent, "attribute::channel");
     }
 
 
     protected String getStartDate (Node currentEvent)
     {
-        String result = getTagValue(currentEvent,"/attribute::start");
+        String result = getTagValue(currentEvent,"attribute::start");
         return reformatDateString(result,myOldFormat);
     }
 
 
     protected String getEndDate (Node currentEvent)
     {
-        String result = getTagValue(currentEvent,"/attribute::stop");
+        String result = getTagValue(currentEvent,"attribute::stop");
         return reformatDateString(result,myOldFormat);
     }
 
