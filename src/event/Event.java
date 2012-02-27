@@ -32,13 +32,13 @@ public class Event
     }
 
 
-    public boolean containsKeyWord (String key, String keyword)
+    public boolean containsKeyword (String key, String keyword)
     {
         return get(key).contains(keyword);
     }
 
 
-    public boolean containsKeyWord (String keyword)
+    public boolean containsKeyword (String keyword)
     {
         for (String s : myFields.values())
         {
