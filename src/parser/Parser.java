@@ -64,7 +64,7 @@ public abstract class Parser
     }
 
 
-    private Event createEvent (Node currentEvent)
+    protected Event createEvent (Node currentEvent)
     {
 
         return new Event(getMyFields(currentEvent));
@@ -81,7 +81,6 @@ public abstract class Parser
         fields.put("url", getURL(currentEvent));
         fields.put("startTime", getStartDate(currentEvent));
         fields.put("endTime", getEndDate(currentEvent));
-        fields.put("repeat", getRepeatPeriod(currentEvent));
         return fields;
     }
 
@@ -124,10 +123,6 @@ public abstract class Parser
         return "no such field";
     }
     
-    protected String getRepeatPeriod (Node currentEvent)
-    {
-        return "none";
-    }
 
     public List<Event> getEventList ()
     {
