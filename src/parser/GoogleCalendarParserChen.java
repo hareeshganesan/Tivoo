@@ -188,4 +188,13 @@ public class GoogleCalendarParserChen extends Parser {
 		date.setSeconds(date.getSeconds() + duration);
 		return eventFormat.format(date);
 	}
+	
+	@Override
+    protected Event createEvent (Node currentEvent)
+    {
+    	HashMap<String,String> fields = getMyFields(currentEvent);
+    	fields.put("repeat", getRepeatPeriod(currentEvent));
+
+        return new Event(getMyFields(currentEvent));
+    }
 }
