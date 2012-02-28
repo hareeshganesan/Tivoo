@@ -25,7 +25,7 @@ public class FilterByKeywordList extends FilterDecorator
         {
             for (String keyword:myKeywordList)
             {
-                if (entry.containsKeyword(keyword))
+                if (entry.containsKeywordInAllFields(keyword))
                 {
                     myFilteredList.add(entry);
                     break;

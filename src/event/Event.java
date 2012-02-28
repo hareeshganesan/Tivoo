@@ -38,7 +38,7 @@ public class Event
     }
 
 
-    public boolean containsKeyword (String keyword)
+    public boolean containsKeywordInAllFields (String keyword)
     {
         for (String s : myFields.values())
         {
