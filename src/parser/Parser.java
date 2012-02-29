@@ -70,9 +70,9 @@ public abstract class Parser
         return new Event(getMyFields(currentEvent));
     }
 
-//!!getRepeatPeriod(currentEvent) must be called after getStartDate(currentEvent)
-// this is because the information indicating whether a event is recurring or not
-// is hidden and mixed with startTime in googlecal.xml.
+    //!!getRepeatPeriod(currentEvent) must be called after getStartDate(currentEvent)
+    // this is because the information indicating whether a event is recurring or not
+    // is hidden and mixed with startTime in googlecal.xml.
     protected HashMap<String, String> getMyFields (Node currentEvent)
     {
         HashMap<String, String> fields = new HashMap<String, String>();
@@ -96,33 +96,33 @@ public abstract class Parser
     protected String getTitle (Node currentEvent)
     {
 
-        return "no such field";
+        return null;
     }
 
 
     protected String getSummary (Node currentEvent)
     {
-        return "no such field";
+        return null;
     }
 
 
     protected String getURL (Node currentEvent)
     {
-        return "no such field";
+        return null;
     }
 
 
     protected String getStartDate (Node currentEvent)
     {
-        return "no such field";
+        return null;
     }
 
 
     protected String getEndDate (Node currentEvent)
     {
-        return "no such field";
+        return null;
     }
-    
+
 
     public List<Event> getEventList ()
     {
@@ -216,10 +216,8 @@ public abstract class Parser
         }
         catch (ParseException e)
         {
-            //TODO get a better exception
-            e.printStackTrace();
+            throw new TivooSystemError("reformatDateString failed");
         }
-
         return eventFormat.format(date);
     }
 
