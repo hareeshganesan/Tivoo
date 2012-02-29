@@ -9,7 +9,7 @@ import java.util.HashMap;
 import org.w3c.dom.Node;
 
 import event.Event;
-
+ 
 public class GoogleCalendarParserChen extends Parser {
 	private String myRepeatPeriod = "none";
 	private static HashMap<String, String> myMonth = new HashMap<String, String>();
