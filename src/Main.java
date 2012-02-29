@@ -12,7 +12,7 @@ public class Main
         try
         {
 
-//            File file1 = new File("./xml/dukecal.xml");
+            File file1 = new File("./xml/dukecal.xml");
             File file2 = new File("./xml/DukeBasketBall.xml");
             File file3 = new File("./xml/TVTest.xml");
             File file4 = new File("./xml/googlecal.xml");

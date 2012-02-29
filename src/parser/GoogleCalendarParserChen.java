@@ -35,7 +35,7 @@ public class GoogleCalendarParserChen extends Parser {
 	}
 
 	protected String getTitle(Node currentEvent) {
-		System.out.println(getTagValue(currentEvent, "title/text()"));//
+//		System.out.println(getTagValue(currentEvent, "title/text()"));//
 		return getTagValue(currentEvent, "title/text()");
 	}
 
@@ -46,15 +46,15 @@ public class GoogleCalendarParserChen extends Parser {
 	protected String getStartDate(Node currentEvent) {
 		try {
 			String toparse = getTagValue(currentEvent, "summary/text()");
-			System.out.println(parseTime(toparse, "start"));//
+//			System.out.println(parseTime(toparse, "start"));//
 			return parseTime(toparse, "start");
 
 		} catch (java.lang.StringIndexOutOfBoundsException e) {
-			System.out.println("invalid format !");
-			System.out.println(getTagValue(currentEvent, "title/text()"));
+//			System.out.println("invalid format !");
+//			System.out.println(getTagValue(currentEvent, "title/text()"));
 		} catch (ParseException e) {
-			System.out.println("parsetime err in reurring date");
-			System.out.println(getTagValue(currentEvent, "title/text()"));
+//			System.out.println("parsetime err in reurring date");
+//			System.out.println(getTagValue(currentEvent, "title/text()"));
 			e.getStackTrace();
 		}
 		return "INVALID";
@@ -63,14 +63,14 @@ public class GoogleCalendarParserChen extends Parser {
 	protected String getEndDate(Node currentEvent) {
 		try {
 			String toparse = getTagValue(currentEvent, "summary/text()");
-			System.out.println(parseTime(toparse, "end"));//
+//			System.out.println(parseTime(toparse, "end"));//
 			return parseTime(toparse, "end");
 		} catch (java.lang.StringIndexOutOfBoundsException e) {
-			System.out.println("invalid format !");
-			System.out.println(getTagValue(currentEvent, "title/text()"));
+//			System.out.println("invalid format !");
+//			System.out.println(getTagValue(currentEvent, "title/text()"));
 		} catch (ParseException e) {
-			System.out.println("parsetime err in reurring date");
-			System.out.println(getTagValue(currentEvent, "title/text()"));
+//			System.out.println("parsetime err in reurring date");
+//			System.out.println(getTagValue(currentEvent, "title/text()"));
 			e.getStackTrace();
 		}
 		return "INVALID";

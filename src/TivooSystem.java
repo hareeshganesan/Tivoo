@@ -24,7 +24,6 @@ public class TivooSystem
         myParserList.add(new GoogleCalendarParserChen());
         myParserList.add(new NFLParser());
         myParserList.add(new TVParser());
-        myParserList.add(new TVParser());
     }
 
 
@@ -49,14 +48,14 @@ public class TivooSystem
                 parserFound = true;
                 break;
             }
-            catch (TivooInvalidFeed e)
+            catch (TivooUnrecognizedFeed e)
             {
                 continue;
             }
         }
         if (!parserFound)
         {
-            throw new TivooInvalidFeed();
+            throw new TivooUnrecognizedFeed();
         }
     }
 
