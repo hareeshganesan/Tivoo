@@ -15,17 +15,16 @@ public class TivooSystem
     private Set<Writer> myWriters;
     private Set<Parser> myParsers;
     private FilterDecorator myHeadFilter;
-    private static HashMap<String, Parser> myMap =
-        new HashMap<String, Parser>();
+    private static List<Parser> myParserList = new ArrayList<Parser>();
 
     static
     {
-        myMap.put("DukeBasketBall.xml", new DukeBasketballParser());
-        myMap.put("dukecal.xml", new DukeCalendarParser());
-        myMap.put("googlecal.xml", new GoogleCalendarParserChen());
-        myMap.put("NFL.xml", new NFLParser());
-        myMap.put("tv.xml", new TVParser());
-        myMap.put("TVTest.xml", new TVParser());
+        myParserList.add(new DukeBasketballParser());
+        myParserList.add(new DukeCalendarParser());
+        myParserList.add(new GoogleCalendarParserChen());
+        myParserList.add(new NFLParser());
+        myParserList.add(new TVParser());
+        myParserList.add(new TVParser());
     }
 
 
@@ -41,15 +40,23 @@ public class TivooSystem
 
     public void loadFile (File file)
     {
-        try
-        {
-            Parser parser = myMap.get(file.getName());
-            parser.loadFile(file);
-            myParsers.add(parser);
+        boolean parserFound = false;
+        for (Parser parser: myParserList) {
+            try
+            {
+                parser.loadFile(file);
+                myParsers.add(parser);
+                parserFound = true;
+                break;
+            }
+            catch (TivooInvalidFeed e)
+            {
+                continue;
+            }
         }
-        catch (NullPointerException e)
+        if (!parserFound)
         {
-            throw new TivooUnrecognizedFeed();
+            throw new TivooInvalidFeed();
         }
     }
 
