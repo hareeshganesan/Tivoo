@@ -1,7 +1,7 @@
 package exception;
 
 @SuppressWarnings("serial")
-public class TivooEventKeywordNotFound extends TivooException
+public class TivooEventKeywordNotFound extends TivooSystemError
 {
 
     public TivooEventKeywordNotFound ()

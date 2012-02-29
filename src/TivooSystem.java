@@ -1,10 +1,5 @@
 import java.io.File;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import event.Event;
+import java.util.*;
 import parser.*;
 import writer.*;
 import event.*;
@@ -20,18 +15,15 @@ public class TivooSystem
     private Set<Writer> myWriters;
     private Set<Parser> myParsers;
     private FilterDecorator myHeadFilter;
-    private static HashMap<String, Parser> myMap =
-        new HashMap<String, Parser>();
+    private static List<Parser> myParserList = new ArrayList<Parser>();
 
     static
     {
-
-        myMap.put("DukeBasketBall.xml", new DukeBasketballParser());
-        myMap.put("dukecal.xml", new DukeCalendarParser());
-        myMap.put("googlecal.xml", new GoogleCalendarParserChen());
-        myMap.put("NFL.xml", new NFLParser());
-        myMap.put("tv.xml", new TVParser());
-        myMap.put("TVTest.xml", new TVParser());
+        myParserList.add(new DukeBasketballParser());
+        myParserList.add(new DukeCalendarParser());
+        myParserList.add(new GoogleCalendarParserChen());
+        myParserList.add(new NFLParser());
+        myParserList.add(new TVParser());
     }
 
 
@@ -47,13 +39,21 @@ public class TivooSystem
 
     public void loadFile (File file)
     {
-        try
-        {
-            Parser parser = myMap.get(file.getName());
-            parser.loadFile(file);
-            myParsers.add(parser);
+        boolean parserFound = false;
+        for (Parser parser: myParserList) {
+            try
+            {
+                parser.loadFile(file);
+                myParsers.add(parser);
+                parserFound = true;
+                break;
+            }
+            catch (TivooUnrecognizedFeed e)
+            {
+                continue;
+            }
         }
-        catch (NullPointerException e)
+        if (!parserFound)
         {
             throw new TivooUnrecognizedFeed();
         }
@@ -81,9 +81,9 @@ public class TivooSystem
     }
 
 
-    public void addFilterByKeywordInGeneral (String keyword)
+    public void addFilterByKeywordList (String[] keywordList)
     {
-        FilterByKeywordInGeneral filter = new FilterByKeywordInGeneral(keyword);
+        FilterByKeywordList filter = new FilterByKeywordList(keywordList);
         addFilter(filter);
     }
 
@@ -183,9 +183,7 @@ public class TivooSystem
 
         for (Writer writer : myWriters)
         {
-
             writer.outputHTML(myFilteredList);
-
         }
     }
 

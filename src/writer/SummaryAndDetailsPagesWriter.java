@@ -10,6 +10,7 @@ import com.hp.gagawa.java.elements.Html;
 import com.hp.gagawa.java.elements.Table;
 import com.hp.gagawa.java.elements.Text;
 import event.Event;
+import exception.TivooEventKeywordNotFound;
 
 
 public class SummaryAndDetailsPagesWriter extends Writer
@@ -37,17 +38,20 @@ public class SummaryAndDetailsPagesWriter extends Writer
         for (Event event : events)
         {
             Html html = initializeHTMLDocument();
-
-            html.appendChild(new H2().appendChild(new Text(event.get("title"))));
-
             Table details = new Table();
 
-            generateDetail(details, "Start Time", event.get("startTime"));
-            generateDetail(details, "End Time", event.get("endTime"));
-            generateDetail(details, "Summary", event.get("summary"));
+            try
+            {
+                html.appendChild(new H2().appendChild(new Text(event.get("title"))));
 
+                generateDetail(details, "Start Time", event.get("startTime"));
+                generateDetail(details, "End Time", event.get("endTime"));
+                generateDetail(details, "Summary", event.get("summary"));
+            }
+            catch (TivooEventKeywordNotFound e) {}
+            
             String filename =
-                directory + "event" + events.indexOf(event) + ".html";
+                    directory + "event" + events.indexOf(event) + ".html";
 
             html.appendChild(details);
             write(html, filename);
@@ -62,13 +66,13 @@ public class SummaryAndDetailsPagesWriter extends Writer
 
         String[] days =
             {
-                    "Sunday",
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday",
-                    "Saturday" };
+                "Sunday",
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+            "Saturday" };
 
         HashMap<Integer, ArrayList<Event>> eventsByDate = groupByDate(events);
         for (int i = 0; i < 7; i++)
@@ -92,7 +96,7 @@ public class SummaryAndDetailsPagesWriter extends Writer
     private HashMap<Integer, ArrayList<Event>> groupByDate (List<Event> events)
     {
         HashMap<Integer, ArrayList<Event>> dateSet =
-            new HashMap<Integer, ArrayList<Event>>();
+                new HashMap<Integer, ArrayList<Event>>();
         for (int i = 0; i < 7; i++)
             dateSet.put(i, new ArrayList<Event>());
 
@@ -102,7 +106,7 @@ public class SummaryAndDetailsPagesWriter extends Writer
             try
             {
                 dateSet.get(dateCreator.parse(event.get("startTime")).getDay())
-                       .add(event);
+                .add(event);
             }
             catch (ParseException e)
             {}

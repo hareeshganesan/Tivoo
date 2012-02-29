@@ -25,7 +25,6 @@ public class FilterByTimeFrame extends FilterDecorator
         Date start, end;
         try
         {
-            System.out.println("hello");
             start = defaultDateFormat.parse(startTime);
             end = defaultDateFormat.parse(endTime);
         }

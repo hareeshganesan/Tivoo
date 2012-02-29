@@ -1,20 +1,20 @@
 package filter;
 
+import java.util.Arrays;
 import java.util.List;
 import event.Event;
-import exception.TivooEventKeywordNotFound;
 
 
-public class FilterByKeyword extends FilterDecorator
+public class FilterByKeywordList extends FilterDecorator
 {
 
-    private String myKeyword;
+    private List<String> myKeywordList;
 
 
-    public FilterByKeyword (String keyword)
+    public FilterByKeywordList (String[] keywordList)
     {
         super();
-        myKeyword = keyword;
+        myKeywordList = Arrays.asList(keywordList);
     }
 
 
@@ -24,16 +24,13 @@ public class FilterByKeyword extends FilterDecorator
         List<Event> decoratedList = decoratedFilterWork(list);
         for (Event entry : decoratedList)
         {
-            try
+            for (String keyword:myKeywordList)
             {
-                if (entry.containsKeyword("title", myKeyword))
+                if (entry.containsKeywordInAllFields(keyword))
                 {
                     myFilteredList.add(entry);
+                    break;
                 }
-            }
-            catch (TivooEventKeywordNotFound e)
-            {
-                myFilteredList.add(entry);
             }
         }
     }

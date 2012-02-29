@@ -23,7 +23,7 @@ public class Event
         String toReturn = myFields.get(key);
         if (toReturn == null)
         {
-            throw new TivooEventKeywordNotFound(key);
+            throw new TivooEventKeywordNotFound(String.format("%s is not found in field", key));
         }
         else
         {
@@ -32,17 +32,17 @@ public class Event
     }
 
 
-    public boolean containsKeyWord (String key, String keyword)
+    public boolean containsKeyword (String key, String keyword)
     {
         return get(key).contains(keyword);
     }
 
 
-    public boolean containsKeyWord (String keyword)
+    public boolean containsKeywordInAllFields (String keyword)
     {
         for (String s : myFields.values())
         {
-            if (s.contains(keyword))
+            if (s != null && s.contains(keyword))
             {
                 return true;
             }
