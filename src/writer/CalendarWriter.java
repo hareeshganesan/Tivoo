@@ -63,7 +63,10 @@ public class CalendarWriter extends Writer
         write(html, getMyDirectory());
     }
 
-
+    /**
+     * This method processes the start date by incrementing it by the specified increment in time frame.
+     * @return
+     */
     private String processDate ()
     {
         DateFormat format = new SimpleDateFormat(Event.dateFormat);
