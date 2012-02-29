@@ -42,7 +42,7 @@ public class Event
     {
         for (String s : myFields.values())
         {
-            if (s.contains(keyword))
+            if (s != null && s.contains(keyword))
             {
                 return true;
             }
