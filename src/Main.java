@@ -27,7 +27,7 @@ public class Main
 //            model.addFilterByKeyword("vs");
             model.addFilterByTimeFrame("2011-07-21 18:30:00", "2012-01-21 13:00:00");
             String[] s = {"NFL", "Duke", "ACM", "Exhibition", "Meet"};
-            model.addFilterByKeywordList(Arrays.asList(s));
+            model.addFilterByKeywordList(s);
             model.addFilterByKeywordSorting("title");
 
             model.addSummaryAndDetailPagesWriter("./html/summary.html");
@@ -45,7 +45,7 @@ public class Main
         catch (TivooException e)
         {
 
-            System.out.println(e.getMessage());
+            System.err.println(e.getMessage());
         }
     }
 }

@@ -81,7 +81,7 @@ public class TivooSystem
     }
 
 
-    public void addFilterByKeywordList (List<String> keywordList)
+    public void addFilterByKeywordList (String[] keywordList)
     {
         FilterByKeywordList filter = new FilterByKeywordList(keywordList);
         addFilter(filter);
@@ -183,9 +183,7 @@ public class TivooSystem
 
         for (Writer writer : myWriters)
         {
-
             writer.outputHTML(myFilteredList);
-
         }
     }
 

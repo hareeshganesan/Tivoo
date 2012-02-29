@@ -23,7 +23,7 @@ public class Event
         String toReturn = myFields.get(key);
         if (toReturn == null)
         {
-            throw new TivooEventKeywordNotFound(key);
+            throw new TivooEventKeywordNotFound(String.format("%s is not found in field", key));
         }
         else
         {
