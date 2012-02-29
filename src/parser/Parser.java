@@ -24,24 +24,30 @@ import org.xml.sax.SAXException;
 import event.Event;
 import exception.TivooInvalidFeed;
 import exception.TivooSystemError;
+import exception.TivooUnrecognizedFeed;
 
 
 public abstract class Parser
 {
     protected ArrayList<Event> myEvents;
-    protected Document myDocument;
+    protected NodeList myEventList;
 
 
     public Parser ()
     {
-        myDocument = null;
         myEvents = new ArrayList<Event>();
+        myEventList = null;
     }
 
 
     public void loadFile (File file)
     {
-        myDocument = generateDocument(file);
+        Document document = generateDocument(file);
+        NodeList nodeList = getTagNodes(document, getHead());
+        if (nodeList.getLength() == 0) {
+            throw new TivooUnrecognizedFeed();
+        }
+        myEventList = nodeList;
     }
 
 
@@ -50,14 +56,13 @@ public abstract class Parser
 
     public void parse ()
     {
-        if (myDocument == null)
+        if (myEventList == null)
         {
             return;
         }
-        NodeList eventList = getTagNodes(myDocument, getHead());
-        for (int temp = 0; temp < eventList.getLength(); temp++)
+        for (int temp = 0; temp < myEventList.getLength(); temp++)
         {
-            Node currentEvent = eventList.item(temp);
+            Node currentEvent = myEventList.item(temp);
 
             myEvents.add(createEvent(currentEvent));
         }
@@ -66,7 +71,6 @@ public abstract class Parser
 
     protected Event createEvent (Node currentEvent)
     {
-
         return new Event(getMyFields(currentEvent));
     }
 
