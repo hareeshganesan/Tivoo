@@ -9,7 +9,7 @@ public class NFLParser extends Parser
     @Override
     protected String getHead ()
     {
-        // TODO Auto-generated method stub
+
         return "/document/row";
     }
 

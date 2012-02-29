@@ -12,18 +12,31 @@ public class Event
     public static final String dateFormat = "yyyy-MM-dd HH:mm:ss";
 
 
+    /**
+     * Constructor of events with a map of fields to the information that the
+     * field should have
+     * 
+     * @param map
+     */
     public Event (HashMap<String, String> map)
     {
         myFields = map;
     }
 
 
+    /**
+     * Gets the information for a given field
+     * 
+     * @param key
+     * @return
+     */
     public String get (String key)
     {
         String toReturn = myFields.get(key);
         if (toReturn == null)
         {
-            throw new TivooEventKeywordNotFound(String.format("%s is not found in field", key));
+            throw new TivooEventKeywordNotFound(String.format("%s is not found in field",
+                                                              key));
         }
         else
         {
@@ -32,12 +45,25 @@ public class Event
     }
 
 
+    /**
+     * check if field has a given keyword
+     * 
+     * @param key
+     * @param keyword
+     * @return
+     */
     public boolean containsKeyword (String key, String keyword)
     {
         return get(key).contains(keyword);
     }
 
 
+    /**
+     * checks if all fields have a keyword
+     * 
+     * @param keyword
+     * @return
+     */
     public boolean containsKeywordInAllFields (String keyword)
     {
         for (String s : myFields.values())

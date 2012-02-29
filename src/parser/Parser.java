@@ -33,6 +33,9 @@ public abstract class Parser
     protected NodeList myEventList;
 
 
+    /**
+     * Constructor initializes myEvents and myEventList
+     */
     public Parser ()
     {
         myEvents = new ArrayList<Event>();
@@ -40,20 +43,36 @@ public abstract class Parser
     }
 
 
+    /**
+     * loads a file and creates a node list stores the list in myEventList
+     * throws an exception if the file can not be loaded
+     * 
+     * @param file
+     */
     public void loadFile (File file)
     {
         Document document = generateDocument(file);
         NodeList nodeList = getTagNodes(document, getHead());
-        if (nodeList.getLength() == 0) {
+        if (nodeList.getLength() == 0)
+        {
             throw new TivooUnrecognizedFeed();
         }
         myEventList = nodeList;
     }
 
 
+    /**
+     * Template method for finding the head node
+     * 
+     * @return
+     */
     protected abstract String getHead ();
 
 
+    /**
+     * loops through the entire node list creating an event and adding the event
+     * to the list myEvents
+     */
     public void parse ()
     {
         if (myEventList == null)
@@ -69,14 +88,24 @@ public abstract class Parser
     }
 
 
+    /**
+     * from a given node creates an Event
+     * 
+     * @param currentEvent
+     * @return Event
+     */
     protected Event createEvent (Node currentEvent)
     {
         return new Event(getMyFields(currentEvent));
     }
 
-    //!!getRepeatPeriod(currentEvent) must be called after getStartDate(currentEvent)
-    // this is because the information indicating whether a event is recurring or not
-    // is hidden and mixed with startTime in googlecal.xml.
+
+    /**
+     * gets the 5 main fields of an event
+     * 
+     * @param currentEvent
+     * @return HashMap<String,String>
+     */
     protected HashMap<String, String> getMyFields (Node currentEvent)
     {
         HashMap<String, String> fields = new HashMap<String, String>();
@@ -90,8 +119,8 @@ public abstract class Parser
 
 
     /**
-     * Allows for generic events but reduces code duplication so the parser has
-     * default behaviour
+     * Allows for generic events and reduces code duplication so the parser has
+     * default behavior
      * 
      * @param currentEvent
      * @return
@@ -104,11 +133,27 @@ public abstract class Parser
     }
 
 
+    /**
+     * Allows for generic events and reduces code duplication so the parser has
+     * default behavior
+     * 
+     * @param currentEvent
+     * @return
+     */
+
     protected String getSummary (Node currentEvent)
     {
         return null;
     }
 
+
+    /**
+     * Allows for generic events and reduces code duplication so the parser has
+     * default behavior
+     * 
+     * @param currentEvent
+     * @return
+     */
 
     protected String getURL (Node currentEvent)
     {
@@ -116,11 +161,27 @@ public abstract class Parser
     }
 
 
+    /**
+     * Allows for generic events and reduces code duplication so the parser has
+     * default behavior
+     * 
+     * @param currentEvent
+     * @return
+     */
+
     protected String getStartDate (Node currentEvent)
     {
         return null;
     }
 
+
+    /**
+     * Allows for generic events and reduces code duplication so the parser has
+     * default behavior
+     * 
+     * @param currentEvent
+     * @return
+     */
 
     protected String getEndDate (Node currentEvent)
     {
@@ -128,12 +189,24 @@ public abstract class Parser
     }
 
 
+    /**
+     * returns the eventList
+     * 
+     * @return myEvents
+     */
+
     public List<Event> getEventList ()
     {
         return new ArrayList<Event>(myEvents);
     }
 
 
+    /**
+     * creates a Document from a file
+     * 
+     * @param file
+     * @return Document
+     */
     private Document generateDocument (File file)
     {
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
@@ -150,7 +223,7 @@ public abstract class Parser
             throw new TivooSystemError("DocumentBuilderFactory initialization failed");
         }
         catch (SAXException e)
-        { // why SAXException|IOException doesn't work?
+        {
             throw new TivooInvalidFeed();
         }
         catch (IOException e)
@@ -161,6 +234,13 @@ public abstract class Parser
     }
 
 
+    /**
+     * returns a NodeList of the subnodes of a Node
+     * 
+     * @param Node
+     * @param xPath
+     * @return
+     */
     protected NodeList getTagNodes (Object Node, String xPath)
     {
         XPathExpression expr = getXPathExpression(xPath);
@@ -177,6 +257,13 @@ public abstract class Parser
     }
 
 
+    /**
+     * gets the tagvalue of a node
+     * 
+     * @param Node
+     * @param xPath
+     * @return
+     */
     protected String getTagValue (Object Node, String xPath)
     {
         Node node = getTagNodes(Node, xPath).item(0);
@@ -191,6 +278,12 @@ public abstract class Parser
     }
 
 
+    /**
+     * creates Xpaths
+     * 
+     * @param xPath
+     * @return
+     */
     private XPathExpression getXPathExpression (String xPath)
     {
         XPathFactory xpathfactory = XPathFactory.newInstance();
@@ -208,6 +301,14 @@ public abstract class Parser
     }
 
 
+    /**
+     * Takes in a string and an oldformat and transforms the date string into a
+     * lexigraphical one
+     * 
+     * @param info
+     * @param oldFormat
+     * @return
+     */
     protected String reformatDateString (String info, String oldFormat)
     {
         DateFormat df = new SimpleDateFormat(oldFormat);
