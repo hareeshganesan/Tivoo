@@ -13,6 +13,7 @@ import com.hp.gagawa.java.elements.Td;
 import com.hp.gagawa.java.elements.Text;
 import com.hp.gagawa.java.elements.Tr;
 import event.Event;
+import exception.TivooIllegalDateFormat;
 import filter.FilterByTimeFrame;
 import filter.FilterDecorator;
 
@@ -73,7 +74,7 @@ public class CalendarWriter extends Writer
         }
         catch (ParseException e)
         {
-            e.printStackTrace();
+            throw new TivooIllegalDateFormat();
         }
 
         Calendar calendar = new GregorianCalendar();
@@ -83,7 +84,7 @@ public class CalendarWriter extends Writer
         if (myTimeFrame.equals("DAY")) timeFrame = Calendar.DAY_OF_MONTH;
         else if (myTimeFrame.equals("WEEK")) timeFrame = Calendar.WEEK_OF_YEAR;
         else if (myTimeFrame.equals("MONTH")) timeFrame = Calendar.MONTH;
-
+        
         calendar.add(timeFrame, 1);
 
         return format.format(calendar.getTime());
