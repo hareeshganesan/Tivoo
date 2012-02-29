@@ -24,6 +24,11 @@ public abstract class Writer
     private String myTitle, myDirectory;
 
 
+    /**
+     * Writes a given Gagawa HTML object to a file specified by filename.
+     * @param html
+     * @param filename
+     */
     protected void write (Html html, String filename)
     {
         try
@@ -39,7 +44,10 @@ public abstract class Writer
         }
     }
 
-
+    /**
+     * Initialize HTML object by setting up the page with a page title.
+     * @return
+     */
     protected Html initializeHTMLDocument ()
     {
         Html html = new Html();
@@ -62,22 +70,34 @@ public abstract class Writer
         return html;
     }
 
-
+    /**
+     * Outputs html to a specified file location.
+     * @param events
+     */
     abstract public void outputHTML (List<Event> events);
 
-
+    /**
+     * Get the title of the writer.
+     * @return
+     */
     protected String getMyTitle ()
     {
         return myTitle;
     }
 
-
+    /**
+     * Set the title of the writer.
+     * @return
+     */
     protected void setMyTitle (String myTitle)
     {
         this.myTitle = myTitle;
     }
 
-
+    /**
+     * Get the directory of the writer that it is writing to.
+     * @return
+     */
     protected String getMyDirectory ()
     {
         return myDirectory;
@@ -90,6 +110,12 @@ public abstract class Writer
     }
 
 
+    /**
+     * Adds a row  to a table.
+     * @param details
+     * @param eventType
+     * @param detail
+     */
     protected void generateDetail (Table details,
                                    String eventType,
                                    String detail)
@@ -98,7 +124,12 @@ public abstract class Writer
         details.appendChild(new Tr().appendChild(new Td().appendChild(new Text(fullDetail))));
     }
 
-
+    /**
+     * Adds an event to a table as a row with title, start and end time. 
+     * @param events
+     * @param table
+     * @param event
+     */
     protected void addEventToTable (List<Event> events, Table table, Event event)
     {
         Tr event_format = new Tr();
