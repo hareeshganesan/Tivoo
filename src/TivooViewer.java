@@ -4,6 +4,8 @@ import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 import javax.swing.*;
@@ -176,29 +178,34 @@ public class TivooViewer extends JPanel
 
         public void actionPerformed (ActionEvent e)
         {
-            File file = new File("html/listview.html");
-            myModel.addListWriter("html/listview.html");
-            myModel.perform();
 
-            displayFile(file);
-
-           
+            displayFile();
 
         }
 
     }
 
 
-    private void displayFile (File file)
+    private void displayFile ()
     {
         try
         {
-            
+            Document doc = myPage.getDocument();
+            doc.putProperty(Document.StreamDescriptionProperty, null);
+
+            File file = new File("html/dumbview.html");
+            myModel.addDumbWriter("html/dumbview.html");
+            myModel.perform();
             myPage.setPage(file.toURI().toURL());
-            
-           
-          
         }
+        catch (FileNotFoundException error)
+        {
+            JOptionPane.showMessageDialog(this,
+                                          "Could not find file you linked to",
+                                          "Error",
+                                          JOptionPane.ERROR_MESSAGE);
+        }
+
         catch (IOException e1)
         {
             JOptionPane.showMessageDialog(this,

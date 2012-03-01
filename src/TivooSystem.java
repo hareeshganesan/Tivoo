@@ -193,4 +193,12 @@ public class TivooSystem
         myOriginalList = new ArrayList<Event>();
         myFilteredList = new ArrayList<Event>();
     }
+
+
+    public void addDumbWriter (String directory)
+    {
+        Writer writer = new DumbWriter(directory);
+        addWriter(writer);
+        
+    }
 }
