@@ -52,6 +52,11 @@ public class FilterByTimeFrame extends FilterDecorator
     }
 
 
+    /**
+     * Returns if the input event happened between the givin time frame. 
+     * @param event
+     * @return
+     */
     public boolean isWithinTimeFrame (Event event)
     {
         DateFormat format = new SimpleDateFormat(PropertyResourceBundle.getBundle("myProperties").getString("dateFormat"));
