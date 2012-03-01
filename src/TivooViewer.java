@@ -3,11 +3,14 @@ import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import javax.swing.*;
 import javax.swing.event.HyperlinkEvent;
 import javax.swing.event.HyperlinkListener;
 import javax.swing.text.Document;
+import javax.swing.text.html.HTMLEditorKit;
 import exception.TivooInvalidFeed;
 
 
@@ -83,6 +86,7 @@ public class TivooViewer extends JPanel
     {
         public void actionPerformed (ActionEvent e)
         {
+
             if (myFilters.getSelectedItem().equals("Keyword"))
             {
 
@@ -172,20 +176,36 @@ public class TivooViewer extends JPanel
 
         public void actionPerformed (ActionEvent e)
         {
-            myModel.addSummaryAndDetailPagesWriter("./html/summary.html");
+            File file = new File("html/listview.html");
+            myModel.addListWriter("html/listview.html");
             myModel.perform();
-            try
-            {
-                
-                myPage.setPage("/html/summary.html");
-            }
-            catch (IOException e1)
-            {
-                myTf.setText("You tried to view the file and it broke");
-            }
+
+            displayFile(file);
+
+           
 
         }
 
+    }
+
+
+    private void displayFile (File file)
+    {
+        try
+        {
+            
+            myPage.setPage(file.toURI().toURL());
+            
+           
+          
+        }
+        catch (IOException e1)
+        {
+            JOptionPane.showMessageDialog(this,
+                                          "Could not find file you linked to",
+                                          "Error",
+                                          JOptionPane.ERROR_MESSAGE);
+        }
     }
 
 
