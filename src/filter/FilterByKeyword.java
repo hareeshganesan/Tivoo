@@ -1,6 +1,7 @@
 package filter;
 
 import java.util.List;
+import java.util.PropertyResourceBundle;
 import event.Event;
 import exception.TivooEventKeywordNotFound;
 
@@ -26,7 +27,7 @@ public class FilterByKeyword extends FilterDecorator
         {
             try
             {
-                if (entry.containsKeyword("title", myKeyword))
+                if (entry.containsKeyword(entry.get("title"), myKeyword))
                 {
                     myFilteredList.add(entry);
                 }

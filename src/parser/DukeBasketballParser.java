@@ -1,11 +1,12 @@
 package parser;
 
+import java.util.PropertyResourceBundle;
 import org.w3c.dom.Node;
 
 
 public class DukeBasketballParser extends Parser
 {
-    private final String myOldFormat = "MM/dd/yyyy hh:mm:ss a";
+    private final String myOldFormat = PropertyResourceBundle.getBundle("myProperties").getString("dukeballFormat");
 
 
     @Override
