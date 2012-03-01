@@ -27,7 +27,7 @@ public class FilterByKeyword extends FilterDecorator
         {
             try
             {
-                if (entry.containsKeyword(entry.get("title"), myKeyword))
+                if (entry.containsKeyword("title", myKeyword))
                 {
                     myFilteredList.add(entry);
                 }
