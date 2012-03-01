@@ -20,23 +20,23 @@ public class Main
             
 //            model.loadFile(file1);
             model.loadFile(file2);
-            model.loadFile(file3);
-            model.loadFile(file4);
-            model.loadFile(file5);
+//            model.loadFile(file3);
+//            model.loadFile(file4);
+//            model.loadFile(file5);
             
-//            model.addFilterByKeyword("vs");
-            model.addFilterByTimeFrame("2011-07-21 18:30:00", "2012-01-21 13:00:00");
-            String[] s = {"NFL", "Duke", "ACM", "Exhibition", "Meet"};
-            model.addFilterByKeywordList(s);
-            model.addFilterByKeywordSorting("title");
+            model.addFilterByKeyword("vs");
+//            model.addFilterByTimeFrame("2011-07-21 18:30:00", "2012-01-21 13:00:00");
+//            String[] s = {"NFL", "Duke", "ACM", "Exhibition", "Meet"};
+//            model.addFilterByKeywordList(s);
+//            model.addFilterByKeywordSorting("title");
 
             model.addSummaryAndDetailPagesWriter("./html/summary.html");
 
-            model.addConflictWriter("./html/conflicts.html");
-
-            model.addListWriter("./html/listview.html");
-
-            model.addCalendarWriter("./html/calendarview.html", "2011-11-21 18:30:00", "MONTH");
+//            model.addConflictWriter("./html/conflicts.html");
+//
+//            model.addListWriter("./html/listview.html");
+//
+//            model.addCalendarWriter("./html/calendarview.html", "2011-11-21 18:30:00", "MONTH");
 
             model.perform();
 
