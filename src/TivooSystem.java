@@ -37,6 +37,10 @@ public class TivooSystem
     }
 
 
+    /**
+     * Loads file in to a corresponding parser. 
+     * @param file
+     */
     public void loadFile (File file)
     {
         boolean parserFound = false;
@@ -60,34 +64,51 @@ public class TivooSystem
     }
 
 
+    /**
+     * Adds a instance of FilterByKeyword to myFilterList. 
+     * @param keyword
+     */
     public void addFilterByKeyword (String keyword)
     {
         FilterDecorator filter = new FilterByKeyword(keyword);
         addFilter(filter);
     }
 
-
+    /**
+     * Adds a instance of FilterByTimeFrame to myFilterList. 
+     * @param startTime
+     * @param endTime
+     */
     public void addFilterByTimeFrame (String startTime, String endTime)
     {
         FilterDecorator filter = new FilterByTimeFrame(startTime, endTime);
         addFilter(filter);
     }
 
-
+    /**
+     * Adds a instance of FilterByKeywordSorting to myFilterList. 
+     * @param keyword
+     */
     public void addFilterByKeywordSorting (String keyword)
     {
         FilterByKeywordSorting filter = new FilterByKeywordSorting(keyword);
         addFilter(filter);
     }
 
-
+    /**
+     * Adds a instance of FilterByKeywordList to myFilterList. 
+     * @param keywordList
+     */
     public void addFilterByKeywordList (String[] keywordList)
     {
         FilterByKeywordList filter = new FilterByKeywordList(keywordList);
         addFilter(filter);
     }
 
-
+    /**
+     * Adds the input filter to myFilterList. 
+     * @param filter
+     */
     private void addFilter (FilterDecorator filter)
     {
         if (myHeadFilter == null)
@@ -101,40 +122,61 @@ public class TivooSystem
         }
     }
 
-
+    /**
+     * Adds a instance of SummaryAndDetailPagesWriter to myWriterList. 
+     * @param directory
+     */
     public void addSummaryAndDetailPagesWriter (String directory)
     {
         Writer writer = new SummaryAndDetailsPagesWriter(directory);
         addWriter(writer);
     }
 
-
+    /**
+     * Adds a instance of ConflictWriter to myWriterList. 
+     * @param directory
+     */
     public void addConflictWriter (String directory)
     {
         Writer writer = new ConflictWriter(directory);
         addWriter(writer);
     }
     
+    /**
+     * Adds a instance of CalendarWriter to myWriterList. 
+     * @param directory
+     * @param startDate
+     * @param timeFrame
+     */
     public void addCalendarWriter (String directory, String startDate, String timeFrame)
     {
         Writer writer = new CalendarWriter(directory, startDate, timeFrame);
         addWriter(writer);
     }
 
-
+    /**
+     * Adds a instance of ListWriter to myWriterList. 
+     * @param directory
+     */
     public void addListWriter (String directory)
     {
         Writer writer = new ListWriter(directory);
         addWriter(writer);
     }
 
-
+    /**
+     * Adds the input writer to myWriterList. 
+     * @param writer
+     */
     private void addWriter (Writer writer)
     {
         myWriters.add(writer);
     }
 
-
+    /**
+     * Clears running history and makes the parsers parse input xml files, filters filter parsed event list, and writers 
+     * output htmls according to filered events. 
+     */
     public void perform ()
     {
 
@@ -148,7 +190,10 @@ public class TivooSystem
 
     }
 
-
+    /**
+     * Iterates over the selected parsers and makes each parser parse their input xmls. Parsed events will be stored in
+     * myOriginalList.
+     */
     private void parse ()
     {
         if (myParsers.size() == 0)
@@ -162,7 +207,10 @@ public class TivooSystem
         }
     }
 
-
+    /**
+     * Iterates over the linked filters and makes each filter filter events recursively. The output list of each filter
+     * will be used as the input of its sub-filter. The output of the head filter will be stored in myFilteredList.
+     */
     private void filter ()
     {
         if (myHeadFilter == null)
@@ -173,7 +221,9 @@ public class TivooSystem
         myFilteredList = myHeadFilter.getFilteredList();
     }
 
-
+    /**
+     * Iterates over the selected writers and makes each writer output pages using myFilteredList as input events.
+     */
     private void output ()
     {
         if (myParsers.size() == 0)
@@ -187,7 +237,9 @@ public class TivooSystem
         }
     }
 
-
+    /**
+     * Clears myOriginalList and myFilteredList. 
+     */
     private void clear ()
     {
         myOriginalList = new ArrayList<Event>();
