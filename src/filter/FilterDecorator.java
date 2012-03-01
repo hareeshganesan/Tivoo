@@ -16,8 +16,10 @@ public abstract class FilterDecorator extends Filter
         myFilteredList = new ArrayList<Event>();
     }
 
+
     /**
-     * Lets the decorated filter work first. 
+     * Lets the decorated filter work first.
+     * 
      * @param list
      * @return
      */
@@ -36,8 +38,10 @@ public abstract class FilterDecorator extends Filter
         }
     }
 
+
     /**
-     * Appends a new filter to the current one. 
+     * Appends a new filter to the current one.
+     * 
      * @param filter
      */
     public void appendFilter (Filter filter)

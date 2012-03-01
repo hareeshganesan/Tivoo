@@ -26,6 +26,7 @@ public abstract class Writer
 
     /**
      * Writes a given Gagawa HTML object to a file specified by filename.
+     * 
      * @param html
      * @param filename
      */
@@ -43,7 +44,8 @@ public abstract class Writer
             throw new TivooInvalidOutputDirectory();
         }
     }
-    
+
+
     protected void write (String html, String filename)
     {
         try
@@ -59,8 +61,10 @@ public abstract class Writer
         }
     }
 
+
     /**
      * Initialize HTML object by setting up the page with a page title.
+     * 
      * @return
      */
     protected Html initializeHTMLDocument ()
@@ -85,14 +89,18 @@ public abstract class Writer
         return html;
     }
 
+
     /**
      * Outputs html to a specified file location.
+     * 
      * @param events
      */
     abstract public void outputHTML (List<Event> events);
 
+
     /**
      * Get the title of the writer.
+     * 
      * @return
      */
     protected String getMyTitle ()
@@ -100,8 +108,10 @@ public abstract class Writer
         return myTitle;
     }
 
+
     /**
      * Set the title of the writer.
+     * 
      * @return
      */
     protected void setMyTitle (String myTitle)
@@ -109,8 +119,10 @@ public abstract class Writer
         this.myTitle = myTitle;
     }
 
+
     /**
      * Get the directory of the writer that it is writing to.
+     * 
      * @return
      */
     protected String getMyDirectory ()
@@ -126,7 +138,8 @@ public abstract class Writer
 
 
     /**
-     * Adds a row  to a table.
+     * Adds a row to a table.
+     * 
      * @param details
      * @param eventType
      * @param detail
@@ -139,8 +152,10 @@ public abstract class Writer
         details.appendChild(new Tr().appendChild(new Td().appendChild(new Text(fullDetail))));
     }
 
+
     /**
-     * Adds an event to a table as a row with title, start and end time. 
+     * Adds an event to a table as a row with title, start and end time.
+     * 
      * @param events
      * @param table
      * @param event

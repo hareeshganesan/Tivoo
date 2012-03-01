@@ -1,13 +1,31 @@
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.*;
-import parser.*;
-import writer.*;
-import event.*;
-import exception.*;
-import filter.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.ResourceBundle;
+import java.util.Set;
+import parser.DukeBasketballParser;
+import parser.DukeCalendarParser;
+import parser.GoogleCalendarParserChen;
+import parser.NFLParser;
+import parser.Parser;
+import parser.TVParser;
+import writer.CalendarWriter;
+import writer.ConflictWriter;
+import writer.DumbWriter;
+import writer.ListWriter;
+import writer.SummaryAndDetailsPagesWriter;
+import writer.Writer;
+import event.Event;
+import exception.TivooNoFilterSelected;
+import exception.TivooNoParserSelected;
+import exception.TivooNoWriterSelected;
+import exception.TivooUnrecognizedFeed;
+import filter.FilterByKeyword;
+import filter.FilterByKeywordList;
+import filter.FilterByKeywordSorting;
+import filter.FilterByTimeFrame;
+import filter.FilterDecorator;
 
 
 public class TivooSystem
@@ -27,13 +45,15 @@ public class TivooSystem
         myParserList.add(new GoogleCalendarParserChen());
         myParserList.add(new NFLParser());
         myParserList.add(new TVParser());
-        myResources = PropertyResourceBundle.getBundle("myProperties");
-
     }
 
-    public static ResourceBundle getResources(){
+
+    public static ResourceBundle getResources ()
+    {
         return myResources;
     }
+
+
     public TivooSystem ()
     {
         myOriginalList = new ArrayList<Event>();
@@ -45,7 +65,8 @@ public class TivooSystem
 
 
     /**
-     * Loads file in to a corresponding parser. 
+     * Loads file in to a corresponding parser.
+     * 
      * @param file
      */
     public void loadFile (File file)
@@ -73,7 +94,8 @@ public class TivooSystem
 
 
     /**
-     * Adds a instance of FilterByKeyword to myFilterList. 
+     * Adds a instance of FilterByKeyword to myFilterList.
+     * 
      * @param keyword
      */
     public void addFilterByKeyword (String keyword)
@@ -82,8 +104,10 @@ public class TivooSystem
         addFilter(filter);
     }
 
+
     /**
-     * Adds a instance of FilterByTimeFrame to myFilterList. 
+     * Adds a instance of FilterByTimeFrame to myFilterList.
+     * 
      * @param startTime
      * @param endTime
      */
@@ -93,8 +117,10 @@ public class TivooSystem
         addFilter(filter);
     }
 
+
     /**
-     * Adds a instance of FilterByKeywordSorting to myFilterList. 
+     * Adds a instance of FilterByKeywordSorting to myFilterList.
+     * 
      * @param keyword
      */
     public void addFilterByKeywordSorting (String keyword)
@@ -103,8 +129,10 @@ public class TivooSystem
         addFilter(filter);
     }
 
+
     /**
-     * Adds a instance of FilterByKeywordList to myFilterList. 
+     * Adds a instance of FilterByKeywordList to myFilterList.
+     * 
      * @param keywordList
      */
     public void addFilterByKeywordList (String[] keywordList)
@@ -113,8 +141,10 @@ public class TivooSystem
         addFilter(filter);
     }
 
+
     /**
-     * Adds the input filter to myFilterList. 
+     * Adds the input filter to myFilterList.
+     * 
      * @param filter
      */
     private void addFilter (FilterDecorator filter)
@@ -130,8 +160,10 @@ public class TivooSystem
         }
     }
 
+
     /**
-     * Adds a instance of SummaryAndDetailPagesWriter to myWriterList. 
+     * Adds a instance of SummaryAndDetailPagesWriter to myWriterList.
+     * 
      * @param directory
      */
     public void addSummaryAndDetailPagesWriter (String directory)
@@ -140,8 +172,10 @@ public class TivooSystem
         addWriter(writer);
     }
 
+
     /**
-     * Adds a instance of ConflictWriter to myWriterList. 
+     * Adds a instance of ConflictWriter to myWriterList.
+     * 
      * @param directory
      */
     public void addConflictWriter (String directory)
@@ -150,8 +184,10 @@ public class TivooSystem
         addWriter(writer);
     }
 
-	/**
-     * Adds a instance of CalendarWriter to myWriterList. 
+
+    /**
+     * Adds a instance of CalendarWriter to myWriterList.
+     * 
      * @param directory
      * @param startDate
      * @param timeFrame
@@ -164,8 +200,10 @@ public class TivooSystem
         addWriter(writer);
     }
 
+
     /**
-     * Adds a instance of ListWriter to myWriterList. 
+     * Adds a instance of ListWriter to myWriterList.
+     * 
      * @param directory
      */
     public void addListWriter (String directory)
@@ -174,8 +212,10 @@ public class TivooSystem
         addWriter(writer);
     }
 
+
     /**
-     * Adds the input writer to myWriterList. 
+     * Adds the input writer to myWriterList.
+     * 
      * @param writer
      */
     private void addWriter (Writer writer)
@@ -183,9 +223,11 @@ public class TivooSystem
         myWriters.add(writer);
     }
 
+
     /**
-     * Clears running history and makes the parsers parse input xml files, filters filter parsed event list, and writers 
-     * output htmls according to filered events. 
+     * Clears running history and makes the parsers parse input xml files,
+     * filters filter parsed event list, and writers output htmls according to
+     * filered events.
      */
     public void perform ()
     {
@@ -200,9 +242,10 @@ public class TivooSystem
 
     }
 
+
     /**
-     * Iterates over the selected parsers and makes each parser parse their input xmls. Parsed events will be stored in
-     * myOriginalList.
+     * Iterates over the selected parsers and makes each parser parse their
+     * input xmls. Parsed events will be stored in myOriginalList.
      */
     private void parse ()
     {
@@ -217,9 +260,12 @@ public class TivooSystem
         }
     }
 
+
     /**
-     * Iterates over the linked filters and makes each filter filter events recursively. The output list of each filter
-     * will be used as the input of its sub-filter. The output of the head filter will be stored in myFilteredList.
+     * Iterates over the linked filters and makes each filter filter events
+     * recursively. The output list of each filter will be used as the input of
+     * its sub-filter. The output of the head filter will be stored in
+     * myFilteredList.
      */
     private void filter ()
     {
@@ -232,8 +278,10 @@ public class TivooSystem
         myFilteredList.size();
     }
 
+
     /**
-     * Iterates over the selected writers and makes each writer output pages using myFilteredList as input events.
+     * Iterates over the selected writers and makes each writer output pages
+     * using myFilteredList as input events.
      */
     private void output ()
     {
@@ -248,23 +296,26 @@ public class TivooSystem
         }
     }
 
+
     /**
-     * Clears myOriginalList and myFilteredList. 
+     * Clears myOriginalList and myFilteredList.
      */
     private void clear ()
     {
         myOriginalList = new ArrayList<Event>();
         myFilteredList = new ArrayList<Event>();
     }
-    
+
+
     /**
-     * Adds a dumb writer that displays the events in order. 
+     * Adds a dumb writer that displays the events in order.
+     * 
      * @param directory
      */
     public void addDumbWriter (String directory)
     {
         Writer writer = new DumbWriter(directory);
         addWriter(writer);
-        
+
     }
 }

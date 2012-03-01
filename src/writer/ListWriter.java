@@ -31,7 +31,7 @@ public class ListWriter extends Writer
                 return e1.get("startTime").compareTo(e2.get("startTime"));
             }
         });
-        
+
         Html html = initializeHTMLDocument();
 
         Table table = new Table();

@@ -24,7 +24,7 @@ public class FilterByKeywordList extends FilterDecorator
         List<Event> decoratedList = decoratedFilterWork(list);
         for (Event entry : decoratedList)
         {
-            for (String keyword:myKeywordList)
+            for (String keyword : myKeywordList)
             {
                 if (entry.containsKeywordInAllFields(keyword))
                 {

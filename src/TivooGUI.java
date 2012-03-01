@@ -9,7 +9,6 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
-import javax.swing.JComboBox;
 import javax.swing.JEditorPane;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
@@ -20,9 +19,8 @@ import javax.swing.event.HyperlinkListener;
 
 
 /*
- * This class demos both the file chooser and Java's ability to display HTML Use
- * the file chooser to open an an HTML object. The rendered version of the HTML
- * should appear in the window.
+ * This class serves as a sample GUI that loads a file, performs a selected
+ * filter, and returns.
  */
 
 @SuppressWarnings("serial")
@@ -42,7 +40,7 @@ public class TivooGUI extends JFrame
         JPanel panel = new JPanel(new GridLayout());
         pane = new JEditorPane();
         JPanel buttonPanel = new JPanel(new FlowLayout());
-        
+
         JButton loadButton = new JButton("Load");
         loadButton.addActionListener(new ActionListener()
         {
@@ -70,7 +68,7 @@ public class TivooGUI extends JFrame
             filters[i] = new JCheckBox(filterStrings[i]);
             buttonPanel.add(filters[i]);
         }
-        
+
         JButton submitButton = new JButton("Submit");
         submitButton.addActionListener(new ActionListener()
         {
@@ -79,32 +77,39 @@ public class TivooGUI extends JFrame
             {
                 if (filters[0].isSelected())
                 {
-                    String keyword = JOptionPane.showInputDialog("Input keyword");
+                    String keyword =
+                        JOptionPane.showInputDialog("Input keyword");
                     model.addFilterByKeyword(keyword);
                 }
-                
+
                 if (filters[1].isSelected())
                 {
-                    int numWords = Integer.parseInt(JOptionPane.showInputDialog("Input number of keywords in list"));
+                    int numWords =
+                        Integer.parseInt(JOptionPane.showInputDialog("Input number of keywords in list"));
                     String[] keywordList = new String[numWords];
-                    for(int i=0; i<numWords; i++)
-                        keywordList[i] = JOptionPane.showInputDialog("Input the correct keyword for keyword #"+numWords);
+                    for (int i = 0; i < numWords; i++)
+                        keywordList[i] =
+                            JOptionPane.showInputDialog("Input the correct keyword for keyword #" +
+                                                        numWords);
                     model.addFilterByKeywordList(keywordList);
                 }
-                
+
                 if (filters[2].isSelected())
                 {
-                    String keyword = JOptionPane.showInputDialog("Input keyword for sort");
+                    String keyword =
+                        JOptionPane.showInputDialog("Input keyword for sort");
                     model.addFilterByKeywordSorting(keyword);
                 }
-                
+
                 if (filters[3].isSelected())
                 {
-                    String startTime = JOptionPane.showInputDialog("Input start time in format \"yyyy-MM-dd HH:mm:ss\"");
-                    String endTime = JOptionPane.showInputDialog("Input end time in format \"yyyy-MM-dd HH:mm:ss\"");
+                    String startTime =
+                        JOptionPane.showInputDialog("Input start time in format \"yyyy-MM-dd HH:mm:ss\"");
+                    String endTime =
+                        JOptionPane.showInputDialog("Input end time in format \"yyyy-MM-dd HH:mm:ss\"");
                     model.addFilterByTimeFrame(startTime, endTime);
                 }
-                
+
                 model.addDumbWriter("html/dumbview.html");
                 model.perform();
 
@@ -127,8 +132,6 @@ public class TivooGUI extends JFrame
         });
         buttonPanel.add(submitButton);
         panel.add(pane);
-
-        
 
         panel.add(buttonPanel);
 

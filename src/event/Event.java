@@ -10,7 +10,6 @@ public class Event
     private HashMap<String, String> myFields = new HashMap<String, String>();
 
 
-
     /**
      * Constructor of events with a map of fields to the information that the
      * field should have

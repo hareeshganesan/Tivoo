@@ -6,7 +6,9 @@ import org.w3c.dom.Node;
 
 public class DukeBasketballParser extends Parser
 {
-    private final String myOldFormat = PropertyResourceBundle.getBundle("myProperties").getString("dukeballFormat");
+    private final String myOldFormat =
+        PropertyResourceBundle.getBundle("myProperties")
+                              .getString("dukeballFormat");
 
 
     @Override

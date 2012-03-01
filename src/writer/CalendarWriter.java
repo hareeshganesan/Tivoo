@@ -64,13 +64,18 @@ public class CalendarWriter extends Writer
         write(html, getMyDirectory());
     }
 
+
     /**
-     * This method processes the start date by incrementing it by the specified increment in time frame.
+     * This method processes the start date by incrementing it by the specified
+     * increment in time frame.
+     * 
      * @return
      */
     private String processDate ()
     {
-        DateFormat format = new SimpleDateFormat(PropertyResourceBundle.getBundle("myProperties").getString("dateFormat"));
+        DateFormat format =
+            new SimpleDateFormat(PropertyResourceBundle.getBundle("myProperties")
+                                                       .getString("dateFormat"));
         Date start = new Date();
         try
         {
@@ -88,7 +93,7 @@ public class CalendarWriter extends Writer
         if (myTimeFrame.equals("DAY")) timeFrame = Calendar.DAY_OF_MONTH;
         else if (myTimeFrame.equals("WEEK")) timeFrame = Calendar.WEEK_OF_YEAR;
         else if (myTimeFrame.equals("MONTH")) timeFrame = Calendar.MONTH;
-        
+
         calendar.add(timeFrame, 1);
 
         return format.format(calendar.getTime());

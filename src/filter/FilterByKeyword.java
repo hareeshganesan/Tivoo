@@ -1,7 +1,6 @@
 package filter;
 
 import java.util.List;
-import java.util.PropertyResourceBundle;
 import event.Event;
 import exception.TivooEventKeywordNotFound;
 

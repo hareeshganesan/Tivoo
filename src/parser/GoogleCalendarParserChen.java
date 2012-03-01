@@ -225,13 +225,16 @@ public class GoogleCalendarParserChen extends Parser
     {
         DateFormat df = new SimpleDateFormat(oldFormat);
         Date date = new Date();
-        DateFormat eventFormat = new SimpleDateFormat(PropertyResourceBundle.getBundle("myProperties").getString("dateFormat"));
+        DateFormat eventFormat =
+            new SimpleDateFormat(PropertyResourceBundle.getBundle("myProperties")
+                                                       .getString("dateFormat"));
 
         date = df.parse(info);
 
         date.setSeconds(date.getSeconds() + duration);
         return eventFormat.format(date);
     }
+
 
     /**
      * Replaces createEvent in superclass because it has an extra field

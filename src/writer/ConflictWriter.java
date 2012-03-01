@@ -45,8 +45,11 @@ public class ConflictWriter extends Writer
         write(html, getMyDirectory());
     }
 
+
     /**
-     * Iterates through the set of events and checks if a given event overlaps with those. If it does, return false.
+     * Iterates through the set of events and checks if a given event overlaps
+     * with those. If it does, return false.
+     * 
      * @param event
      * @param events
      * @return

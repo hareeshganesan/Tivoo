@@ -35,6 +35,7 @@ public abstract class Parser
     protected NodeList myEventList;
     protected ResourceBundle myResources;
 
+
     /**
      * Constructor initializes myEvents and myEventList
      */
@@ -315,7 +316,9 @@ public abstract class Parser
     {
         DateFormat df = new SimpleDateFormat(oldFormat);
         Date date = new Date();
-        DateFormat eventFormat = new SimpleDateFormat(PropertyResourceBundle.getBundle("myProperties").getString("dateFormat"));
+        DateFormat eventFormat =
+            new SimpleDateFormat(PropertyResourceBundle.getBundle("myProperties")
+                                                       .getString("dateFormat"));
         try
         {
             date = df.parse(info);
