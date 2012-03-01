@@ -105,13 +105,13 @@ public class TivooGUI extends JFrame
                     model.addFilterByTimeFrame(startTime, endTime);
                 }
                 
-                model.addListWriter("html/listview.html");
+                model.addDumbWriter("html/dumbview.html");
                 model.perform();
 
                 pane.addHyperlinkListener(new LinkFollower());
                 try
                 {
-                    pane.setPage(new File("html/listview.html").toURL());
+                    pane.setPage(new File("html/dumbview.html").toURL());
                 }
                 catch (MalformedURLException e1)
                 {

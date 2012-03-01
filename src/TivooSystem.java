@@ -229,6 +229,7 @@ public class TivooSystem
         }
         myHeadFilter.filter(myOriginalList);
         myFilteredList = myHeadFilter.getFilteredList();
+        myFilteredList.size();
     }
 
     /**
@@ -254,5 +255,16 @@ public class TivooSystem
     {
         myOriginalList = new ArrayList<Event>();
         myFilteredList = new ArrayList<Event>();
+    }
+    
+    /**
+     * Adds a dumb writer that displays the events in order. 
+     * @param directory
+     */
+    public void addDumbWriter (String directory)
+    {
+        Writer writer = new DumbWriter(directory);
+        addWriter(writer);
+        
     }
 }

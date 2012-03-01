@@ -36,8 +36,6 @@ public class TVParser extends Parser
     protected String getStartDate (Node currentEvent)
     {
         String result = getTagValue(currentEvent,"attribute::start");
-        
-        System.out.println(myOldFormat);
         return reformatDateString(result,myOldFormat);
     }
 
@@ -45,8 +43,6 @@ public class TVParser extends Parser
     protected String getEndDate (Node currentEvent)
     {
         String result = getTagValue(currentEvent,"attribute::stop");
-
-        System.out.println("info: " + result);
         return reformatDateString(result,myOldFormat);
     }
 

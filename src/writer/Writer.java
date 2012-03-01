@@ -43,6 +43,21 @@ public abstract class Writer
             throw new TivooInvalidOutputDirectory();
         }
     }
+    
+    protected void write (String html, String filename)
+    {
+        try
+        {
+            BufferedWriter bw = new BufferedWriter(new FileWriter(filename));
+            bw.write(html);
+            bw.flush();
+            bw.close();
+        }
+        catch (IOException e)
+        {
+            throw new TivooInvalidOutputDirectory();
+        }
+    }
 
     /**
      * Initialize HTML object by setting up the page with a page title.

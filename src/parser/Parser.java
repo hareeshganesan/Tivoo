@@ -322,9 +322,6 @@ public abstract class Parser
         }
         catch (ParseException e)
         {
-            System.out.println(info);
-
-            System.out.println(oldFormat);
             e.printStackTrace();
             throw new TivooSystemError("reformatDateString failed");
         }
