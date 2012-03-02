@@ -193,8 +193,8 @@ public class TivooViewer extends JPanel
             Document doc = myPage.getDocument();
             doc.putProperty(Document.StreamDescriptionProperty, null);
 
-            File file = new File("html/dumbview.html");
-            myModel.addDumbWriter("html/dumbview.html");
+            File file = new File("./html/dumbview.html");
+            myModel.addDumbWriter("./html/dumbview.html");
             myModel.perform();
             myPage.setPage(file.toURI().toURL());
         }
