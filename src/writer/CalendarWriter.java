@@ -7,6 +7,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.List;
+import java.util.PropertyResourceBundle;
 import com.hp.gagawa.java.elements.Html;
 import com.hp.gagawa.java.elements.Table;
 import com.hp.gagawa.java.elements.Td;
@@ -69,7 +70,7 @@ public class CalendarWriter extends Writer
      */
     private String processDate ()
     {
-        DateFormat format = new SimpleDateFormat(Event.dateFormat);
+        DateFormat format = new SimpleDateFormat(PropertyResourceBundle.getBundle("myProperties").getString("dateFormat"));
         Date start = new Date();
         try
         {

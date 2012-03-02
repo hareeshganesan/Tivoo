@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.PropertyResourceBundle;
 import com.hp.gagawa.java.elements.H2;
 import com.hp.gagawa.java.elements.Html;
 import com.hp.gagawa.java.elements.Table;
@@ -43,7 +44,7 @@ public class SummaryAndDetailsPagesWriter extends Writer
             try
             {
                 html.appendChild(new H2().appendChild(new Text(event.get("title"))));
-
+                
                 generateDetail(details, "Start Time", event.get("startTime"));
                 generateDetail(details, "End Time", event.get("endTime"));
                 generateDetail(details, "Summary", event.get("summary"));
@@ -100,7 +101,7 @@ public class SummaryAndDetailsPagesWriter extends Writer
         for (int i = 0; i < 7; i++)
             dateSet.put(i, new ArrayList<Event>());
 
-        SimpleDateFormat dateCreator = new SimpleDateFormat(Event.dateFormat);
+        SimpleDateFormat dateCreator = new SimpleDateFormat(PropertyResourceBundle.getBundle("myProperties").getString("dateFormat"));
         for (Event event : events)
         {
             try

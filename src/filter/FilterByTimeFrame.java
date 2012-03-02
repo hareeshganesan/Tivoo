@@ -5,6 +5,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.PropertyResourceBundle;
 import event.Event;
 import exception.TivooIllegalDateFormat;
 import exception.TivooSystemError;
@@ -14,7 +15,7 @@ public class FilterByTimeFrame extends FilterDecorator
 {
 
     private static DateFormat defaultDateFormat =
-        new SimpleDateFormat(Event.dateFormat);
+        new SimpleDateFormat(PropertyResourceBundle.getBundle("myProperties").getString("dateFormat"));
 
     private Date myStartTime, myEndTime;
 
@@ -58,7 +59,7 @@ public class FilterByTimeFrame extends FilterDecorator
      */
     public boolean isWithinTimeFrame (Event event)
     {
-        DateFormat format = new SimpleDateFormat(Event.dateFormat);
+        DateFormat format = new SimpleDateFormat(PropertyResourceBundle.getBundle("myProperties").getString("dateFormat"));
         Date eventStartTime;
         Date eventEndTime;
         try

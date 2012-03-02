@@ -1,4 +1,7 @@
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.*;
 import parser.*;
 import writer.*;
@@ -16,7 +19,7 @@ public class TivooSystem
     private Set<Parser> myParsers;
     private FilterDecorator myHeadFilter;
     private static List<Parser> myParserList = new ArrayList<Parser>();
-
+    private static ResourceBundle myResources;
     static
     {
         myParserList.add(new DukeBasketballParser());
@@ -24,9 +27,13 @@ public class TivooSystem
         myParserList.add(new GoogleCalendarParserChen());
         myParserList.add(new NFLParser());
         myParserList.add(new TVParser());
+        myResources = PropertyResourceBundle.getBundle("myProperties");
+
     }
 
-
+    public static ResourceBundle getResources(){
+        return myResources;
+    }
     public TivooSystem ()
     {
         myOriginalList = new ArrayList<Event>();
@@ -44,7 +51,8 @@ public class TivooSystem
     public void loadFile (File file)
     {
         boolean parserFound = false;
-        for (Parser parser: myParserList) {
+        for (Parser parser : myParserList)
+        {
             try
             {
                 parser.loadFile(file);
@@ -141,14 +149,16 @@ public class TivooSystem
         Writer writer = new ConflictWriter(directory);
         addWriter(writer);
     }
-    
-    /**
+
+	/**
      * Adds a instance of CalendarWriter to myWriterList. 
      * @param directory
      * @param startDate
      * @param timeFrame
      */
-    public void addCalendarWriter (String directory, String startDate, String timeFrame)
+    public void addCalendarWriter (String directory,
+                                   String startDate,
+                                   String timeFrame)
     {
         Writer writer = new CalendarWriter(directory, startDate, timeFrame);
         addWriter(writer);
