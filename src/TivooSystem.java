@@ -19,7 +19,6 @@ public class TivooSystem
     private Set<Parser> myParsers;
     private FilterDecorator myHeadFilter;
     private static List<Parser> myParserList = new ArrayList<Parser>();
-    private static ResourceBundle myResources;
     static
     {
         myParserList.add(new DukeBasketballParser());
@@ -27,13 +26,9 @@ public class TivooSystem
         myParserList.add(new GoogleCalendarParserChen());
         myParserList.add(new NFLParser());
         myParserList.add(new TVParser());
-        myResources = PropertyResourceBundle.getBundle("myProperties");
 
     }
 
-    public static ResourceBundle getResources(){
-        return myResources;
-    }
     public TivooSystem ()
     {
         myOriginalList = new ArrayList<Event>();
